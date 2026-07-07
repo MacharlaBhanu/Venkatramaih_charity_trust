@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-section text-body font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-heading;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1280px] px-5 md:px-8 lg:px-16 2xl:max-w-[1440px] 2xl:px-20;
+  }
+
+  .glass-card {
+    @apply rounded-3xl border border-line bg-white/80 backdrop-blur-md shadow-soft;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ocean px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all duration-200 hover:bg-sky hover:shadow-glass focus:outline-none focus:ring-2 focus:ring-sky/50 active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ocean bg-white/70 px-6 py-3 text-sm font-semibold text-ocean transition-all duration-200 hover:bg-softblue focus:outline-none focus:ring-2 focus:ring-sky/40 active:scale-[0.98];
+  }
+
+  .btn-mint {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-softgreen px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all duration-200 hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-mint/50 active:scale-[0.98];
+  }
+
+  .link-arrow {
+    @apply inline-flex items-center gap-1 text-sm font-semibold text-ocean transition-colors hover:text-sky;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-softgreen;
+  }
+}
+
+@layer utilities {
+  /* Blend decorative leaf PNGs (white/light backgrounds) into light sections */
+  .leaf-blend {
+    mix-blend-mode: multiply;
+  }
+
+  /* Soft fade on the hero image left + top edges to blend into the page */
+  .hero-fade {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 1) 30%
+    );
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 1) 30%);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eef8ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfe3f6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5bbfef;
+}
+
+/* Hide scrollbar for horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
