@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Leaf } from 'lucide-react';
 
 interface SectionTitleProps {
   eyebrow?: string;
@@ -22,12 +23,16 @@ export default function SectionTitle({
       className={`${align === 'center' ? 'mx-auto text-center' : 'text-left'} max-w-2xl ${className}`}
     >
       {eyebrow && (
-        <span className={`eyebrow mb-3 ${align === 'center' ? 'justify-center' : ''}`}>
-          <span aria-hidden="true">✦</span>
+        <span
+          className={`mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase text-softgreen ${
+            align === 'center' ? 'justify-center' : ''
+          }`}
+        >
+          <Leaf className="h-4 w-4" strokeWidth={1.7} />
           {eyebrow}
         </span>
       )}
-      <h2 className="text-2xl font-bold leading-tight sm:text-3xl md:text-[2rem]">
+      <h2 className="font-serif text-[23px] font-bold leading-tight text-heading sm:text-[28px] md:text-[32px]">
         {title}
       </h2>
       {decorated && (

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Playfair+Display:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +25,7 @@
 
 @layer components {
   .container-page {
-    @apply mx-auto w-full max-w-[1280px] px-5 md:px-8 lg:px-16 2xl:max-w-[1440px] 2xl:px-20;
+    @apply mx-auto w-full max-w-[1440px] px-[14px] sm:px-[18px] md:px-6 lg:px-8 2xl:max-w-[1480px] 2xl:px-10;
   }
 
   .glass-card {
@@ -92,4 +92,131 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Shared typography: all pages use the same families and responsive hierarchy as Home. */
+.site-main {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.site-main h1:not(.home-hero-title) {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.site-main h2,
+.site-main .contact-serif,
+.site-main .involved-serif {
+  font-family: Fraunces, 'Playfair Display', Georgia, serif;
+}
+
+.site-main h2 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.site-main h3 {
+  font-family: Fraunces, 'Playfair Display', Georgia, serif;
+}
+
+/* Home-style fade-and-rise motion shared by every non-Home page. */
+.page-motion-item {
+  opacity: 0;
+  transform: translateY(26px) scale(0.988);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--page-motion-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.page-motion-item.page-motion-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (min-width: 640px) {
+  .site-main h1:not(.home-hero-title) {
+    font-size: 46px;
+  }
+
+  .site-main h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-main h1:not(.home-hero-title) {
+    font-size: 60px;
+  }
+
+  .site-main h2 {
+    font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-motion-item,
+  .page-motion-item.page-motion-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Keep mobile pages compact and prevent long headings or controls from widening the canvas. */
+  main,
+  main *,
+  header *,
+  section,
+  article {
+    min-width: 0;
+  }
+
+  img,
+  iframe,
+  input,
+  textarea,
+  button {
+    max-width: 100%;
+  }
+
+  #site-footer .container-page {
+    padding-top: 2rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Preserve the Figma reading order on compact screens: details, message form, office info. */
+  .contact-primary-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-details-stack {
+    display: contents;
+  }
+
+  .contact-details-stack > article:first-child {
+    order: 1;
+  }
+
+  .contact-form-card {
+    order: 2;
+  }
+
+  .contact-details-stack > div {
+    order: 3;
+  }
 }

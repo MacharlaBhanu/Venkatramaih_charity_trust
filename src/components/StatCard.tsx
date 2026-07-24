@@ -68,14 +68,14 @@ export default function StatCard({ value, label, icon, variant = 'plain' }: Stat
   }
 
   return (
-    <div className="flex flex-col items-center px-2 text-center">
+    <div className="flex min-w-0 flex-col items-center px-1 text-center sm:px-2">
       {LucideI && (
-        <span className="mb-2 flex h-[34px] w-[34px] items-center justify-center rounded-full bg-softblue/40 text-ocean">
-          <LucideI className="h-6 w-6" strokeWidth={1.7} />
+        <span className="mb-2 flex h-8 w-8 items-center justify-center text-ocean/85">
+          <LucideI className="h-7 w-7" strokeWidth={1.55} />
         </span>
       )}
-      <div className="font-sans text-2xl font-extrabold leading-none tracking-tight text-heading">{value}</div>
-      <div className="mt-1.5 text-[12px] font-normal text-body">{label}</div>
+      <div className="max-w-full font-sans text-[20px] font-extrabold leading-none text-heading sm:text-[24px]">{value}</div>
+      <div className="mt-2 max-w-full text-[10px] font-medium leading-tight text-body sm:text-[12px] sm:leading-none">{label}</div>
     </div>
   );
 }

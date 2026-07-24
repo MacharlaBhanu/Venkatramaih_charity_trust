@@ -19,12 +19,12 @@ export default function StoryCard({
 }: StoryCardProps) {
   if (layout === 'horizontal') {
     return (
-      <article className="group flex gap-4 rounded-3xl border border-line bg-white p-3 shadow-card transition-all duration-300 hover:shadow-glass">
+      <article className="group flex gap-4 rounded-[14px] border border-line/80 bg-white p-3 shadow-[0_12px_32px_rgba(18,58,90,0.07)] transition-all duration-300 hover:-translate-y-0.5 hover:border-softblue hover:shadow-[0_18px_42px_rgba(18,58,90,0.11)]">
         <img
           src={image}
           alt={title}
           loading="lazy"
-          className="h-24 w-24 shrink-0 rounded-2xl object-cover object-top sm:h-28 sm:w-28"
+          className="h-24 w-24 shrink-0 rounded-[10px] object-cover object-top sm:h-28 sm:w-28"
         />
         <div className="flex flex-col justify-center py-1 pr-2">
           <h3 className="text-base font-bold leading-snug text-heading">{title}</h3>
@@ -38,8 +38,8 @@ export default function StoryCard({
   }
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_8px_24px_rgba(18,58,90,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
-      <div className="h-[100px] overflow-hidden">
+    <article className="group flex h-full flex-col overflow-hidden rounded-[14px] border border-line/80 bg-white shadow-[0_12px_30px_rgba(18,58,90,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-softblue hover:shadow-[0_18px_42px_rgba(18,58,90,0.11)]">
+      <div className="h-[112px] overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -49,7 +49,7 @@ export default function StoryCard({
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
-      <div className="flex flex-1 flex-col p-3">
+      <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
         {category && (
           <span className="eyebrow mb-1 text-[10px]">
             <span aria-hidden="true">✦</span>
@@ -57,7 +57,7 @@ export default function StoryCard({
           </span>
         )}
         <h3 className="text-[13px] font-bold leading-snug text-heading">{title}</h3>
-        <p className="mt-1 flex-1 text-[11px] leading-[1.45] text-body">{text}</p>
+        <p className="mt-1.5 flex-1 text-[11px] leading-[1.5] text-body">{text}</p>
       </div>
     </article>
   );
