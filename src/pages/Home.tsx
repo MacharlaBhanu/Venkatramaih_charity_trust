@@ -153,7 +153,6 @@ const heroSlides = [
     src: heroImage,
     alt: 'A hopeful young girl in a blue school uniform with children behind her',
     label: 'Education',
-    eyebrow: 'Learning creates possibility',
     titleLead: 'A brighter future',
     titleAccent: 'Begins With Learning',
     description:
@@ -166,7 +165,6 @@ const heroSlides = [
     src: '/assets/about/21_about_hero_learning.png',
     alt: 'A teacher helping students learn together in a bright classroom',
     label: 'Learning',
-    eyebrow: 'Potential, patiently nurtured',
     titleLead: 'Care today creates',
     titleAccent: 'Confidence Tomorrow',
     description:
@@ -179,7 +177,6 @@ const heroSlides = [
     src: '/assets/initiatives/caring_consultation_in_a_clinic.png',
     alt: 'A caring medical consultation in a community clinic',
     label: 'Healthcare',
-    eyebrow: 'Care within reach',
     titleLead: 'Good health belongs',
     titleAccent: 'Within Everyone’s Reach',
     description:
@@ -192,7 +189,6 @@ const heroSlides = [
     src: '/assets/initiatives/sewing_workshop_with_women_in_saris.png',
     alt: 'Women learning together in a community sewing workshop',
     label: 'Empowerment',
-    eyebrow: 'Skills become independence',
     titleLead: 'Practical skills create',
     titleAccent: 'Lasting Independence',
     description:
@@ -205,7 +201,6 @@ const heroSlides = [
     src: '/assets/gallery/02_hero_sapling_banner.png',
     alt: 'Hands carefully holding a young green sapling',
     label: 'Community',
-    eyebrow: 'Change that takes root',
     titleLead: 'Compassion grows',
     titleAccent: 'Stronger Communities',
     description:
@@ -401,7 +396,7 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="relative h-[calc(100svh-104px)] min-h-[590px] max-h-[740px] overflow-hidden bg-[#0A3854] sm:min-h-[650px] lg:h-[calc(100svh-140px)] lg:min-h-[640px] lg:max-h-[820px]">
+      <section className="relative h-[calc(100svh-56px)] min-h-[590px] overflow-hidden bg-[#0A3854] sm:h-[calc(100svh-72px)] sm:min-h-[650px] lg:h-[calc(100svh-92px)] lg:min-h-[680px]">
         <div className="absolute inset-0 overflow-hidden">
           {heroSlides.map((slide, index) => (
             <img
@@ -424,15 +419,11 @@ export default function Home() {
 
         <div className="container-page relative z-10 flex h-full items-end pb-[112px] sm:pb-[124px] lg:pb-[132px] lg:pt-20">
           <div key={activeHero} className="trust-hero-copy hero-copy-enter min-w-0 w-full max-w-[640px] lg:w-[50%]">
-            <div className="mb-3 flex items-center gap-2 text-[10px] font-semibold uppercase text-[#B9E6FA] sm:mb-4 sm:text-[12px]">
-              <span className="h-px w-8 bg-[#8ED8F8]" aria-hidden="true" />
-              {currentHero.eyebrow}
-            </div>
             <h1 className="home-hero-title trust-hero-title max-w-[640px] leading-none">
-              <span className="block text-[38px] font-semibold leading-[1.02] text-white min-[390px]:text-[42px] sm:text-[54px] lg:text-[60px]">
+              <span className="block text-[34px] font-semibold leading-[1.02] text-white min-[390px]:text-[38px] sm:text-[54px] lg:text-[60px]">
                 {currentHero.titleLead}
               </span>
-              <span className="mt-1 block text-[45px] font-semibold italic leading-[0.95] text-[#8ED8F8] [text-shadow:0_3px_24px_rgba(38,151,208,0.18)] min-[390px]:text-[49px] sm:mt-2 sm:text-[62px] lg:text-[70px] xl:text-[76px]">
+              <span className="mt-1 block text-[40px] font-semibold italic leading-[0.95] text-[#8ED8F8] [text-shadow:0_3px_24px_rgba(38,151,208,0.18)] min-[390px]:text-[44px] sm:mt-2 sm:text-[62px] lg:text-[70px] xl:text-[76px]">
                 {currentHero.titleAccent}
               </span>
             </h1>
@@ -505,20 +496,18 @@ export default function Home() {
       </section>
 
       {/* Impact stats card */}
-      <div className="container-page relative z-20 mb-6 mt-6 sm:mb-8 sm:mt-8 md:mb-10 md:mt-10">
-        <Reveal y={36}>
-          <div className="relative mx-auto grid max-w-[1120px] grid-cols-[repeat(2,minmax(0,1fr))] overflow-hidden rounded-[20px] border border-[#BFE3F6] bg-[#E3F4FD]/90 p-4 shadow-[0_30px_80px_rgba(64,151,199,0.18),inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-1px_0_rgba(91,191,239,0.2)] ring-1 ring-[#D8F0FC] backdrop-blur-2xl sm:p-5 md:grid-cols-4 md:rounded-[12px] md:px-7 md:py-7">
-            {homeStats.map((s, i) => (
-              <Reveal key={s.label} delay={120 + i * 110} y={20} className={statDividerClass(i)}>
-                <StatCard {...s} />
-              </Reveal>
-            ))}
-          </div>
-        </Reveal>
+      <div className="container-page relative z-20 mb-6 mt-10 sm:mb-8 sm:mt-12 md:mb-10 md:mt-16">
+        <div className="relative mx-auto grid max-w-[1240px] grid-cols-[repeat(2,minmax(0,1fr))] overflow-hidden rounded-[20px] border border-[#BFE3F6] bg-[#E3F4FD]/90 p-4 shadow-[0_24px_64px_rgba(64,151,199,0.17),inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(91,191,239,0.2)] ring-1 ring-[#D8F0FC] backdrop-blur-2xl sm:p-5 md:grid-cols-4 md:rounded-[12px] md:px-7 md:py-7">
+          {homeStats.map((s, i) => (
+            <Reveal key={s.label} delay={120 + i * 110} y={20} className={statDividerClass(i)}>
+              <StatCard {...s} />
+            </Reveal>
+          ))}
+        </div>
       </div>
 
       {/* Initiatives preview */}
-      <section className="container-page relative pb-14 pt-6 md:pb-18 md:pt-8">
+      <section className="container-page relative pb-14 pt-0 md:pb-18 md:pt-0">
         <Reveal>
           <InsightHeading
             eyebrow="Our Initiatives"
