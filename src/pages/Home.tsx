@@ -249,7 +249,7 @@ export default function Home() {
           font-family: 'Poppins', Inter, system-ui, sans-serif;
         }
         .trust-hero-title {
-          font-family: 'Space Grotesk', 'Poppins', Inter, system-ui, sans-serif;
+          font-family: 'Cormorant Garamond', Georgia, serif;
           letter-spacing: 0;
         }
         @keyframes heroCopyEnter {
@@ -317,10 +317,10 @@ export default function Home() {
               {currentHero.eyebrow}
             </div>
             <h1 className="home-hero-title trust-hero-title max-w-[640px] leading-none">
-              <span className="block text-[27px] font-medium leading-[1.15] text-white min-[390px]:text-[30px] sm:text-[38px] lg:text-[40px]">
+              <span className="block text-[38px] font-semibold leading-[1.02] text-white min-[390px]:text-[42px] sm:text-[54px] lg:text-[60px]">
                 {currentHero.titleLead}
               </span>
-              <span className="mt-1 block text-[41px] font-semibold leading-[0.98] text-[#8ED8F8] [text-shadow:0_3px_24px_rgba(38,151,208,0.18)] min-[390px]:text-[46px] sm:mt-2 sm:text-[58px] lg:text-[66px] xl:text-[72px]">
+              <span className="mt-1 block text-[45px] font-semibold italic leading-[0.95] text-[#8ED8F8] [text-shadow:0_3px_24px_rgba(38,151,208,0.18)] min-[390px]:text-[49px] sm:mt-2 sm:text-[62px] lg:text-[70px] xl:text-[76px]">
                 {currentHero.titleAccent}
               </span>
             </h1>
