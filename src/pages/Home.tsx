@@ -404,6 +404,7 @@ export default function Home() {
               src={slide.src}
               alt={slide.alt}
               loading={index === 0 ? 'eager' : 'lazy'}
+              fetchPriority={index === 0 ? 'high' : 'auto'}
               decoding={index === 0 ? 'sync' : 'async'}
               style={{ objectPosition: slide.position }}
               className={`hero-slide hero-slide-${index} absolute inset-0 h-full w-full object-cover ${

@@ -82,6 +82,7 @@ export default function Initiatives() {
                 src="/assets/initiatives/nurturing_new_life_in_nature.png"
                 alt="Hands holding a young plant symbolising nurturing new life"
                 loading="eager"
+                fetchPriority="high"
                 decoding="async"
                 className="absolute inset-0 h-full w-full object-cover object-center lg:object-right"
               />

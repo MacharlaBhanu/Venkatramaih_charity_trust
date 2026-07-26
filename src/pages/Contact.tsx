@@ -128,6 +128,7 @@ export default function Contact() {
             src="/assets/contact/02_contact_hero_sapling.png"
             alt="Hands nurturing a young sapling"
             loading="eager"
+            fetchPriority="high"
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,251,255,.74)_0%,rgba(247,251,255,.86)_42%,rgba(247,251,255,.3)_100%)]" aria-hidden="true" />

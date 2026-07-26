@@ -139,6 +139,7 @@ export default function Stories() {
               src="/assets/stories/04_story_healthcare_access_clear.png"
               alt="A schoolgirl concentrating on her studies in a classroom"
               loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="stories-photo h-full w-full object-cover object-center"
             />

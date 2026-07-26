@@ -92,6 +92,7 @@ export default function Gallery() {
               src={galleryAssets.hero}
               alt="Hands nurturing a young sapling"
               loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="h-full w-full object-cover object-right"
             />

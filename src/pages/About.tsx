@@ -274,6 +274,7 @@ export default function About() {
               src="/assets/about/21_about_hero_learning.png"
               alt="Teacher helping schoolchildren learn together"
               loading="eager"
+              fetchPriority="high"
               className="h-full w-full object-cover object-[58%_center]"
             />
           </div>

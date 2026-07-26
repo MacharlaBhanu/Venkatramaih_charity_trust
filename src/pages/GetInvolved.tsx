@@ -152,6 +152,7 @@ export default function GetInvolved() {
               src="/assets/get-involved/02_hero_volunteers.png"
               alt="Volunteers distributing food and supplies to a child"
               loading="eager"
+              fetchPriority="high"
               className="h-full w-full object-cover object-center"
             />
           </div>
