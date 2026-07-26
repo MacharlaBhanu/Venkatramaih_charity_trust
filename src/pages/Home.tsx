@@ -164,7 +164,7 @@ const heroSlides = [
   {
     src: '/assets/about/21_about_hero_learning.png',
     alt: 'A teacher helping students learn together in a bright classroom',
-    label: 'Learning',
+    label: 'Mentorship',
     titleLead: 'Care today creates',
     titleAccent: 'Confidence Tomorrow',
     description:
