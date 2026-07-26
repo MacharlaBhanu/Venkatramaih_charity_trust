@@ -9,7 +9,7 @@ import { DonationProvider } from './context/DonationContext';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <DonationProvider>
           <App />
         </DonationProvider>

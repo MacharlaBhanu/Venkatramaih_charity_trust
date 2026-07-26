@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import DonationModal from './components/DonationModal';
 import PageMotion from './components/PageMotion';
+import PublicAssetFallback from './components/PublicAssetFallback';
+import PageImageLoader from './components/PageImageLoader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Initiatives from './pages/Initiatives';
@@ -16,6 +18,8 @@ export default function App() {
   return (
     <div className="flex min-h-screen w-full flex-col overflow-x-hidden bg-page">
       <ScrollToTop />
+      <PublicAssetFallback />
+      <PageImageLoader />
       <PageMotion />
       <Navbar />
       <main className="site-main flex-1">
