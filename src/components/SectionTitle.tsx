@@ -24,7 +24,7 @@ export default function SectionTitle({
     >
       {eyebrow && (
         <span
-          className={`mb-3 inline-flex items-center gap-2 text-[11px] font-bold uppercase text-softgreen ${
+          className={`mb-3 inline-flex items-center gap-2 font-sans text-[12px] font-semibold text-[#349C8D] ${
             align === 'center' ? 'justify-center' : ''
           }`}
         >
@@ -32,7 +32,7 @@ export default function SectionTitle({
           {eyebrow}
         </span>
       )}
-      <h2 className="font-serif text-[23px] font-bold leading-tight text-heading sm:text-[28px] md:text-[32px]">
+      <h2 className="font-serif text-[22px] font-bold leading-[1.3] text-heading sm:text-[27px] md:text-[31px]">
         {title}
       </h2>
       {decorated && (
@@ -45,7 +45,7 @@ export default function SectionTitle({
           <span className="h-px w-8 bg-line" />
         </div>
       )}
-      {subtitle && <p className="mt-3 text-base text-body">{subtitle}</p>}
+      {subtitle && <p className="mt-3 font-sans text-[15px] leading-[1.7] text-body">{subtitle}</p>}
     </div>
   );
 }

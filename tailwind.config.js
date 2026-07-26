@@ -19,10 +19,10 @@ export default {
         line: '#D8EDF7',
       },
       fontFamily: {
-        serif: ['Fraunces', "'Playfair Display'", 'Georgia', 'serif'],
-        display: ["'Playfair Display'", 'Fraunces', 'Georgia', 'serif'],
-        title: ["'Cormorant Garamond'", 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ["'Libre Baskerville'", 'Georgia', 'serif'],
+        display: ["'Libre Baskerville'", 'Georgia', 'serif'],
+        title: ["'Libre Baskerville'", 'Georgia', 'serif'],
+        sans: ["'Source Sans 3'", 'system-ui', 'sans-serif'],
       },
       maxWidth: {
         container: '1200px',

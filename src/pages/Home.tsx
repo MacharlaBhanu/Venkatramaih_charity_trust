@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import {
   Flower2,
   ArrowRight,
-  ChevronLeft,
-  ChevronRight,
+  ArrowUpRight,
   HeartHandshake,
   HandHeart,
   Heart,
@@ -16,10 +15,7 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import SEO from '../components/SEO';
-import SectionTitle from '../components/SectionTitle';
 import StatCard from '../components/StatCard';
-import InitiativeCard from '../components/InitiativeCard';
-import StoryCard from '../components/StoryCard';
 import { useDonation } from '../context/DonationContext';
 import {
   heroImage,
@@ -35,6 +31,122 @@ const impactIcons: Record<string, LucideIcon> = {
   userCheck: UserRoundCheck,
   usersRound: UsersRound,
 };
+
+const initiativeIcons: Record<string, LucideIcon> = {
+  book: GraduationCap,
+  health: HeartPulse,
+  empower: UserRoundCheck,
+  welfare: UsersRound,
+};
+
+const initiativeColors = ['#247E9E', '#34796F', '#536C91', '#976A72'];
+const storyColors = ['#356A91', '#3D7C73', '#765F82'];
+
+function InsightHeading({
+  eyebrow,
+  title,
+  accent,
+}: {
+  eyebrow: string;
+  title: string;
+  accent: string;
+}) {
+  return (
+    <div className="relative mx-auto max-w-[760px] overflow-hidden px-3 pb-9 pt-12 text-center sm:pb-11 sm:pt-14 lg:max-w-[1360px] lg:overflow-visible lg:pb-[72px] lg:pt-[164px]">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-3 h-[105px] w-[min(570px,128vw)] -translate-x-1/2 rounded-t-[50%] border-t-2 border-white/90 bg-[linear-gradient(180deg,rgba(166,220,248,0.5)_0%,rgba(229,246,255,0.38)_46%,rgba(255,255,255,0)_100%)] shadow-[inset_0_3px_8px_rgba(255,255,255,0.9),0_-2px_12px_rgba(91,191,239,0.22)] backdrop-blur-xl [mask-image:linear-gradient(to_bottom,black_0%,black_56%,transparent_100%)] lg:top-8 lg:h-[245px] lg:w-[min(1360px,94vw)] lg:border-t-[3px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-[18px] h-[92px] w-[min(545px,122vw)] -translate-x-1/2 rounded-t-[50%] border-t border-sky/55 shadow-[inset_0_2px_5px_rgba(255,255,255,0.75)] [mask-image:linear-gradient(to_bottom,black_0%,black_52%,transparent_100%)] lg:top-[42px] lg:h-[228px] lg:w-[min(1315px,91vw)] lg:border-t-2"
+      />
+      <p className="relative font-sans text-[14px] font-semibold text-[#287E88] sm:text-[15px] lg:text-[17px]">
+        {eyebrow}
+      </p>
+      <h2 className="relative mt-2 font-serif text-[29px] font-bold leading-[1.23] text-heading sm:text-[36px] lg:mt-3 lg:text-[44px]">
+        {title}{' '}
+        <span className="text-ocean">{accent}</span>
+      </h2>
+    </div>
+  );
+}
+
+function InsightPanel({
+  number,
+  title,
+  description,
+  image,
+  color,
+  icon: Icon,
+  to,
+  actionLabel,
+}: {
+  number: number;
+  title: string;
+  description: string;
+  image: string;
+  color: string;
+  icon: LucideIcon;
+  to: string;
+  actionLabel: string;
+}) {
+  return (
+    <article className="group relative grid min-h-[270px] grid-cols-[45%_55%] overflow-hidden rounded-[8px] bg-white shadow-[0_18px_44px_rgba(18,58,90,0.11)] sm:min-h-[280px] lg:min-h-[320px] lg:grid-cols-[42%_58%]">
+      <div
+        className="relative z-[1] flex min-w-0 flex-col justify-end overflow-hidden px-4 pb-5 pt-16 text-white sm:px-6 sm:pb-6 lg:px-12 lg:pb-10 lg:pt-20"
+        style={{ backgroundColor: color }}
+      >
+        <span
+          aria-hidden="true"
+          className="absolute -right-1 top-4 font-sans text-[88px] font-bold leading-none text-white/10 sm:text-[118px] lg:right-8 lg:top-6 lg:text-[180px]"
+        >
+          {number}
+        </span>
+        <span className="relative flex h-9 w-9 items-center justify-center rounded-[8px] bg-white/15 ring-1 ring-white/15 backdrop-blur-sm">
+          <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
+        </span>
+        <h3 className="relative mt-4 font-sans text-[16px] font-bold leading-[1.15] text-white sm:text-[20px] lg:text-[26px]">
+          {title}
+        </h3>
+        <p className="relative mt-2 max-w-[360px] text-[11px] leading-[1.45] text-white/82 sm:text-[13px] sm:leading-[1.55] lg:text-[15px]">
+          {description}
+        </p>
+      </div>
+
+      <div className="relative min-w-0 overflow-hidden">
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-y-0 left-0 w-12"
+          style={{ background: `linear-gradient(90deg, ${color}, transparent)` }}
+        />
+      </div>
+
+      <Link
+        to={to}
+        aria-label={`${actionLabel}: ${title}`}
+        className="absolute bottom-4 right-4 z-[3] flex h-11 w-11 items-center justify-center rounded-full border-4 border-white bg-white shadow-[0_10px_24px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/70 sm:h-12 sm:w-12 lg:bottom-6 lg:right-6 lg:h-14 lg:w-auto lg:gap-4 lg:border-0 lg:pl-6 lg:pr-2"
+        title={actionLabel}
+        style={{ color }}
+      >
+        <span className="hidden font-sans text-[14px] font-semibold lg:inline">{actionLabel}</span>
+        <span
+          className="flex h-8 w-8 items-center justify-center rounded-full text-white lg:h-10 lg:w-10"
+          style={{ backgroundColor: color }}
+        >
+          <ArrowUpRight className="h-4 w-4 lg:h-5 lg:w-5" />
+        </span>
+      </Link>
+    </article>
+  );
+}
 
 const heroSlides = [
   {
@@ -246,7 +358,7 @@ export default function Home() {
           animation: heroCopyEnter 0.72s cubic-bezier(0.22, 0.61, 0.36, 1) both;
         }
         .trust-hero-copy {
-          font-family: 'Poppins', Inter, system-ui, sans-serif;
+          font-family: 'Source Sans 3', system-ui, sans-serif;
         }
         .trust-hero-title {
           font-family: 'Cormorant Garamond', Georgia, serif;
@@ -406,18 +518,27 @@ export default function Home() {
       </div>
 
       {/* Initiatives preview */}
-      <section className="container-page relative pb-12 pt-8 md:pb-14 md:pt-10">
+      <section className="container-page relative pb-14 pt-6 md:pb-18 md:pt-8">
         <Reveal>
-          <SectionTitle
+          <InsightHeading
             eyebrow="Our Initiatives"
-            title="Empowering Communities, Building a Better Future"
-            subtitle="Focused programs across education, healthcare, empowerment and welfare, each designed to create lasting, dignified change."
+            title="Focused care that builds"
+            accent="a better future"
           />
         </Reveal>
-        <div className="relative mt-9 grid grid-cols-1 items-stretch gap-5 sm:grid-cols-2 md:mt-10 lg:grid-cols-4 lg:gap-6">
+        <div className="relative mx-auto grid max-w-[1360px] grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-1 lg:gap-5">
           {homeInitiatives.map((item, i) => (
             <Reveal key={item.title} delay={i * 120} className="h-full">
-              <InitiativeCard {...item} />
+              <InsightPanel
+                number={i + 1}
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                color={initiativeColors[i % initiativeColors.length]}
+                icon={initiativeIcons[item.icon] ?? HandHeart}
+                to="/initiatives"
+                actionLabel="Explore initiative"
+              />
             </Reveal>
           ))}
         </div>
@@ -475,76 +596,61 @@ export default function Home() {
 
       {/* Stories + Impact glance */}
       <section className="container-page relative pb-16 md:pb-20">
-        <div className="grid items-stretch gap-8 lg:grid-cols-[67%_33%] lg:gap-9">
-          <div className="relative flex flex-col">
-            <Reveal className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <h2 className="flex items-center gap-2.5 font-serif text-[25px] font-semibold leading-tight text-heading md:text-[28px]">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-seafoam text-[#45B8A8]">
-                  <Flower2 className="h-5 w-5" strokeWidth={1.8} />
-                </span>
-                Stories of Change
-              </h2>
-              <Link
-                to="/stories"
-                className="inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white/75 px-3.5 py-3 text-xs font-semibold text-ocean lg:py-2 shadow-[0_10px_26px_rgba(18,58,90,0.06)] transition-all duration-300 hover:-translate-y-0.5 hover:border-softblue hover:bg-softblue/70 hover:text-sky"
-              >
-                View All Stories <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            </Reveal>
+        <Reveal>
+          <InsightHeading
+            eyebrow="Stories of Change"
+            title="Real journeys shaped by"
+            accent="hope and opportunity"
+          />
+        </Reveal>
 
-            <div className="relative">
-              {/* Slider arrows */}
-              <button
-                aria-label="Previous stories"
-                className="absolute -left-3 top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-line bg-white/95 text-ocean shadow-soft backdrop-blur transition-all duration-300 hover:-translate-x-0.5 hover:bg-softblue hover:text-sky md:flex"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </button>
-              <button
-                aria-label="Next stories"
-                className="absolute -right-3 top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-line bg-white/95 text-ocean shadow-soft backdrop-blur transition-all duration-300 hover:translate-x-0.5 hover:bg-softblue hover:text-sky md:flex"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
-
-              <div className="grid gap-5 sm:grid-cols-3">
-                {homeStories.map((s, i) => (
-                  <Reveal key={s.title} delay={i * 130} className="h-full">
-                    <StoryCard {...s} objectPosition="center 25%" />
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <Reveal delay={120} y={32} className="h-full">
-            <div className="flex h-full flex-col rounded-[8px] border border-white/80 bg-white/90 p-5 shadow-[0_18px_46px_rgba(18,58,90,0.09)] ring-1 ring-line/60 backdrop-blur-sm sm:p-6">
-              <h3 className="mb-4 text-center font-serif text-[21px] font-semibold leading-tight text-heading">
-                Our Impact at a Glance
-              </h3>
-              <div className="grid flex-1 grid-cols-2 gap-3 [grid-auto-rows:1fr]">
-                {impactGlance.map((s, i) => {
-                  const LucideI = impactIcons[s.icon] ?? GraduationCap;
-                  return (
-                    <Reveal key={s.label} delay={220 + i * 100} y={18} className="h-full">
-                      <div className="group flex h-full min-h-[82px] items-center gap-3 rounded-[8px] border border-line/80 bg-[linear-gradient(180deg,#FFFFFF_0%,#F7FBFF_100%)] p-3 shadow-[0_8px_22px_rgba(18,58,90,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:border-softblue hover:shadow-[0_14px_30px_rgba(18,58,90,0.08)]">
-                        <span className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-softblue/80 text-ocean ring-1 ring-white transition-transform duration-300 group-hover:scale-105">
-                          <LucideI className="h-[18px] w-[18px]" strokeWidth={1.8} />
-                        </span>
-                        <div>
-                          <div className="text-[16px] font-extrabold leading-none text-heading">
-                            {s.value}
-                          </div>
-                          <div className="mt-1.5 text-[11px] leading-[1.35] text-muted">{s.label}</div>
-                        </div>
-                      </div>
-                    </Reveal>
-                  );
-                })}
-              </div>
-            </div>
-          </Reveal>
+        <div className="mx-auto grid max-w-[1360px] grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-1 lg:gap-5">
+          {homeStories.map((story, i) => {
+            const StoryIcon = [GraduationCap, HeartPulse, UserRoundCheck][i] ?? Flower2;
+            return (
+              <Reveal key={story.title} delay={i * 130} className="h-full">
+                <InsightPanel
+                  number={i + 1}
+                  title={story.title}
+                  description={story.text}
+                  image={story.image}
+                  color={storyColors[i % storyColors.length]}
+                  icon={StoryIcon}
+                  to="/stories"
+                  actionLabel="Read story"
+                />
+              </Reveal>
+            );
+          })}
         </div>
+
+        <Reveal delay={140} y={26}>
+          <div className="mt-5 grid grid-cols-2 overflow-hidden rounded-[8px] border border-line bg-white shadow-[0_16px_38px_rgba(18,58,90,0.07)] sm:grid-cols-4">
+            {impactGlance.map((stat, i) => {
+              const ImpactIcon = impactIcons[stat.icon] ?? GraduationCap;
+              return (
+                <div
+                  key={stat.label}
+                  className={`flex min-h-[104px] items-center gap-3 px-4 py-5 sm:px-5 ${
+                    i % 2 ? 'border-l border-line' : ''
+                  } ${i > 1 ? 'border-t border-line sm:border-t-0' : ''} ${
+                    i > 0 ? 'sm:border-l sm:border-line' : ''
+                  }`}
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] bg-softblue text-ocean">
+                    <ImpactIcon className="h-[19px] w-[19px]" strokeWidth={1.8} />
+                  </span>
+                  <div className="min-w-0">
+                    <div className="font-sans text-[18px] font-bold leading-none text-heading">
+                      {stat.value}
+                    </div>
+                    <div className="mt-1.5 text-[11px] leading-[1.3] text-muted">{stat.label}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </Reveal>
       </section>
     </>
   );

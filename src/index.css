@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -96,32 +96,32 @@
 
 /* Shared typography: all pages use the same families and responsive hierarchy as Home. */
 .site-main {
-  font-family: Inter, system-ui, sans-serif;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
 }
 
 .site-main h1:not(.home-hero-title) {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 38px;
-  font-weight: 600;
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0;
 }
 
 .site-main h2,
 .site-main .contact-serif,
 .site-main .involved-serif {
-  font-family: Fraunces, 'Playfair Display', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
 }
 
 .site-main h2 {
   font-size: 23px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: 0;
 }
 
 .site-main h3 {
-  font-family: Fraunces, 'Playfair Display', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
 }
 
 /* Home-style fade-and-rise motion shared by every non-Home page. */
@@ -166,7 +166,7 @@
 
 .page-image-loader__title {
   margin: 0;
-  font-family: Fraunces, 'Playfair Display', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: clamp(19px, 4.8vw, 25px);
   font-weight: 600;
   text-align: center;
