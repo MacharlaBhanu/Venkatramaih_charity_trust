@@ -1,20 +1,12 @@
 import sharp from 'sharp';
 
 const background = 'public/assets/social/share-background.png';
-const output = 'public/social-share.png';
+const homepageLogo = 'public/assets/home/logo_mark.png';
+const output = 'public/social-share-v2.png';
 
 const overlay = Buffer.from(`
   <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
     <rect x="154" y="145" width="892" height="340" rx="34" fill="#ffffff" stroke="#dcefeb" stroke-width="2"/>
-
-    <g transform="translate(205 191) scale(4.45)">
-      <path d="M32 6c-4 8-4 16 0 24 4-8 4-16 0-24z" fill="#5BBFEF"/>
-      <path d="M32 30C24 26 16 26 10 30c6 4 14 6 22 4-2-2-2-4 0-4z" fill="#1689C7"/>
-      <path d="M32 30c8-4 16-4 22 0-6 4-14 6-22 4 2-2 2-4 0-4z" fill="#9DE6D0"/>
-      <path d="M22 16c-2 8 2 14 10 18-2-8-4-14-10-18z" fill="#6BCDB6"/>
-      <path d="M42 16c2 8-2 14-10 18 2-8 4-14 10-18z" fill="#5BBFEF"/>
-      <circle cx="32" cy="46" r="4" fill="#1689C7"/>
-    </g>
 
     <text x="490" y="245" fill="#12376d" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="1.2">KANNEGANTI</text>
     <text x="490" y="305" fill="#12376d" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="1.2">VENKATARAMAIAH</text>
@@ -24,9 +16,34 @@ const overlay = Buffer.from(`
   </svg>
 `);
 
+// Crop the exact lotus used by the homepage header and upscale it without
+// redrawing or changing the official gradients and leaf shapes.
+const { data: logoPixels, info: logoInfo } = await sharp(homepageLogo)
+  .extract({ left: 130, top: 24, width: 760, height: 566 })
+  .ensureAlpha()
+  .raw()
+  .toBuffer({ resolveWithObject: true });
+
+for (let i = 0; i < logoPixels.length; i += logoInfo.channels) {
+  const high = Math.max(logoPixels[i], logoPixels[i + 1], logoPixels[i + 2]);
+  const low = Math.min(logoPixels[i], logoPixels[i + 1], logoPixels[i + 2]);
+  const chroma = high - low;
+  if (chroma <= 5) logoPixels[i + 3] = 0;
+  else if (chroma < 30) logoPixels[i + 3] = Math.round(((chroma - 5) / 25) * 255);
+}
+
+const logoMark = await sharp(logoPixels, { raw: logoInfo })
+  .trim({ background: { r: 0, g: 0, b: 0, alpha: 0 } })
+  .resize({ width: 220, kernel: sharp.kernel.lanczos3 })
+  .png()
+  .toBuffer();
+
 await sharp(background)
   .resize(1200, 630, { fit: 'cover', position: 'centre' })
-  .composite([{ input: overlay, top: 0, left: 0 }])
+  .composite([
+    { input: overlay, top: 0, left: 0 },
+    { input: logoMark, top: 242, left: 238 },
+  ])
   .png({ compressionLevel: 9 })
   .toFile(output);
 
