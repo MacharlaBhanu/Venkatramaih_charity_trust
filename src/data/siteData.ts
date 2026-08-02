@@ -2,7 +2,7 @@ export const site = {
   name: 'Kanneganti Venkataramaiah Charitable Trust',
   shortName: 'KV Charitable Trust',
   tagline: 'Compassion Today, Better Tomorrow',
-  url: 'https://www.kvgcharitabletrust.in',
+  url: 'https://kvrcharitabletrust.in',
   description:
     'Kanneganti Venkataramaiah Charitable Trust supports education, healthcare, women empowerment, food support, scholarships, and community welfare initiatives to uplift underprivileged communities.',
   phones: ['+91 88955 43300', '+91 40 2900 43300'],
