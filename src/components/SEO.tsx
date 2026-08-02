@@ -8,7 +8,7 @@ interface SEOProps {
   breadcrumb?: { name: string; path: string }[];
 }
 
-const ogImage = `${site.url}/reference/home.png`;
+const ogImage = `${site.url}/assets/home/02_logo_top.png`;
 
 export default function SEO({ title, description, path, breadcrumb }: SEOProps) {
   const desc = description ?? site.description;
