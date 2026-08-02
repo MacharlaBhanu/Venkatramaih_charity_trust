@@ -77,7 +77,7 @@ export default function GetInvolved() {
         ]}
       />
 
-      <div className="overflow-hidden bg-page">
+      <div className="brand-color-page overflow-hidden bg-page">
         <style>{`
           .involved-shell {
             width: 100%;
@@ -99,7 +99,7 @@ export default function GetInvolved() {
             position: absolute;
             inset: 0;
             z-index: 1;
-            background: linear-gradient(to right, #F7FBFF 0%, rgba(247,251,255,.88) 16%, rgba(247,251,255,.3) 34%, transparent 52%);
+            background: linear-gradient(to right, #0A527A 0%, rgba(10,82,122,.88) 16%, rgba(10,82,122,.34) 34%, transparent 52%);
             pointer-events: none;
           }
           .involved-hero-image::after {
@@ -107,7 +107,7 @@ export default function GetInvolved() {
             position: absolute;
             inset: 0;
             z-index: 1;
-            background: linear-gradient(to top, #EEF8FF 0%, rgba(238,248,255,.32) 18%, transparent 48%);
+            background: linear-gradient(to top, rgba(157,215,239,.48) 0%, rgba(157,215,239,.18) 18%, transparent 48%);
             pointer-events: none;
           }
           .involved-process-line {
@@ -131,7 +131,7 @@ export default function GetInvolved() {
           }
           @media (max-width: 767px) {
             .involved-hero-image::before {
-              background: linear-gradient(to bottom, transparent 52%, #EEF8FF 100%);
+              background: linear-gradient(to bottom, transparent 52%, #082F49 100%);
             }
             .involved-process-line {
               left: 27px;
@@ -146,7 +146,7 @@ export default function GetInvolved() {
         `}</style>
 
         {/* Hero */}
-        <section className="relative min-h-[550px] overflow-hidden border-b border-line bg-[linear-gradient(90deg,#F7FBFF_0%,#EEF8FF_100%)] md:min-h-[330px]">
+        <section className="relative min-h-[550px] overflow-hidden border-b border-line bg-[linear-gradient(115deg,#082F49_0%,#0A527A_48%,#B9E3F5_100%)] md:min-h-[330px]">
           <div className="involved-hero-image absolute inset-x-0 top-0 h-[310px] overflow-hidden md:inset-y-0 md:left-auto md:right-0 md:h-full md:w-[63%]">
             <img
               src="/assets/get-involved/02_hero_volunteers.png"
@@ -166,16 +166,16 @@ export default function GetInvolved() {
 
           <div className="involved-shell relative z-10 flex min-h-[550px] items-end pb-10 pt-[280px] md:min-h-[330px] md:items-center md:py-[34px]">
             <div className="max-w-[520px] md:w-[44%]">
-              <h1 className="involved-serif text-[38px] font-bold leading-[1.02] tracking-[-0.03em] text-heading sm:text-[46px] lg:text-[58px]">
+              <h1 className="involved-serif text-[38px] font-bold leading-[1.02] tracking-[-0.03em] text-white sm:text-[46px] lg:text-[58px]">
                 <span className="block">Get Involved,</span>
-                <span className="block text-ocean">Create Change</span>
+                <span className="block text-[#8ED8F8]">Create Change</span>
               </h1>
               <div className="mt-3 flex w-[138px] items-center gap-2 text-sky" aria-hidden="true">
                 <span className="h-px flex-1 bg-sky/55" />
                 <Heart className="h-3.5 w-3.5 fill-sky/20" strokeWidth={1.7} />
                 <span className="h-px flex-1 bg-sky/55" />
               </div>
-              <p className="mt-4 max-w-[500px] text-[14px] leading-[1.7] text-body">
+              <p className="mt-4 max-w-[500px] text-[14px] leading-[1.7] text-white/80">
                 Together, we can build a kinder, healthier, and more empowered tomorrow. Your time,
                 resources, and voice can transform lives and strengthen communities.
               </p>
@@ -305,7 +305,7 @@ export default function GetInvolved() {
                 {faqItems.map((item, index) => {
                   const isOpen = openFaq === index;
                   return (
-                    <div key={item.question} className="overflow-hidden rounded-[7px] border border-line bg-page">
+                    <div key={item.question} className="brand-subcard overflow-hidden rounded-[7px] border border-line bg-page">
                       <button
                         type="button"
                         onClick={() => setOpenFaq(isOpen ? null : index)}

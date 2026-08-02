@@ -72,7 +72,7 @@ export default function Stories() {
         ]}
       />
 
-      <div className="stories-page overflow-hidden bg-page">
+      <div className="brand-color-page stories-page overflow-hidden bg-page">
         <style>
           {`
             .stories-content-shell {
@@ -133,7 +133,7 @@ export default function Stories() {
         </style>
 
         {/* Hero */}
-        <section className="relative min-h-[535px] overflow-hidden border-b border-line bg-white sm:min-h-[620px] md:min-h-[330px]">
+        <section className="relative min-h-[535px] overflow-hidden border-b border-line bg-[linear-gradient(115deg,#082F49_0%,#0A527A_48%,#B9E3F5_100%)] sm:min-h-[620px] md:min-h-[330px]">
           <div className="absolute inset-x-0 top-0 h-[250px] overflow-hidden sm:h-[320px] md:inset-y-0 md:left-auto md:right-0 md:h-full md:w-[67%]">
             <img
               src="/assets/stories/04_story_healthcare_access_clear.png"
@@ -146,7 +146,7 @@ export default function Stories() {
           </div>
           <div
             aria-hidden="true"
-            className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.04)_32%,#FFFFFF_49%,#F7FBFF_100%)] md:bg-[linear-gradient(90deg,#F7FBFF_0%,#F7FBFF_35%,rgba(247,251,255,0.94)_40%,rgba(247,251,255,0.48)_49%,rgba(247,251,255,0.08)_58%,rgba(247,251,255,0)_66%)]"
+            className="absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(8,47,73,0.02)_0%,rgba(8,47,73,0.08)_32%,#0A527A_49%,#082F49_100%)] md:bg-[linear-gradient(90deg,#082F49_0%,#0A527A_35%,rgba(10,82,122,0.94)_40%,rgba(10,82,122,0.5)_49%,rgba(10,82,122,0.1)_58%,rgba(10,82,122,0)_66%)]"
           />
           <img
             src="/assets/gallery/18_cta_leaf_style_left.png"
@@ -157,7 +157,7 @@ export default function Stories() {
 
           <div className="stories-content-shell relative z-10 flex min-h-[535px] items-end pb-10 pt-[272px] sm:min-h-[620px] sm:pb-14 sm:pt-[340px] md:min-h-[330px] md:items-center md:pb-8 md:pt-8">
             <div className="relative z-10 max-w-[600px] md:w-[48%]">
-              <h1 className="max-w-[590px] font-serif text-[38px] font-bold leading-[1.02] tracking-[-0.03em] text-heading sm:text-[46px] lg:text-[58px] xl:text-[62px]">
+              <h1 className="max-w-[590px] font-serif text-[38px] font-bold leading-[1.02] tracking-[-0.03em] text-white sm:text-[46px] lg:text-[58px] xl:text-[62px]">
                 Stories of{' '}
                 <span className="bg-gradient-to-r from-ocean to-sky bg-clip-text text-transparent">Change</span>
               </h1>
@@ -165,8 +165,8 @@ export default function Stories() {
                 <span className="h-px w-12 bg-sky/70" />
                 <Sparkles className="h-4 w-4" strokeWidth={1.8} />
               </div>
-              <p className="mt-4 text-[17px] font-semibold text-heading md:text-[18px]">Real stories. Real impact.</p>
-              <p className="mt-2 max-w-[480px] text-[14px] leading-[1.7] text-body">
+              <p className="mt-4 text-[17px] font-semibold text-white md:text-[18px]">Real stories. Real impact.</p>
+              <p className="mt-2 max-w-[480px] text-[14px] leading-[1.7] text-white/80">
                 Every life touched creates a ripple of hope. Discover how your support is transforming lives and building brighter tomorrows across communities.
               </p>
             </div>
@@ -207,15 +207,15 @@ export default function Stories() {
               <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-heading/15 via-transparent to-transparent" aria-hidden="true" />
             </div>
 
-            <div className="grid gap-4 border-t border-line bg-page p-5 sm:grid-cols-3 md:col-span-2 lg:col-span-1 lg:flex lg:flex-col lg:justify-center lg:gap-5 lg:border-l lg:border-t-0 lg:p-6">
+            <div className="brand-subcard grid gap-4 border-t border-line bg-page p-5 sm:grid-cols-3 md:col-span-2 lg:col-span-1 lg:flex lg:flex-col lg:justify-center lg:gap-5 lg:border-l lg:border-t-0 lg:p-6">
               {featuredStory.milestones.map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <span className={`flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full ${item.tone === 'green' ? 'bg-seafoam text-softgreen' : 'bg-softblue text-ocean'}`}>
                     <StoryIcon name={item.icon} className="h-[17px] w-[17px]" />
                   </span>
                   <span>
-                    <span className="block text-[10px] font-semibold text-muted">{item.label}</span>
-                    <strong className="mt-0.5 block text-[12px] font-semibold leading-snug text-heading">{item.value}</strong>
+                    <span className="block text-[10px] font-semibold text-white/60">{item.label}</span>
+                    <strong className="mt-0.5 block text-[12px] font-semibold leading-snug text-white">{item.value}</strong>
                   </span>
                 </div>
               ))}
@@ -273,7 +273,7 @@ export default function Stories() {
                   <StoryIcon name={stat.icon} className="h-[22px] w-[22px]" />
                 </span>
                 <div>
-                  <strong className="block bg-gradient-to-br from-ocean to-sky bg-clip-text font-serif text-[25px] font-bold leading-none text-transparent">{stat.value}</strong>
+                  <strong className="block bg-gradient-to-br from-ocean to-sky bg-clip-text font-sans text-[25px] font-extrabold leading-none tracking-[-0.02em] text-transparent">{stat.value}</strong>
                   <span className="mt-1 block text-[11px] text-body">{stat.label}</span>
                 </div>
               </div>

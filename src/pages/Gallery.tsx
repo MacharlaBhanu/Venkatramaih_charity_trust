@@ -78,8 +78,8 @@ export default function Gallery() {
         ]}
       />
 
-      <div className="overflow-x-hidden bg-page">
-        <section className="relative min-h-[270px] overflow-hidden border-b border-line bg-[linear-gradient(90deg,#F7FBFF_0%,#EEF8FF_100%)] md:h-[282px]">
+      <div className="brand-color-page overflow-x-hidden bg-page">
+        <section className="relative min-h-[270px] overflow-hidden border-b border-line bg-[#236F94] md:h-[282px]">
           <img
             src={galleryAssets.ctaLeafLeft}
             alt=""
@@ -87,7 +87,7 @@ export default function Gallery() {
             className="leaf-blend pointer-events-none absolute -bottom-16 -left-5 h-[250px] w-auto opacity-40"
           />
 
-          <div className="absolute inset-y-0 right-0 w-[58%] sm:w-[52%] lg:w-[47%]">
+          <div className="absolute inset-0">
             <img
               src={galleryAssets.hero}
               alt="Hands nurturing a young sapling"
@@ -96,24 +96,24 @@ export default function Gallery() {
               decoding="async"
               className="h-full w-full object-cover object-right"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#F7FBFF_0%,rgba(247,251,255,0.85)_35%,transparent_100%)]" />
-            <div className="absolute inset-0 bg-[linear-gradient(to_top,#EEF8FF_0%,rgba(238,248,255,0.75)_35%,transparent_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#236F94_0%,rgba(35,111,148,0.98)_24%,rgba(35,111,148,0.82)_45%,rgba(35,111,148,0.48)_64%,rgba(35,111,148,0.16)_82%,transparent_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(157,215,239,0.5)_0%,rgba(157,215,239,0.18)_35%,transparent_100%)]" />
           </div>
 
           <div className={`${contentWrapper} relative z-10 flex h-full min-h-[270px] flex-col items-center justify-center py-8 text-center md:min-h-0`}>
             <nav className="mb-2 flex items-center gap-2 text-[12px]" aria-label="Breadcrumb">
-              <Link to="/" className="font-medium text-ocean transition-colors hover:text-sky">Home</Link>
-              <span className="text-muted" aria-hidden="true">/</span>
-              <span className="text-body">Gallery</span>
+              <Link to="/" className="font-medium text-[#8ED8F8] transition-colors hover:text-white">Home</Link>
+              <span className="text-white/55" aria-hidden="true">/</span>
+              <span className="text-white/80">Gallery</span>
             </nav>
-            <h1 className="font-serif text-[38px] font-bold leading-none text-heading sm:text-[46px] lg:text-[60px]">Gallery</h1>
+            <h1 className="font-serif text-[38px] font-bold leading-none text-white drop-shadow-sm sm:text-[46px] lg:text-[60px]">Gallery</h1>
             <div className="mt-3 flex items-center justify-center gap-2 text-sky" aria-hidden="true">
               <span className="h-px w-7 bg-line" />
               <Heart className="h-4 w-4 fill-sky" strokeWidth={1.4} />
               <span className="h-px w-7 bg-line" />
             </div>
-            <p className="mt-2 max-w-full rounded-2xl border border-white/80 bg-white/55 px-4 py-2 text-[13px] font-semibold leading-snug text-heading shadow-[0_6px_18px_rgba(18,58,90,0.04)] backdrop-blur-sm sm:rounded-full sm:text-[14px]">Moments of compassion. Stories of change.</p>
-            <p className="mt-2 max-w-[520px] text-[13px] leading-[1.55] text-body">
+            <p className="mt-2 max-w-full rounded-2xl border border-white/30 bg-[#082F49]/45 px-4 py-2 text-[13px] font-semibold leading-snug text-white shadow-[0_8px_22px_rgba(3,31,48,0.16)] backdrop-blur-sm sm:rounded-full sm:text-[14px]">Moments of compassion. Stories of change.</p>
+            <p className="mt-2 max-w-[520px] text-[13px] leading-[1.55] text-white/80">
               Explore glimpses of our initiatives, events, and everyday acts of kindness that are creating a better tomorrow.
             </p>
           </div>
@@ -201,7 +201,7 @@ export default function Gallery() {
           </section>
 
           <section className={`${contentWrapper} pb-7`}>
-            <div className="relative overflow-hidden rounded-[16px] border border-line bg-[linear-gradient(110deg,#FFFFFF_0%,#F8FCFF_62%,#EEF8FF_100%)] p-5 shadow-[0_14px_36px_rgba(18,58,90,0.07)] sm:p-7 lg:px-8">
+            <div className="brand-subcard relative overflow-hidden rounded-[16px] border border-line bg-[linear-gradient(110deg,#FFFFFF_0%,#F8FCFF_62%,#EEF8FF_100%)] p-5 shadow-[0_14px_36px_rgba(18,58,90,0.07)] sm:p-7 lg:px-8">
               <img src={galleryAssets.ctaLeafRight} alt="" aria-hidden="true" className="leaf-blend pointer-events-none absolute -bottom-24 right-1 h-[240px] w-auto opacity-[0.08]" />
               <div className="relative z-10 mb-5 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
                 <h2 className="text-[24px] font-bold text-heading">Event Highlights</h2>
@@ -216,7 +216,7 @@ export default function Gallery() {
           </section>
 
           <section className={`${contentWrapper} grid gap-6 pb-7 lg:grid-cols-[1fr_1.25fr]`}>
-            <div className="rounded-[16px] border border-line bg-[linear-gradient(145deg,#FFFFFF_0%,#F9FCFF_100%)] p-5 shadow-[0_14px_36px_rgba(18,58,90,0.07)] sm:p-6">
+            <div className="brand-subcard rounded-[16px] border border-line bg-[linear-gradient(145deg,#FFFFFF_0%,#F9FCFF_100%)] p-5 shadow-[0_14px_36px_rgba(18,58,90,0.07)] sm:p-6">
               <div className="mb-5 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
                 <h2 className="text-[24px] font-bold text-heading">Photo Albums</h2>
                 <Link to="/gallery" className="inline-flex shrink-0 items-center gap-2 text-[12px] font-semibold text-ocean hover:text-sky">
@@ -228,7 +228,7 @@ export default function Gallery() {
               </div>
             </div>
 
-            <div className="relative min-h-[280px] overflow-hidden rounded-[16px] border border-line bg-white shadow-[0_14px_36px_rgba(18,58,90,0.09)] transition-all duration-300 hover:border-sky/50 hover:shadow-[0_20px_44px_rgba(18,58,90,0.13)] sm:min-h-[250px] lg:h-[230px] lg:min-h-0">
+            <div className="brand-subcard relative min-h-[280px] overflow-hidden rounded-[16px] border border-line bg-white shadow-[0_14px_36px_rgba(18,58,90,0.09)] transition-all duration-300 hover:border-sky/50 hover:shadow-[0_20px_44px_rgba(18,58,90,0.13)] sm:min-h-[250px] lg:h-[230px] lg:min-h-0">
               <img
                 src={galleryAssets.spotlight}
                 alt="A smiling schoolgirl with classmates"
@@ -236,7 +236,7 @@ export default function Gallery() {
                 decoding="async"
                 className="absolute inset-y-0 right-0 h-full w-full object-cover object-center sm:w-[58%]"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,#FFFFFF_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.62)_62%,rgba(255,255,255,0.08)_100%)]" />
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,#082F49_0%,rgba(36,126,158,0.94)_42%,rgba(36,126,158,0.66)_62%,rgba(36,126,158,0.08)_100%)]" />
               <div className="relative z-10 flex h-full max-w-[600px] flex-col justify-center p-6 sm:w-[70%] lg:w-[64%] lg:p-6 xl:p-8">
                 <p className="flex items-center gap-2 text-[15px] font-bold uppercase tracking-[0.08em] text-ocean">
                   <Sparkles className="h-4 w-4 text-softgreen" strokeWidth={1.8} />

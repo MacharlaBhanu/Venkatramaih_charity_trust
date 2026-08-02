@@ -58,6 +58,13 @@ const trustees = [
   { name: 'Lavanya K.', role: 'Trustee', img: '/assets/about/11_trustee_lavanya_k.png' },
 ];
 
+const aboutCardTones = [
+  'about-color-card-ocean',
+  'about-color-card-teal',
+  'about-color-card-slate',
+  'about-color-card-rose',
+];
+
 const iconMap: Record<string, LucideIcon> = {
   book: BookOpen,
   eye: Eye,
@@ -198,6 +205,57 @@ export default function About() {
               box-shadow: 0 18px 50px rgba(18, 58, 90, 0.08);
             }
 
+            .about-color-card {
+              border-color: rgba(255, 255, 255, 0.34) !important;
+              box-shadow: 0 18px 44px rgba(18, 58, 90, 0.18) !important;
+            }
+
+            .about-color-card-ocean {
+              background: linear-gradient(135deg, #247E9E 0%, #1689C7 100%) !important;
+            }
+
+            .about-color-card-teal {
+              background: linear-gradient(135deg, #34796F 0%, #45A995 100%) !important;
+            }
+
+            .about-color-card-slate {
+              background: linear-gradient(135deg, #405F82 0%, #536C91 100%) !important;
+            }
+
+            .about-color-card-rose {
+              background: linear-gradient(135deg, #7D5968 0%, #976A72 100%) !important;
+            }
+
+            .about-color-card-stats {
+              background: linear-gradient(110deg, #247E9E 0%, #34796F 50%, #536C91 100%) !important;
+            }
+
+            .about-color-card h2,
+            .about-color-card h3,
+            .about-color-card p,
+            .about-color-card .about-stat-value {
+              color: #FFFFFF !important;
+            }
+
+            .about-color-card p {
+              color: rgba(255, 255, 255, 0.82) !important;
+            }
+
+            .about-feature-card.about-color-card::before {
+              border-color: rgba(255, 255, 255, 0.24);
+              background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 58%),
+                linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+            }
+
+            .about-feature-card.about-color-card::after {
+              background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.75), transparent);
+            }
+
+            .about-color-card-stats svg {
+              color: #D9F3FF !important;
+            }
+
             .about-stats-leaf {
               position: absolute;
               top: 50%;
@@ -268,7 +326,7 @@ export default function About() {
         </style>
 
         {/* Hero */}
-        <section className="relative min-h-[550px] overflow-hidden border-b border-line/70 bg-white sm:min-h-[640px] lg:min-h-[500px]">
+        <section className="static-home-hero relative min-h-[550px] overflow-hidden border-b border-line/70 bg-white sm:min-h-[640px] lg:min-h-[500px]">
           <div className="absolute inset-x-0 top-0 h-[255px] overflow-hidden sm:h-[340px] lg:inset-y-0 lg:left-auto lg:right-0 lg:h-full lg:w-[66%]">
             <img
               src="/assets/about/21_about_hero_learning.png"
@@ -327,7 +385,7 @@ export default function About() {
         <section className="container-page pb-3 pt-5 md:pb-4 md:pt-6">
           <div className="mx-auto max-w-[1280px]">
             <div className="about-card-grid gap-5">
-              <article className="about-legacy-card group overflow-hidden rounded-[18px] border border-white/90 bg-white/95 shadow-card ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
+              <article className="about-legacy-card about-color-card about-color-card-ocean group overflow-hidden rounded-[18px] border border-white/90 bg-white/95 shadow-card ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
                 <div className="p-5 md:p-6">
                   <h2 className="font-serif text-[20px] font-bold leading-[1.2] tracking-[-0.01em] text-heading md:text-[21px] lg:text-[22px]">
                     A Legacy of Compassion
@@ -352,7 +410,7 @@ export default function About() {
                 </div>
               </article>
 
-              <article className="about-feature-card relative flex flex-col items-center justify-center overflow-hidden rounded-[18px] border border-white/90 px-7 py-8 text-center ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
+              <article className="about-feature-card about-color-card about-color-card-teal relative flex flex-col items-center justify-center overflow-hidden rounded-[18px] border border-white/90 px-7 py-8 text-center ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
                 <IconCircle icon="eye" size="lg" className="relative z-10 mx-auto bg-white/90 shadow-[0_16px_38px_rgba(18,58,90,0.10)]" />
                 <h3 className="relative z-10 mt-5 font-serif text-[20px] font-bold leading-[1.2] tracking-[-0.01em] text-ocean md:text-[21px]">Our Vision</h3>
                 <p className="relative z-10 mx-auto mt-3 max-w-[235px] font-sans text-[13px] font-normal leading-[1.6] text-body">
@@ -367,7 +425,7 @@ export default function About() {
                 />
               </article>
 
-              <article className="about-feature-card relative flex flex-col items-center justify-center overflow-hidden rounded-[18px] border border-white/90 px-7 py-8 text-center ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
+              <article className="about-feature-card about-color-card about-color-card-slate relative flex flex-col items-center justify-center overflow-hidden rounded-[18px] border border-white/90 px-7 py-8 text-center ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass">
                 <IconCircle icon="target" size="lg" className="relative z-10 mx-auto bg-white/90 shadow-[0_16px_38px_rgba(18,58,90,0.10)]" />
                 <h3 className="relative z-10 mt-5 font-serif text-[20px] font-bold leading-[1.2] tracking-[-0.01em] text-ocean md:text-[21px]">Our Mission</h3>
                 <p className="relative z-10 mx-auto mt-3 max-w-[240px] font-sans text-[13px] font-normal leading-[1.6] text-body">
@@ -384,7 +442,7 @@ export default function About() {
             </div>
 
             <div className="about-founder-row mt-5 gap-5">
-              <article className="about-founder-card overflow-hidden rounded-[18px] border border-white/90 bg-white/95 shadow-card ring-1 ring-line/55">
+              <article className="about-founder-card about-color-card about-color-card-rose overflow-hidden rounded-[18px] border border-white/90 bg-white/95 shadow-card ring-1 ring-line/55">
                 <div className="about-founder-photo-frame">
                   <img
                     src="/assets/about/04_founder_portrait.png"
@@ -409,7 +467,7 @@ export default function About() {
                 </div>
               </article>
 
-              <article className="relative overflow-hidden rounded-[18px] border border-white/90 bg-gradient-to-br from-white via-white to-section/40 p-6 shadow-card ring-1 ring-line/55">
+              <article className="about-color-card about-color-card-teal relative overflow-hidden rounded-[18px] border border-white/90 bg-gradient-to-br from-white via-white to-section/40 p-6 shadow-card ring-1 ring-line/55">
                 <h2 className="text-center font-serif text-[20px] font-bold leading-[1.2] tracking-[-0.01em] text-ocean md:text-[21px] lg:text-[22px]">
                   Our Core Values
                 </h2>
@@ -475,7 +533,7 @@ export default function About() {
                 return (
                   <article
                     key={item.year}
-                    className="rounded-[16px] border border-white/90 bg-white/95 p-5 shadow-card ring-1 ring-line/55 min-[420px]:min-h-[150px]"
+                    className={`about-color-card ${aboutCardTones[index % aboutCardTones.length]} rounded-[16px] border border-white/90 bg-white/95 p-5 shadow-card ring-1 ring-line/55 min-[420px]:min-h-[150px]`}
                   >
                     <span
                       className={`flex h-12 w-12 items-center justify-center rounded-full ${index < 3 ? 'bg-softblue text-ocean' : 'bg-seafoam text-softgreen'}`}
@@ -494,7 +552,7 @@ export default function About() {
         {/* Stats strip */}
         <section className="container-page py-4 md:py-5">
           <div className="mx-auto max-w-[1280px]">
-            <div className="about-stats-strip relative overflow-hidden rounded-[22px] border border-white/95 px-5 py-5 ring-1 ring-line/65 md:px-8">
+            <div className="about-stats-strip about-color-card about-color-card-stats relative overflow-hidden rounded-[22px] border border-white/95 px-5 py-5 ring-1 ring-line/65 md:px-8">
               <img
                 src="/assets/about/14_left_leaf_decor.png"
                 alt=""
@@ -518,7 +576,7 @@ export default function About() {
                     >
                       <StatIcon className="h-8 w-8 shrink-0 text-ocean" strokeWidth={1.8} aria-hidden="true" />
                       <div className="min-w-0 text-left">
-                        <div className="font-sans text-[22px] font-bold leading-none tracking-[-0.02em] text-ocean md:text-[25px] lg:text-[26px]">
+                        <div className="about-stat-value font-sans text-[22px] font-bold leading-none tracking-[-0.02em] text-ocean md:text-[25px] lg:text-[26px]">
                           {stat.value}
                         </div>
                         <p className="mt-1 font-sans text-[11px] font-normal leading-[1.25] text-body">{stat.label}</p>
@@ -553,10 +611,10 @@ export default function About() {
               </button>
 
               <div className="grid gap-4 min-[390px]:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-6 lg:px-2 xl:gap-6">
-                {trustees.map((trustee) => (
+                {trustees.map((trustee, index) => (
                   <article
                     key={trustee.name}
-                    className="group overflow-hidden rounded-[18px] border border-white/90 bg-white/95 text-center shadow-card ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass"
+                    className={`about-color-card ${aboutCardTones[index % aboutCardTones.length]} group overflow-hidden rounded-[18px] border border-white/90 bg-white/95 text-center shadow-card ring-1 ring-line/55 transition-all duration-300 hover:-translate-y-1 hover:shadow-glass`}
                   >
                     <div className="overflow-hidden">
                       <img

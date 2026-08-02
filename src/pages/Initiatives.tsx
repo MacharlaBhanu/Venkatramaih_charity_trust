@@ -28,6 +28,8 @@ const statIcons: Record<string, LucideIcon> = {
   award: Award,
 };
 
+const initiativeTones = ['ocean', 'teal', 'slate', 'rose'] as const;
+
 export default function Initiatives() {
   const { openDonation } = useDonation();
 
@@ -44,7 +46,7 @@ export default function Initiatives() {
       />
 
       <div className="bg-page">
-        <section className="relative overflow-hidden bg-gradient-to-r from-page to-section">
+        <section className="relative overflow-hidden bg-[linear-gradient(115deg,#082F49_0%,#0A527A_48%,#B9E3F5_100%)]">
           <div className="container-page grid min-h-[264px] items-center gap-8 py-10 pb-14 lg:px-[54px] lg:grid-cols-[0.45fr_0.55fr] lg:py-8 lg:pb-[26px]">
             <img
               src="/assets/about/14_left_leaf_decor.png"
@@ -59,18 +61,18 @@ export default function Initiatives() {
               className="leaf-blend pointer-events-none absolute -bottom-8 left-[42%] hidden w-[120px] rotate-[18deg] opacity-[0.08] lg:block"
             />
             <div className="relative z-10 max-w-[560px]">
-              <h1 className="text-[38px] font-bold leading-[1.05] text-heading sm:text-[46px] lg:text-[52px]">
+              <h1 className="text-[38px] font-bold leading-[1.05] text-white sm:text-[46px] lg:text-[52px]">
                 Our Initiatives
               </h1>
-              <p className="mt-3 text-[18px] font-medium text-heading sm:text-[21px]">
+              <p className="mt-3 text-[18px] font-medium text-[#D9F3FF] sm:text-[21px]">
                 Compassion in Action. Change that Lasts.
               </p>
               <div className="mt-3 flex w-[286px] max-w-full items-center gap-2" aria-hidden="true">
-                <span className="h-px flex-1 bg-line" />
-                <span className="text-sky">♥</span>
-                <span className="h-px flex-1 bg-line" />
+                <span className="h-px flex-1 bg-white/35" />
+                <span className="text-[#8ED8F8]">♥</span>
+                <span className="h-px flex-1 bg-white/35" />
               </div>
-              <p className="mt-6 max-w-[520px] text-[14px] leading-[1.7] text-body">
+              <p className="mt-6 max-w-[520px] text-[14px] leading-[1.7] text-white/80">
                 We work across key areas of need to empower individuals, uplift communities, and
                 build a better tomorrow. Every initiative is a step towards a more equitable,
                 healthier, and hopeful society.
@@ -86,34 +88,34 @@ export default function Initiatives() {
                 decoding="async"
                 className="absolute inset-0 h-full w-full object-cover object-center lg:object-right"
               />
-              <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-page via-page/85 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-section via-section/75 to-transparent" />
+              <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#0A527A] via-[#0A527A]/75 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#9DD7EF]/45 via-[#9DD7EF]/20 to-transparent" />
             </div>
           </div>
         </section>
 
         <section className="container-page relative z-20 -mt-6 lg:px-[54px]">
-          <div className="grid grid-cols-2 overflow-hidden rounded-[14px] border border-line bg-white/95 shadow-[0_14px_36px_rgba(22,137,199,0.10)] backdrop-blur md:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-[repeat(2,minmax(0,1fr))] overflow-hidden rounded-[14px] border border-white/25 bg-[linear-gradient(105deg,#0A527A_0%,#247E9E_45%,#34796F_100%)] shadow-[0_18px_44px_rgba(3,31,48,0.22)] backdrop-blur md:grid-cols-[repeat(3,minmax(0,1fr))] lg:grid-cols-[repeat(5,minmax(0,1fr))]">
             {initiativesStats.map((stat, index) => {
               const StatIcon = statIcons[stat.icon] ?? Heart;
 
               return (
                 <div
                   key={stat.label}
-                  className={`flex min-h-[86px] items-center justify-center gap-3 border-b border-line px-3 py-4 last:col-span-2 last:border-b-0 md:min-h-[78px] md:last:col-span-1 lg:border-b-0 ${
-                    index > 0 ? 'lg:border-l lg:border-line' : ''
+                  className={`flex min-h-[104px] min-w-0 flex-col items-center justify-center gap-1.5 border-b border-white/20 px-2 py-3 text-center last:col-span-2 last:border-b-0 sm:min-h-[86px] sm:flex-row sm:gap-3 sm:px-3 sm:py-4 sm:text-left md:min-h-[78px] md:last:col-span-1 lg:border-b-0 ${
+                    index > 0 ? 'lg:border-l lg:border-white/20' : ''
                   } ${
-                    index % 3 !== 0 ? 'md:border-l md:border-line lg:border-l' : ''
+                    index % 3 !== 0 ? 'md:border-l md:border-white/20 lg:border-l' : ''
                   }`}
                 >
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-softblue text-ocean">
-                    <StatIcon className="h-[20px] w-[20px]" strokeWidth={1.8} />
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/90 text-ocean shadow-soft sm:h-11 sm:w-11">
+                    <StatIcon className="h-[18px] w-[18px] sm:h-[20px] sm:w-[20px]" strokeWidth={1.8} />
                   </span>
-                  <span>
-                    <strong className="block font-sans text-[24px] font-extrabold leading-none text-heading">
+                  <span className="min-w-0">
+                    <strong className="block font-sans text-[20px] font-extrabold leading-none text-white sm:text-[24px]">
                       {stat.value}
                     </strong>
-                    <span className="mt-2 block text-[11px] leading-none text-body">{stat.label}</span>
+                    <span className="mt-2 block text-[9px] leading-none text-white/70 sm:text-[11px]">{stat.label}</span>
                   </span>
                 </div>
               );
@@ -123,14 +125,14 @@ export default function Initiatives() {
 
         <section className="container-page py-5 pb-7 lg:px-[54px]">
           <div className="grid grid-cols-1 gap-[18px] md:grid-cols-2 xl:grid-cols-3">
-            {initiatives.map((initiative) => (
-              <InitiativeDetailCard key={initiative.title} {...initiative} />
+            {initiatives.map((initiative, index) => (
+              <InitiativeDetailCard key={initiative.title} {...initiative} tone={initiativeTones[index % initiativeTones.length]} />
             ))}
           </div>
         </section>
 
         <section className="container-page pb-9 lg:px-[54px]">
-          <div className="relative rounded-[16px] border border-line bg-white px-5 py-7 shadow-[0_10px_28px_rgba(18,58,90,0.07)] sm:px-8">
+          <div className="relative rounded-[16px] border border-white/25 bg-[linear-gradient(135deg,#0A3854_0%,#174E68_56%,#34796F_100%)] px-5 py-7 shadow-[0_18px_46px_rgba(3,31,48,0.2)] sm:px-8">
             <button
               type="button"
               aria-label="Previous story"
@@ -148,18 +150,18 @@ export default function Initiatives() {
 
             <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
               <div>
-                <h2 className="text-[24px] font-bold leading-tight text-heading">Stories of Change</h2>
-                <p className="mt-1 text-[13px] text-body">Real people. Real impact. Stronger communities.</p>
+                <h2 className="text-[24px] font-bold leading-tight text-white">Stories of Change</h2>
+                <p className="mt-1 text-[13px] text-white/70">Real people. Real impact. Stronger communities.</p>
               </div>
-              <Link to="/stories" className="inline-flex items-center gap-2 text-[13px] font-bold text-ocean">
+              <Link to="/stories" className="inline-flex items-center gap-2 text-[13px] font-bold text-[#8ED8F8]">
                 View All Stories
                 <span aria-hidden="true">→</span>
               </Link>
             </div>
 
             <div className="grid gap-5 lg:grid-cols-3">
-              {initiativesStories.map((story) => (
-                <InitiativeStoryCard key={story.title} {...story} />
+              {initiativesStories.map((story, index) => (
+                <InitiativeStoryCard key={story.title} {...story} tone={initiativeTones[index % initiativeTones.length]} />
               ))}
             </div>
           </div>

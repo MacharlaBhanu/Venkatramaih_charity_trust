@@ -91,7 +91,7 @@ export default function Contact() {
         ]}
       />
 
-      <div className="overflow-hidden bg-page">
+      <div className="brand-color-page overflow-hidden bg-page">
         <style>{`
           .contact-shell {
             width: 100%;
@@ -123,26 +123,27 @@ export default function Contact() {
         `}</style>
 
         {/* Hero */}
-        <section className="relative min-h-[215px] overflow-hidden border-b border-line bg-[linear-gradient(90deg,#F7FBFF_0%,#EEF8FF_100%)]">
+        <section className="relative min-h-[240px] overflow-hidden border-b border-line bg-[#236F94] sm:min-h-[215px]">
           <img
-            src="/assets/contact/02_contact_hero_sapling.png"
+            src="/assets/gallery/02_hero_sapling_banner.png"
             alt="Hands nurturing a young sapling"
             loading="eager"
             fetchPriority="high"
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-right"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(247,251,255,.74)_0%,rgba(247,251,255,.86)_42%,rgba(247,251,255,.3)_100%)]" aria-hidden="true" />
-          <div className="pointer-events-none absolute inset-y-0 left-1/2 w-[58%] max-w-[760px] -translate-x-1/2 bg-[linear-gradient(90deg,transparent_0%,rgba(244,250,253,.98)_16%,rgba(244,250,253,.98)_84%,transparent_100%)]" aria-hidden="true" />
-          <div className="contact-hero-shell relative z-10 flex min-h-[215px] items-center justify-center py-7 text-center">
-            <div className="max-w-[600px]">
-              <h1 className="contact-serif text-[36px] font-bold leading-none tracking-[-0.025em] text-heading sm:text-[44px] lg:text-[54px]">Contact Us</h1>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#236F94_0%,rgba(35,111,148,0.98)_24%,rgba(35,111,148,0.82)_45%,rgba(35,111,148,0.48)_64%,rgba(35,111,148,0.16)_82%,transparent_100%)]" aria-hidden="true" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(157,215,239,0.5)_0%,rgba(157,215,239,0.18)_35%,transparent_100%)]" aria-hidden="true" />
+          <div className="contact-hero-shell relative z-10 flex min-h-[240px] items-center justify-center py-8 text-center sm:min-h-[215px] sm:py-7">
+            <div className="w-full max-w-[600px] px-1 sm:px-0">
+              <h1 className="contact-serif text-[40px] font-bold leading-none tracking-[-0.025em] text-white drop-shadow-sm sm:text-[44px] lg:text-[54px]">Contact Us</h1>
               <div className="mx-auto mt-3 flex w-[116px] items-center gap-2 text-sky" aria-hidden="true">
                 <span className="h-px flex-1 bg-sky/55" />
                 <Heart className="h-4 w-4 fill-sky/25" strokeWidth={1.7} />
                 <span className="h-px flex-1 bg-sky/55" />
               </div>
-              <p className="mt-4 text-[14px] font-medium text-body">We’re here to help and happy to connect.</p>
-              <p className="mt-1 text-[13px] text-body">Reach out to us for any inquiries, collaborations, or support.</p>
+              <p className="mt-4 text-[13px] font-medium leading-relaxed text-white drop-shadow-sm sm:text-[14px]">We’re here to help and happy to connect.</p>
+              <p className="mx-auto mt-1 max-w-[440px] text-[12px] leading-relaxed text-white/90 drop-shadow-sm sm:text-[13px]">Reach out to us for any inquiries, collaborations, or support.</p>
             </div>
           </div>
         </section>
@@ -163,7 +164,7 @@ export default function Contact() {
                 {contactMethods.map((method) => {
                   const MethodIcon = methodIcons[method.icon];
                   return (
-                    <div key={method.title} className="group flex min-h-[136px] flex-col items-center rounded-[12px] border border-line bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFDFF_100%)] px-2.5 py-3.5 text-center shadow-[0_6px_18px_rgba(18,58,90,.05)] transition duration-300 hover:-translate-y-1 hover:border-sky/40 hover:shadow-[0_14px_30px_rgba(18,58,90,.1)]">
+                    <div key={method.title} className="brand-subcard group flex min-h-[136px] flex-col items-center rounded-[12px] border border-line bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFDFF_100%)] px-2.5 py-3.5 text-center shadow-[0_6px_18px_rgba(18,58,90,.05)] transition duration-300 hover:-translate-y-1 hover:border-sky/40 hover:shadow-[0_14px_30px_rgba(18,58,90,.1)]">
                       <span className={`flex h-12 w-12 items-center justify-center rounded-full ring-1 ring-white transition-transform duration-300 group-hover:scale-110 ${method.tone === 'green' ? 'bg-gradient-to-br from-seafoam to-mint/40 text-softgreen' : 'bg-gradient-to-br from-softblue to-sky/25 text-ocean'}`}>
                         <MethodIcon className="h-[21px] w-[21px]" strokeWidth={1.8} aria-hidden="true" />
                       </span>
@@ -175,7 +176,7 @@ export default function Contact() {
                   );
                 })}
 
-                <div className="group flex min-h-[136px] flex-col items-center rounded-[12px] border border-line bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFDFF_100%)] px-2.5 py-3.5 text-center shadow-[0_6px_18px_rgba(18,58,90,.05)] transition duration-300 hover:-translate-y-1 hover:border-sky/40 hover:shadow-[0_14px_30px_rgba(18,58,90,.1)]">
+                <div className="brand-subcard group flex min-h-[136px] flex-col items-center rounded-[12px] border border-line bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFDFF_100%)] px-2.5 py-3.5 text-center shadow-[0_6px_18px_rgba(18,58,90,.05)] transition duration-300 hover:-translate-y-1 hover:border-sky/40 hover:shadow-[0_14px_30px_rgba(18,58,90,.1)]">
                   <span className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-seafoam to-mint/40 text-softgreen ring-1 ring-white transition-transform duration-300 group-hover:scale-110">
                     <Share2 className="h-[21px] w-[21px]" strokeWidth={1.8} aria-hidden="true" />
                   </span>
@@ -213,12 +214,12 @@ export default function Contact() {
                 <ul className="mt-3">
                   {workingHours.map((item, index) => (
                     <li key={item.day} className={`flex justify-between gap-3 py-2 text-[10px] ${index < workingHours.length - 1 ? 'border-b border-line' : ''}`}>
-                      <span className="text-ocean">{item.day}</span>
-                      <span className="text-right font-medium text-heading">{item.time}</span>
+                      <span className="text-white/75">{item.day}</span>
+                      <span className="text-right font-medium text-white">{item.time}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-3 flex gap-2.5 rounded-[9px] bg-[#EAF8F1] p-3">
+                <div className="brand-subcard mt-3 flex gap-2.5 rounded-[9px] bg-[#EAF8F1] p-3">
                   <HandHeart className="h-[21px] w-[21px] shrink-0 text-softgreen" strokeWidth={1.8} aria-hidden="true" />
                   <div>
                     <p className="text-[11px] font-bold text-[#267D72]">We’re always here for you.</p>
@@ -312,7 +313,7 @@ export default function Contact() {
 
           <article className="relative flex flex-col justify-center overflow-hidden rounded-[15px] border border-line bg-[linear-gradient(135deg,#FFFFFF_0%,#EAF8F1_100%)] p-5 shadow-[0_8px_24px_rgba(18,58,90,.055)] transition duration-300 hover:shadow-[0_16px_36px_rgba(18,58,90,.1)] sm:p-[22px]">
             <div className="pointer-events-none absolute bottom-0 right-0 h-[220px] w-[160px] overflow-hidden opacity-55" aria-hidden="true">
-              <img src="/assets/contact/05_support_card_leaf.png" alt="" className="leaf-blend absolute bottom-0 right-0 w-[200px] max-w-none [mask-image:linear-gradient(to_left,#000_0%,#000_76%,transparent_100%)]" />
+              <img src="/assets/contact/05_support_card_leaf_transparent.png" alt="" className="absolute bottom-0 right-0 w-[200px] max-w-none [mask-image:linear-gradient(to_left,#000_0%,#000_76%,transparent_100%)]" />
             </div>
             <div className="relative z-10">
               <span className="flex h-[54px] w-[54px] items-center justify-center rounded-full border border-line bg-white text-softgreen shadow-soft">
