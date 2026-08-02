@@ -8,7 +8,7 @@ interface SEOProps {
   breadcrumb?: { name: string; path: string }[];
 }
 
-const ogImage = `${site.url}/assets/home/02_logo_top.png`;
+const ogImage = `${site.url}/social-share.png`;
 
 export default function SEO({ title, description, path, breadcrumb }: SEOProps) {
   const desc = description ?? site.description;
@@ -58,11 +58,17 @@ export default function SEO({ title, description, path, breadcrumb }: SEOProps) 
       <meta property="og:description" content={desc} />
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:secure_url" content={ogImage} />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={`${site.name} logo`} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={desc} />
       <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image:alt" content={`${site.name} logo`} />
 
       <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
       {breadcrumbSchema && (

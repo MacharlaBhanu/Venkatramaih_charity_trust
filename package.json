@@ -12,6 +12,7 @@
     "assets:crop-logo-mark": "node scripts/crop-logo-mark.mjs",
     "assets:footer-logo-bg": "node scripts/footer-logo-bg.mjs",
     "assets:transparent-logo": "node scripts/transparent-logo.mjs",
+    "assets:social-share": "node scripts/generate-social-share.mjs",
     "assets:crop": "node scripts/crop-assets.mjs"
   },
   "dependencies": {
