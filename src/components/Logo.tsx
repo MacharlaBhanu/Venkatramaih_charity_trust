@@ -24,9 +24,9 @@ export default function Logo({ className = '' }: LogoProps) {
       aria-label={`${site.name} home`}
     >
       <img
-        src="/assets/home/02_logo_top.png"
+        src="/assets/home/kvr-logo.png"
         alt={site.name}
-        className="h-11 w-auto object-contain sm:h-12"
+        className="h-12 w-auto object-contain sm:h-16"
       />
     </Link>
   );

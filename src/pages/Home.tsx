@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
-  Flower2,
+  BookOpenText,
   ArrowRight,
   ArrowUpRight,
   HeartHandshake,
@@ -10,7 +12,7 @@ import {
   Heart,
   GraduationCap,
   HeartPulse,
-  UserRoundCheck,
+  School,
   UsersRound,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
@@ -22,25 +24,18 @@ import {
   homeStats,
   homeInitiatives,
   homeStories,
-  impactGlance,
 } from '../data/homeData';
-
-const impactIcons: Record<string, LucideIcon> = {
-  graduation: GraduationCap,
-  heartPulse: HeartPulse,
-  userCheck: UserRoundCheck,
-  usersRound: UsersRound,
-};
 
 const initiativeIcons: Record<string, LucideIcon> = {
   book: GraduationCap,
   health: HeartPulse,
-  empower: UserRoundCheck,
+  school: School,
   welfare: UsersRound,
 };
 
 const initiativeColors = ['#247E9E', '#34796F', '#536C91', '#976A72'];
-const storyColors = ['#356A91', '#3D7C73', '#765F82'];
+
+gsap.registerPlugin(ScrollTrigger);
 
 function InsightHeading({
   eyebrow,
@@ -148,6 +143,33 @@ function InsightPanel({
   );
 }
 
+function StoryInsightCard({
+  title,
+  image,
+}: {
+  title: string;
+  image: string;
+}) {
+  return (
+    <article className="story-card group relative aspect-[718/473] w-full max-w-[718px] overflow-hidden rounded-[22px] bg-white shadow-[0_20px_52px_rgba(18,58,90,0.16)] transition-transform duration-500 sm:rounded-[26px] lg:rounded-[34px] motion-safe:hover:-translate-y-1">
+      <img
+        src={image}
+        alt={`${title} story card`}
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <Link
+        to="/stories"
+        aria-label={`Read story: ${title}`}
+        className="absolute inset-0 z-[1] rounded-[inherit] focus:outline-none focus:ring-4 focus:ring-white/80 focus:ring-offset-2"
+      >
+        <span className="sr-only">Read story: {title}</span>
+      </Link>
+    </article>
+  );
+}
+
 const heroSlides = [
   {
     src: heroImage,
@@ -162,16 +184,17 @@ const heroSlides = [
     mobilePosition: '66% center',
   },
   {
-    src: '/assets/about/21_about_hero_learning.png',
-    alt: 'A teacher helping students learn together in a bright classroom',
-    label: 'Mentorship',
-    titleLead: 'Care today creates',
-    titleAccent: 'Confidence Tomorrow',
+    src: '/assets/home/food-donation-ai-desktop.webp',
+    mobileSrc: '/assets/home/food-donation-ai-mobile.webp',
+    alt: 'Indian volunteers serving a nutritious meal to children and families',
+    label: 'Food Donation',
+    titleLead: 'Nourishing meals bring',
+    titleAccent: 'Hope to Every Home',
     description:
-      'Through thoughtful support and dedicated mentors, young minds find space to grow.',
-    position: '69% center',
-    desktopPosition: '69% 24%',
-    mobilePosition: '65% center',
+      'With nutritious essentials and thoughtful care, we help families face difficult days with dignity.',
+    position: 'center center',
+    desktopPosition: 'center center',
+    mobilePosition: 'center center',
   },
   {
     src: '/assets/initiatives/caring_consultation_in_a_clinic.png',
@@ -186,16 +209,17 @@ const heroSlides = [
     mobilePosition: '57% center',
   },
   {
-    src: '/assets/initiatives/sewing_workshop_with_women_in_saris.png',
-    alt: 'Women learning together in a community sewing workshop',
-    label: 'Empowerment',
-    titleLead: 'Practical skills create',
-    titleAccent: 'Lasting Independence',
+    src: '/assets/home/school-infrastructure-classroom-user-v7-enhanced.jpg',
+    mobileSrc: '/assets/home/school-infrastructure-classroom-user-v7-enhanced.jpg',
+    alt: 'Indian students learning together in a well-equipped classroom',
+    label: 'School Infrastructure',
+    titleLead: 'Every classroom opens',
+    titleAccent: 'A World of Possibility',
     description:
-      'Training and livelihood programs help women build confidence, income, and lasting independence.',
-    position: '54% center',
-    desktopPosition: '54% 24%',
-    mobilePosition: '51% center',
+      'We create safe, welcoming, well-equipped classrooms where every child has room to learn and thrive.',
+    position: 'center center',
+    desktopPosition: 'center center',
+    mobilePosition: 'center center',
   },
   {
     src: '/assets/gallery/02_hero_sapling_banner.png',
@@ -213,10 +237,8 @@ const heroSlides = [
 
 const statDividerClass = (index: number) =>
   [
-    'px-2 py-1 sm:px-4 md:px-6 lg:px-8',
-    index % 2 === 1 ? 'border-l border-[#CFEAF8]/90' : '',
-    index > 1 ? 'border-t border-[#CFEAF8]/90 pt-5 md:border-t-0 md:pt-1' : '',
-    index > 0 ? 'md:border-l md:border-[#CFEAF8]/90' : '',
+    'rounded-[14px] border border-white/10 bg-white/[0.045] px-2 py-4 transition-colors duration-300 hover:bg-white/[0.08] sm:px-3',
+    index === 4 ? 'col-span-2 min-[760px]:col-span-1' : '',
   ]
     .filter(Boolean)
     .join(' ');
@@ -271,6 +293,9 @@ export default function Home() {
   const [activeHero, setActiveHero] = useState(0);
   const heroChipStripRef = useRef<HTMLDivElement>(null);
   const heroChipRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const storiesWrapperRef = useRef<HTMLElement>(null);
+  const storiesStickyRef = useRef<HTMLDivElement>(null);
+  const storiesCardsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -283,6 +308,82 @@ export default function Home() {
 
     return () => window.clearTimeout(timer);
   }, [activeHero]);
+
+  useLayoutEffect(() => {
+    const wrapper = storiesWrapperRef.current;
+    const sticky = storiesStickyRef.current;
+    const cardsColumn = storiesCardsRef.current;
+    if (!wrapper || !sticky || !cardsColumn) return;
+
+    const desktopQuery = window.matchMedia('(min-width: 1024px)');
+    let context: gsap.Context | null = null;
+    let resizeObserver: ResizeObserver | null = null;
+    let refreshFrame = 0;
+
+    const destroyDesktopEffect = () => {
+      resizeObserver?.disconnect();
+      resizeObserver = null;
+      window.cancelAnimationFrame(refreshFrame);
+      context?.revert();
+      context = null;
+      wrapper.style.height = '';
+      cardsColumn.style.transform = '';
+    };
+
+    const buildDesktopEffect = () => {
+      destroyDesktopEffect();
+      if (!desktopQuery.matches) return;
+
+      context = gsap.context(() => {
+        let travelDistance = 0;
+
+        const syncLayout = () => {
+          travelDistance = Math.max(
+            cardsColumn.scrollHeight - sticky.clientHeight + 160,
+            0
+          );
+          wrapper.style.height = `${sticky.clientHeight + travelDistance}px`;
+        };
+
+        const queueRefresh = () => {
+          window.cancelAnimationFrame(refreshFrame);
+          refreshFrame = window.requestAnimationFrame(() => ScrollTrigger.refresh());
+        };
+
+        syncLayout();
+        gsap.set(cardsColumn, { y: 0 });
+
+        ScrollTrigger.create({
+          trigger: wrapper,
+          start: 'top top',
+          end: () => `+=${travelDistance}`,
+          scrub: true,
+          invalidateOnRefresh: true,
+          onRefreshInit: syncLayout,
+          animation: gsap.to(cardsColumn, {
+            y: () => -travelDistance,
+            ease: 'none',
+          }),
+        });
+
+        resizeObserver = new ResizeObserver(queueRefresh);
+        resizeObserver.observe(sticky);
+        resizeObserver.observe(cardsColumn);
+        window.addEventListener('load', queueRefresh);
+        queueRefresh();
+
+        return () => window.removeEventListener('load', queueRefresh);
+      }, wrapper);
+    };
+
+    buildDesktopEffect();
+    desktopQuery.addEventListener('change', buildDesktopEffect);
+
+    return () => {
+      desktopQuery.removeEventListener('change', buildDesktopEffect);
+      destroyDesktopEffect();
+    };
+  }, []);
 
   useEffect(() => {
     const strip = heroChipStripRef.current;
@@ -313,6 +414,13 @@ export default function Home() {
           opacity: 1;
           transform: translateY(0) scale(1);
         }
+        @media (min-width: 1024px) {
+          .stories-desktop-static {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+          }
+        }
         .hero-slide {
           opacity: 0;
           filter: saturate(0.82) blur(3px);
@@ -331,6 +439,10 @@ export default function Home() {
         }
         @keyframes heroKenBurnsDesktop {
           from { transform: scale(1.045); }
+          to { transform: scale(1); }
+        }
+        @keyframes heroKenBurnsMobile {
+          from { transform: scale(1.025); }
           to { transform: scale(1); }
         }
         .hero-progress {
@@ -373,9 +485,14 @@ export default function Home() {
           ${heroSlides
             .map(
               (slide, index) =>
-                `.hero-slide-${index} { object-position: ${slide.mobilePosition}; }`
+                `.hero-slide-${index} { object-position: ${slide.mobilePosition} !important; }`
             )
             .join('\n')}
+        }
+        @media (max-width: 639px) {
+          .hero-slide-active {
+            animation-name: heroKenBurnsMobile;
+          }
         }
         @media (min-width: 1024px) {
           .hero-slide-active {
@@ -390,7 +507,7 @@ export default function Home() {
         }
       `}</style>
       <SEO
-        title="Kanneganti Venkataramaiah Charitable Trust | Home"
+        title="Kanneganti Venkatramaiah Charitable Trust | Home"
         path="/"
         breadcrumb={[{ name: 'Home', path: '/' }]}
       />
@@ -399,18 +516,21 @@ export default function Home() {
       <section className="relative h-[calc(100svh-56px)] min-h-[590px] overflow-hidden bg-[#0A3854] sm:h-[calc(100svh-72px)] sm:min-h-[650px] lg:h-[calc(100svh-92px)] lg:min-h-[680px]">
         <div className="absolute inset-0 overflow-hidden">
           {heroSlides.map((slide, index) => (
-            <img
-              key={slide.src}
-              src={slide.src}
-              alt={slide.alt}
-              loading={index === 0 ? 'eager' : 'lazy'}
-              fetchPriority={index === 0 ? 'high' : 'auto'}
-              decoding={index === 0 ? 'sync' : 'async'}
-              style={{ objectPosition: slide.position }}
-              className={`hero-slide hero-slide-${index} absolute inset-0 h-full w-full object-cover ${
-                index === activeHero ? 'hero-slide-active z-[1]' : ''
-              }`}
-            />
+            <picture key={slide.src} className="contents">
+              {'mobileSrc' in slide && slide.mobileSrc && (
+                <source media="(max-width: 639px)" srcSet={slide.mobileSrc} />
+              )}
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                fetchPriority={index === 0 ? 'high' : 'auto'}
+                decoding={index === 0 ? 'sync' : 'async'}
+                className={`hero-slide hero-slide-${index} absolute inset-0 h-full w-full object-cover ${
+                  index === activeHero ? 'hero-slide-active z-[1]' : ''
+                }`}
+              />
+            </picture>
           ))}
         </div>
         <div
@@ -498,10 +618,12 @@ export default function Home() {
 
       {/* Impact stats card */}
       <div className="container-page relative z-20 mb-6 mt-10 sm:mb-8 sm:mt-12 md:mb-10 md:mt-16">
-        <div className="relative mx-auto grid max-w-[1240px] grid-cols-[repeat(2,minmax(0,1fr))] overflow-hidden rounded-[20px] border border-[#BFE3F6] bg-[#E3F4FD]/90 p-4 shadow-[0_24px_64px_rgba(64,151,199,0.17),inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-1px_0_rgba(91,191,239,0.2)] ring-1 ring-[#D8F0FC] backdrop-blur-2xl sm:p-5 md:grid-cols-4 md:rounded-[12px] md:px-7 md:py-7">
+        <div className="relative mx-auto grid max-w-[1280px] grid-cols-2 gap-2.5 overflow-hidden rounded-[20px] border border-white/30 bg-[linear-gradient(110deg,#247e9e_0%,#34796f_50%,#536c91_100%)] p-4 shadow-[0_24px_64px_rgba(18,58,90,0.2)] ring-1 ring-white/20 sm:gap-3 sm:p-5 min-[760px]:grid-cols-5 md:rounded-[22px] md:px-6 md:py-6">
+          <img src="/assets/about/14_left_leaf_decor.png" alt="" aria-hidden="true" className="leaf-blend pointer-events-none absolute -left-10 top-1/2 hidden w-[160px] -translate-y-1/2 opacity-[0.13] md:block" />
+          <img src="/assets/about/15_right_leaf_decor.png" alt="" aria-hidden="true" className="leaf-blend pointer-events-none absolute -right-10 top-1/2 hidden w-[160px] -translate-y-1/2 opacity-[0.13] md:block" />
           {homeStats.map((s, i) => (
             <Reveal key={s.label} delay={120 + i * 110} y={20} className={statDividerClass(i)}>
-              <StatCard {...s} />
+              <StatCard {...s} variant="dark" />
             </Reveal>
           ))}
         </div>
@@ -535,7 +657,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="container-page pb-12 md:pb-14">
+      <section className="container-page pb-4 sm:pb-12 md:pb-14">
         <Reveal y={32}>
         <div className="relative grid items-center gap-6 overflow-hidden rounded-[20px] border border-white/85 bg-[linear-gradient(100deg,#E3F8F1_0%,#F5FBFF_52%,#EAF6FC_100%)] px-7 py-9 shadow-[0_18px_48px_rgba(18,58,90,0.09)] ring-1 ring-line/60 md:min-h-[150px] md:grid-cols-[180px_minmax(0,1fr)_210px] md:gap-0 md:rounded-[8px] md:px-10 md:py-0">
           <img
@@ -585,62 +707,72 @@ export default function Home() {
       </section>
 
       {/* Stories + Impact glance */}
-      <section className="container-page relative pb-16 md:pb-20">
-        <Reveal>
-          <InsightHeading
-            eyebrow="Stories of Change"
-            title="Real journeys shaped by"
-            accent="hope and opportunity"
-          />
-        </Reveal>
-
-        <div className="mx-auto grid max-w-[1360px] grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-1 lg:gap-5">
-          {homeStories.map((story, i) => {
-            const StoryIcon = [GraduationCap, HeartPulse, UserRoundCheck][i] ?? Flower2;
-            return (
-              <Reveal key={story.title} delay={i * 130} className="h-full">
-                <InsightPanel
-                  number={i + 1}
-                  title={story.title}
-                  description={story.text}
-                  image={story.image}
-                  color={storyColors[i % storyColors.length]}
-                  icon={StoryIcon}
-                  to="/stories"
-                  actionLabel="Read story"
-                />
-              </Reveal>
-            );
-          })}
-        </div>
-
-        <Reveal delay={140} y={26}>
-          <div className="mt-5 grid grid-cols-2 overflow-hidden rounded-[8px] border border-line bg-white shadow-[0_16px_38px_rgba(18,58,90,0.07)] sm:grid-cols-4">
-            {impactGlance.map((stat, i) => {
-              const ImpactIcon = impactIcons[stat.icon] ?? GraduationCap;
-              return (
-                <div
-                  key={stat.label}
-                  className={`flex min-h-[104px] items-center gap-3 px-4 py-5 sm:px-5 ${
-                    i % 2 ? 'border-l border-line' : ''
-                  } ${i > 1 ? 'border-t border-line sm:border-t-0' : ''} ${
-                    i > 0 ? 'sm:border-l sm:border-line' : ''
-                  }`}
-                >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] bg-softblue text-ocean">
-                    <ImpactIcon className="h-[19px] w-[19px]" strokeWidth={1.8} />
+      <section
+        ref={storiesWrapperRef}
+        className="relative min-h-0 bg-[#F7FBFE] pb-16 md:pb-20 lg:min-h-[max(775px,100vh)] lg:overscroll-none lg:pb-0"
+      >
+        <div
+          ref={storiesStickyRef}
+          className="container-page relative bg-[#F7FBFE] lg:sticky lg:top-0 lg:h-[max(775px,100vh)] lg:overflow-hidden lg:[contain:paint]"
+        >
+        <div className="mx-auto grid max-w-[1420px] gap-9 pt-6 sm:gap-12 sm:pt-20 lg:h-full lg:grid-cols-[minmax(300px,0.42fr)_minmax(0,0.58fr)] lg:grid-rows-[minmax(0,1fr)] lg:gap-16 lg:pt-0">
+          <div className="lg:flex lg:h-full lg:items-center">
+            <Reveal className="stories-desktop-static w-full">
+              <div className="mx-auto max-w-[520px] text-center lg:mx-0 lg:max-w-[540px] lg:text-left">
+                <div className="mx-auto flex w-fit items-center gap-2.5 rounded-full border border-[#BFDDEA] bg-white/90 px-3.5 py-2 text-[#287E88] shadow-[0_8px_24px_rgba(18,58,90,0.08)] backdrop-blur-sm sm:px-4 sm:py-2.5 lg:mx-0">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#E8F6FA] sm:h-8 sm:w-8">
+                    <BookOpenText className="h-4 w-4 sm:h-[18px] sm:w-[18px]" strokeWidth={1.9} />
                   </span>
-                  <div className="min-w-0">
-                    <div className="font-sans text-[18px] font-bold leading-none text-heading">
-                      {stat.value}
-                    </div>
-                    <div className="mt-1.5 text-[11px] leading-[1.3] text-muted">{stat.label}</div>
-                  </div>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.16em] sm:text-[13px]">
+                    Stories of Change
+                  </span>
                 </div>
+                <h2
+                  className="mt-5 !text-[36px] !font-bold !leading-[1.02] tracking-[-0.035em] text-heading sm:mt-6 sm:!text-[44px] lg:!text-[52px] xl:!text-[56px]"
+                  style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+                >
+                  <strong className="block font-bold">Real journeys shaped by</strong>
+                  <span className="mt-1 block bg-[linear-gradient(90deg,#356A91_0%,#258EA5_52%,#3D7C73_100%)] bg-clip-text font-bold text-transparent">
+                    hope and opportunity
+                  </span>
+                </h2>
+                <Link
+                  to="/stories"
+                  className="group mx-auto mt-6 inline-flex items-center gap-3 rounded-full bg-[#356A91] py-2 pl-5 pr-2 text-[14px] font-semibold text-white shadow-[0_12px_28px_rgba(53,106,145,0.2)] transition-transform duration-300 hover:-translate-y-0.5 sm:mt-7 sm:gap-3.5 sm:py-2.5 sm:pl-6 sm:pr-2.5 sm:text-[15px] lg:mx-0"
+                >
+                  Explore All Stories
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#356A91] sm:h-10 sm:w-10">
+                    <ArrowRight className="h-[18px] w-[18px] transition-transform duration-300 group-hover:translate-x-0.5" />
+                  </span>
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+
+          <div
+            ref={storiesCardsRef}
+            className="flex min-w-0 flex-col items-center gap-6 sm:gap-8 lg:min-h-0 lg:gap-11 lg:py-20 lg:will-change-transform"
+          >
+            {homeStories.map((story, i) => {
+              return (
+                <Reveal
+                  key={story.title}
+                  className="stories-desktop-static w-full max-w-[718px]"
+                  delay={i * 120}
+                  y={32}
+                >
+                  <StoryInsightCard
+                    title={story.title}
+                    image={story.image}
+                  />
+                </Reveal>
               );
             })}
           </div>
-        </Reveal>
+        </div>
+        </div>
+
+        {/* Impact glance bar (Children Educated, Healthcare Beneficiaries, etc.) hidden by request. */}
       </section>
     </>
   );

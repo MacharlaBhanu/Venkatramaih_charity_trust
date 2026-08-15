@@ -1,10 +1,11 @@
 export const heroImage = '/assets/home/children.png';
 
 export const homeStats = [
-  { value: '12+', label: 'Years of Service', icon: 'handHeart' },
-  { value: '50,000+', label: 'Lives Impacted', icon: 'heart' },
-  { value: '120+', label: 'Projects Completed', icon: 'landmark' },
-  { value: '200+', label: 'Volunteers', icon: 'usersRound' },
+  { value: '14+', label: 'Years of Service', icon: 'users' },
+  { value: '75,000+', label: 'Lives Impacted', icon: 'heart' },
+  { value: '180+', label: 'Projects Completed', icon: 'star' },
+  { value: '250+', label: 'Volunteers', icon: 'usersRound' },
+  { value: '100+', label: 'Partner Organizations', icon: 'handshake' },
 ];
 
 export const homeInitiatives = [
@@ -13,25 +14,26 @@ export const homeInitiatives = [
     description:
       'Providing quality education and learning resources for underprivileged children.',
     icon: 'book',
-    image: '/assets/home/05_initiative_education.png',
+    image: '/assets/home/initiative-education-user-clean-v5.jpg',
   },
   {
     title: 'Healthcare',
     description: 'Improving health and well-being through medical care and awareness.',
     icon: 'health',
-    image: '/assets/home/06_initiative_healthcare.png',
+    image: '/assets/home/initiative-healthcare-hero-fit-v7.jpg',
   },
   {
-    title: 'Empowerment',
-    description: 'Skills development and livelihood programs for a better tomorrow.',
-    icon: 'empower',
-    image: '/assets/home/07_initiative_empowerment.png',
+    title: 'School Infrastructure Development',
+    description:
+      'Creating safe, well-equipped classrooms where every child can learn, grow, and thrive.',
+    icon: 'school',
+    image: '/assets/home/school-infrastructure-initiative.jpg',
   },
   {
     title: 'Social Welfare',
     description: 'Supporting communities through food, shelter, and basic necessities.',
     icon: 'welfare',
-    image: '/assets/home/08_initiative_social_welfare.png',
+    image: '/assets/gallery/02_hero_sapling_banner.png',
   },
 ];
 
@@ -39,23 +41,23 @@ export const homeStories = [
   {
     title: 'From Struggle to Success',
     text: 'Ravi\u2019s dedication changed his life and gave him hope.',
-    image: '/assets/home/story_success.png',
+    image: '/assets/home/story_success-card-v4.jpg',
   },
   {
     title: 'New Hope through Healthcare',
     text: 'Access to timely medical care created a new beginning.',
-    image: '/assets/home/story_healthcare.png',
+    image: '/assets/home/story_healthcare-card-v4.jpg',
   },
   {
-    title: 'Empowered to Inspire',
-    text: 'Lakshmi\u2019s journey of learning empowered her to lead.',
-    image: '/assets/home/story_empowered.png',
+    title: 'A Classroom Rebuilt, A Future Renewed',
+    text: 'A brighter, safer classroom gave young learners a place to dream bigger.',
+    image: '/assets/home/school-infrastructure-story-card-v3.jpg',
   },
 ];
 
 export const impactGlance = [
   { value: '15,000+', label: 'Children Educated', icon: 'graduation' },
   { value: '8,500+', label: 'Healthcare Beneficiaries', icon: 'heartPulse' },
-  { value: '3,200+', label: 'Women Empowered', icon: 'userCheck' },
+  { value: '3,200+', label: 'Students in Better Classrooms', icon: 'graduation' },
   { value: '250+', label: 'Communities Reached', icon: 'usersRound' },
 ];

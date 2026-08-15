@@ -20,12 +20,12 @@ export default function Navbar() {
       <nav className="container-page flex h-[56px] items-center justify-between gap-2 sm:h-[72px] lg:h-[92px]">
         <NavLink to="/" aria-label={`${site.name} home`} className="flex min-w-0 flex-1 items-center gap-2 sm:shrink-0 sm:flex-none sm:gap-2.5">
           <img
-            src="/assets/home/logo_mark.png"
+            src="/assets/home/kvr-logo-mark.png"
             alt={site.name}
             decoding="async"
-            className="block h-[32px] w-auto object-contain min-[390px]:h-[35px] sm:h-[52px] lg:h-[58px]"
+            className="block h-[46px] w-auto object-contain sm:h-[64px] lg:h-[82px]"
           />
-          <span className="min-w-0 font-serif text-[7.5px] font-bold uppercase leading-[1.14] tracking-[0.01em] text-heading min-[360px]:text-[8.5px] min-[390px]:text-[9.5px] sm:text-[13px]">
+          <span className="min-w-0 font-serif text-[7.5px] font-bold uppercase leading-[1.12] tracking-[0.01em] text-heading min-[360px]:text-[8.5px] min-[390px]:text-[9.5px] sm:text-[13px]">
             Kanneganti
             <br />
             Venkatramaiah

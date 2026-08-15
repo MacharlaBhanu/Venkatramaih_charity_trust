@@ -1,12 +1,12 @@
 export const site = {
-  name: 'Kanneganti Venkataramaiah Charitable Trust',
+  name: 'Kanneganti Venkatramaiah Charitable Trust',
   shortName: 'KV Charitable Trust',
   tagline: 'Compassion Today, Better Tomorrow',
   url: 'https://kvrcharitabletrust.in',
   description:
-    'Kanneganti Venkataramaiah Charitable Trust supports education, healthcare, women empowerment, food support, scholarships, and community welfare initiatives to uplift underprivileged communities.',
-  phones: ['+91 88955 43300', '+91 40 2900 43300'],
-  emails: ['info@kvgcharitabletrust.in', 'support@kvgcharitabletrust.in'],
+    'Kanneganti Venkatramaiah Charitable Trust supports education, healthcare, women empowerment, food support, scholarships, and community welfare initiatives to uplift underprivileged communities.',
+  phones: ['+91 9963593217'],
+  emails: ['kvrchtrust@gmail.com'],
   address: {
     line1: 'Plot No. 12, Road No. 3, Banjara Hills,',
     line2: 'Hyderabad, Telangana - 500 084, India.',
@@ -32,8 +32,8 @@ export const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about' },
   { label: 'Our Initiatives', to: '/initiatives' },
-  { label: 'Our Impact', to: '/gallery' },
   { label: 'Stories', to: '/stories' },
+  { label: 'Gallery', to: '/gallery' },
   { label: 'Get Involved', to: '/get-involved' },
   { label: 'Contact Us', to: '/contact' },
 ];

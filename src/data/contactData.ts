@@ -3,13 +3,13 @@ export const contactMethods = [
     title: 'Phone',
     icon: 'phone' as const,
     tone: 'blue' as const,
-    lines: ['+91 88955 43300', '+91 40 2980 43300'],
+    lines: ['+91 9963593217'],
   },
   {
     title: 'Email',
     icon: 'mail' as const,
     tone: 'green' as const,
-    lines: ['info@kvgcharitabletrust.in', 'support@kvgcharitabletrust.in'],
+    lines: ['kvrchtrust@gmail.com'],
   },
   {
     title: 'Office',

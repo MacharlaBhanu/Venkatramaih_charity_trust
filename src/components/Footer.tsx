@@ -51,10 +51,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-x-5 gap-y-9 min-[390px]:grid-cols-2 sm:gap-x-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.4fr] lg:gap-10">
           <div className="flex flex-col items-center text-center min-[390px]:col-span-2 sm:items-start sm:text-left lg:col-span-1">
             <img
-              src="/assets/home/logo_footer.png"
+              src="/assets/home/kvr-logo.png"
               alt={`${site.name} — Compassion Today, Better Tomorrow`}
               decoding="async"
-              className="w-[220px] max-w-full object-contain lg:w-[200px]"
+              className="w-[148px] max-w-full object-contain lg:w-[140px]"
             />
             <p className="mt-3 max-w-[300px] text-[14px] leading-relaxed text-body lg:hidden">
               Compassion today. A stronger, brighter tomorrow.
@@ -103,13 +103,19 @@ export default function Footer() {
         </div>
 
         <div className="relative z-[2] mt-9 flex flex-col items-center justify-between gap-4 border-t border-line pt-5 text-center text-[13px] leading-relaxed text-muted sm:flex-row sm:text-left lg:text-[11px]">
-          <p>© 2024 {site.name}. All rights reserved.</p>
+          <p>© 2026 {site.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 sm:justify-end">
-            <Link to="/contact" className="transition-colors hover:text-ocean">
+            <Link to="/privacy-policy" className="transition-colors hover:text-ocean">
               Privacy Policy
             </Link>
-            <Link to="/contact" className="transition-colors hover:text-ocean">
+            <Link to="/terms-and-conditions" className="transition-colors hover:text-ocean">
               Terms &amp; Conditions
+            </Link>
+            <Link to="/cancellation-and-refund-policy" className="transition-colors hover:text-ocean">
+              Refund Policy
+            </Link>
+            <Link to="/shipping-and-delivery-policy" className="transition-colors hover:text-ocean">
+              Shipping Policy
             </Link>
           </div>
         </div>

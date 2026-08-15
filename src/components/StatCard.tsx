@@ -22,7 +22,7 @@ interface StatCardProps {
   value: string;
   label: string;
   icon?: string;
-  variant?: 'plain' | 'boxed';
+  variant?: 'plain' | 'boxed' | 'dark';
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -62,6 +62,22 @@ export default function StatCard({ value, label, icon, variant = 'plain' }: Stat
         <div>
           <div className="font-serif text-xl font-bold text-heading">{value}</div>
           <div className="text-xs text-muted">{label}</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (variant === 'dark') {
+    return (
+      <div className="group flex min-w-0 items-center justify-center gap-3 px-1 text-left sm:px-2">
+        {LucideI && (
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/95 text-[#247e9e] shadow-[0_10px_26px_rgba(3,31,48,0.16)] transition-transform duration-300 group-hover:scale-105 sm:h-12 sm:w-12">
+            <LucideI className="h-6 w-6" strokeWidth={1.7} />
+          </span>
+        )}
+        <div className="min-w-0">
+          <div className="max-w-full font-sans text-[21px] font-extrabold leading-none text-white sm:text-[25px]">{value}</div>
+          <div className="mt-2 max-w-full text-[10px] font-medium leading-tight text-white/70 sm:text-[11px]">{label}</div>
         </div>
       </div>
     );

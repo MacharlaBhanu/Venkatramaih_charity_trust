@@ -13,10 +13,14 @@ import Gallery from './pages/Gallery';
 import Stories from './pages/Stories';
 import GetInvolved from './pages/GetInvolved';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import CancellationRefundPolicy from './pages/CancellationRefundPolicy';
+import ShippingDeliveryPolicy from './pages/ShippingDeliveryPolicy';
 
 export default function App() {
   return (
-    <div className="flex min-h-screen w-full flex-col overflow-x-hidden bg-page">
+    <div className="flex min-h-screen w-full flex-col overflow-x-clip bg-page">
       <ScrollToTop />
       <PublicAssetFallback />
       <ImageReveal />
@@ -31,6 +35,10 @@ export default function App() {
           <Route path="/stories" element={<Stories />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/cancellation-and-refund-policy" element={<CancellationRefundPolicy />} />
+          <Route path="/shipping-and-delivery-policy" element={<ShippingDeliveryPolicy />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

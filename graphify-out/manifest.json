@@ -15,8 +15,8 @@
     "semantic_hash": "029f4905006c1fffd96bc863e2d98d3e"
   },
   "package.json": {
-    "mtime": 1783404683.4295707,
-    "ast_hash": "786f18138369fc4cb39b32d64ef0d813",
+    "mtime": 1786203704.9274738,
+    "ast_hash": "2eff5c2b5139f16a52e8a88de834a752",
     "semantic_hash": ""
   },
   "postcss.config.js": {
@@ -50,8 +50,8 @@
     "semantic_hash": "587557aaa46591f5787536ec6c4d8bfa"
   },
   "src/App.tsx": {
-    "mtime": 1784915401.7559733,
-    "ast_hash": "960d3f73da529b927bb55e99ed3d6d85",
+    "mtime": 1786382824.124475,
+    "ast_hash": "63968119e33eb7419063e462aacf83c6",
     "semantic_hash": ""
   },
   "src/components/Button.tsx": {
@@ -75,13 +75,13 @@
     "semantic_hash": ""
   },
   "src/components/DonationModal.tsx": {
-    "mtime": 1783343965.0,
-    "ast_hash": "38745749a524bab43330052cca017c78",
-    "semantic_hash": "38745749a524bab43330052cca017c78"
+    "mtime": 1785072877.6711986,
+    "ast_hash": "e83dcb8b30358165ba3facb86be81a33",
+    "semantic_hash": ""
   },
   "src/components/Footer.tsx": {
-    "mtime": 1784828448.1134288,
-    "ast_hash": "6ea249a7ce9a91d4ccf3069bbd2d9cc8",
+    "mtime": 1786778189.1297987,
+    "ast_hash": "ed127edc0fc93881324b7475c3d4a6de",
     "semantic_hash": ""
   },
   "src/components/Icon.tsx": {
@@ -95,13 +95,13 @@
     "semantic_hash": ""
   },
   "src/components/Logo.tsx": {
-    "mtime": 1783349433.0,
-    "ast_hash": "9af1a666c5e922b9a0e8b073d588fe9d",
-    "semantic_hash": "9af1a666c5e922b9a0e8b073d588fe9d"
+    "mtime": 1786207519.9923086,
+    "ast_hash": "e8bb89fcfca85eee94d177dda2229037",
+    "semantic_hash": ""
   },
   "src/components/Navbar.tsx": {
-    "mtime": 1784908989.6857822,
-    "ast_hash": "646c9bc297173587ff707c96eee97a62",
+    "mtime": 1786385819.188734,
+    "ast_hash": "7f6d1fa9def46a0560886b1860a533ae",
     "semantic_hash": ""
   },
   "src/components/PageHero.tsx": {
@@ -110,23 +110,23 @@
     "semantic_hash": "86291242eff703b6376a4bdd495cd0ac"
   },
   "src/components/SEO.tsx": {
-    "mtime": 1783344088.0,
-    "ast_hash": "5b6d1372312dc3fc760968374fdd8a2a",
-    "semantic_hash": "5b6d1372312dc3fc760968374fdd8a2a"
+    "mtime": 1785663508.2081842,
+    "ast_hash": "046d035a6977a604fb2d4dec7b3eb966",
+    "semantic_hash": ""
   },
   "src/components/ScrollToTop.tsx": {
-    "mtime": 1783344100.0,
-    "ast_hash": "694bc6d1c48a227d2fcab6a6ab5e8c06",
-    "semantic_hash": "694bc6d1c48a227d2fcab6a6ab5e8c06"
+    "mtime": 1786779135.676526,
+    "ast_hash": "96605eca81fc7bfdb5e0468139b5bb87",
+    "semantic_hash": ""
   },
   "src/components/SectionTitle.tsx": {
-    "mtime": 1783408513.9730132,
-    "ast_hash": "bb11bdf712d2c370f40a701bf2105a72",
+    "mtime": 1785060184.3646867,
+    "ast_hash": "a31f2808187303c78b6da00bfaba84c1",
     "semantic_hash": ""
   },
   "src/components/StatCard.tsx": {
-    "mtime": 1784908989.851902,
-    "ast_hash": "3b93c705081c2951da6cd5e3ca4e23b8",
+    "mtime": 1786283690.119956,
+    "ast_hash": "f9e570be5fdaae8577951186e0c0e13d",
     "semantic_hash": ""
   },
   "src/components/StoryCard.tsx": {
@@ -145,73 +145,73 @@
     "semantic_hash": "5f77d85f613cab3aabea500543ead4ec"
   },
   "src/data/galleryData.ts": {
-    "mtime": 1784621524.9680882,
-    "ast_hash": "27eff16e8cbfd326c873465442457010",
+    "mtime": 1786562299.3967128,
+    "ast_hash": "3c1c0ab27a7ad4fef6939e4267469295",
     "semantic_hash": ""
   },
   "src/data/homeData.ts": {
-    "mtime": 1783405727.4134626,
-    "ast_hash": "bc8c4b0ce31e0b63db1138743cf9527d",
+    "mtime": 1786283673.6931274,
+    "ast_hash": "c151b9be2b08779a7a5d97f7bb8027c4",
     "semantic_hash": ""
   },
   "src/data/initiativesData.ts": {
-    "mtime": 1784560215.3450823,
-    "ast_hash": "135138374d1775fa2c2429b5e0b2b24e",
+    "mtime": 1786384559.1616318,
+    "ast_hash": "fb7cc1081ef8056bdcb3c925bb754dff",
     "semantic_hash": ""
   },
   "src/data/siteData.ts": {
-    "mtime": 1783351022.0,
-    "ast_hash": "fbf5714483dcd80c6a0aeef52a0074f7",
-    "semantic_hash": "fbf5714483dcd80c6a0aeef52a0074f7"
+    "mtime": 1786385819.1899958,
+    "ast_hash": "748e5bf700a06f58002457cfacc73bf1",
+    "semantic_hash": ""
   },
   "src/data/storiesData.ts": {
-    "mtime": 1784655430.6451209,
-    "ast_hash": "a431fb7bf13fe92fd3d17517b65883e8",
+    "mtime": 1786302595.079143,
+    "ast_hash": "04304528eb9162dc204eae534a2daec6",
     "semantic_hash": ""
   },
   "src/main.tsx": {
-    "mtime": 1783344095.0,
-    "ast_hash": "6ec899e970bf804e780ecf945a3a7dfa",
-    "semantic_hash": "6ec899e970bf804e780ecf945a3a7dfa"
+    "mtime": 1784918637.0984876,
+    "ast_hash": "fcb384868102f7ff89c3c7d426c1d41e",
+    "semantic_hash": ""
   },
   "src/pages/About.tsx": {
-    "mtime": 1784909584.2220633,
-    "ast_hash": "1abe184df70a5aba5621369d1b907953",
+    "mtime": 1786563399.2748542,
+    "ast_hash": "57cae77f549bdae044b42811d6a68b7b",
     "semantic_hash": ""
   },
   "src/pages/Contact.tsx": {
-    "mtime": 1784909132.0083523,
-    "ast_hash": "d5eea7468cf14882de62477e27e51e4e",
+    "mtime": 1786779144.038587,
+    "ast_hash": "cf9b15362b6ffd6dfa61cb86fcb6c772",
     "semantic_hash": ""
   },
   "src/pages/Gallery.tsx": {
-    "mtime": 1784829403.0338311,
-    "ast_hash": "f4bba9cd8362aff40a7a6dac9bf49a0f",
+    "mtime": 1786779658.4221427,
+    "ast_hash": "846fed4482a7a8a4c933b644392e56a6",
     "semantic_hash": ""
   },
   "src/pages/GetInvolved.tsx": {
-    "mtime": 1784908375.7395487,
-    "ast_hash": "8a4b55a44d8bd804ec2a09d3f3bb51bf",
+    "mtime": 1786779898.5506842,
+    "ast_hash": "e0ebc9a96e9f06c4bb2ddddae9ebd9b0",
     "semantic_hash": ""
   },
   "src/pages/Home.tsx": {
-    "mtime": 1784915401.842063,
-    "ast_hash": "c4ee4f1e0acdbb711c590a712852812f",
+    "mtime": 1786385819.2183397,
+    "ast_hash": "12b53381c1b601d6289e649723bcc34c",
     "semantic_hash": ""
   },
   "src/pages/Initiatives.tsx": {
-    "mtime": 1784829302.726462,
-    "ast_hash": "f323b4cc77637915f291bb37b09b1e8c",
+    "mtime": 1786385803.3338208,
+    "ast_hash": "5df7f74eb9816bf0cd1fca835dc261fa",
     "semantic_hash": ""
   },
   "src/pages/Stories.tsx": {
-    "mtime": 1784908375.657041,
-    "ast_hash": "cdfa74c1c235beb0d8621cea52f8da37",
+    "mtime": 1786779504.4796562,
+    "ast_hash": "8b85611b95e8911966b74778ade595c1",
     "semantic_hash": ""
   },
   "tailwind.config.js": {
-    "mtime": 1784696667.808068,
-    "ast_hash": "bceccba2787e4fbf06a9c86d9c4a28ff",
+    "mtime": 1785060184.365102,
+    "ast_hash": "86e22fb803ac38d0127ed664a2d09af7",
     "semantic_hash": ""
   },
   "tsconfig.app.json": {
@@ -230,9 +230,9 @@
     "semantic_hash": "f9cb81ddcea69ffdab672fc8c48dca66"
   },
   "vite.config.ts": {
-    "mtime": 1783343629.0,
-    "ast_hash": "88439104b3c207f17d33ef3160e3b080",
-    "semantic_hash": "88439104b3c207f17d33ef3160e3b080"
+    "mtime": 1784919834.9492788,
+    "ast_hash": "dab8bdefe25f3b78a13b4381772ef37c",
+    "semantic_hash": ""
   },
   "CLAUDE.md": {
     "mtime": 1783403960.6003485,
@@ -245,14 +245,14 @@
     "semantic_hash": "10495bfcc6c568eca4dab6dd5df795d3"
   },
   "index.html": {
-    "mtime": 1783345373.0,
-    "ast_hash": "1b07a90fc58d741469b356144aa161dc",
-    "semantic_hash": "1b07a90fc58d741469b356144aa161dc"
+    "mtime": 1786385802.9298303,
+    "ast_hash": "5159974c14834ef68a6a1e466ee561e9",
+    "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1783344386.0,
-    "ast_hash": "06d4c477cd8f4456aac0a985436a807a",
-    "semantic_hash": "06d4c477cd8f4456aac0a985436a807a"
+    "mtime": 1785662846.1372526,
+    "ast_hash": "073330fb6075c7807795f5fe82ef0751",
+    "semantic_hash": ""
   },
   "home-current-screenshot.png": {
     "mtime": 1783352427.0,
@@ -405,9 +405,9 @@
     "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
   },
   "public/logo.png": {
-    "mtime": 1783345340.0,
-    "ast_hash": "b63c5ed167b55bb73ec7ca53b801096b",
-    "semantic_hash": "b63c5ed167b55bb73ec7ca53b801096b"
+    "mtime": 1786207477.486084,
+    "ast_hash": "90ba166e6b720aa48db0d18818d380d6",
+    "semantic_hash": ""
   },
   "public/reference/about.png": {
     "mtime": 1783343678.0,
@@ -447,21 +447,6 @@
   "src/components/EventHighlightCard.tsx": {
     "mtime": 1784571299.8969328,
     "ast_hash": "1391bebb924ec38471daead60a21c989",
-    "semantic_hash": ""
-  },
-  "src/components/GalleryCard.tsx": {
-    "mtime": 1784828448.3874655,
-    "ast_hash": "5662481f323d06bac587118d8511e708",
-    "semantic_hash": ""
-  },
-  "src/components/InitiativeDetailCard.tsx": {
-    "mtime": 1784908375.4902542,
-    "ast_hash": "28fa4ebcdc98e13cd263813adac95012",
-    "semantic_hash": ""
-  },
-  "src/components/InitiativeStoryCard.tsx": {
-    "mtime": 1784560258.2028093,
-    "ast_hash": "759da514dc830e2b3fc1b152a744a488",
     "semantic_hash": ""
   },
   "src/components/PhotoAlbumCard.tsx": {
@@ -1010,13 +995,13 @@
     "semantic_hash": ""
   },
   "src/data/contactData.ts": {
-    "mtime": 1784701524.4884837,
-    "ast_hash": "0553edbd314384eb3b96222574c2be08",
+    "mtime": 1786384835.4891806,
+    "ast_hash": "bd53b0a93ae4f7e30987564f7f7bb830",
     "semantic_hash": ""
   },
   "src/data/getInvolvedData.ts": {
-    "mtime": 1784700424.306006,
-    "ast_hash": "9af588b06ccf0a5c61ebf9f79692ae5c",
+    "mtime": 1786349783.2517757,
+    "ast_hash": "504dee9c07f99486a1b8da5d976774f4",
     "semantic_hash": ""
   },
   "public/assets/contact/README.txt": {
@@ -1225,8 +1210,438 @@
     "semantic_hash": ""
   },
   "src/components/PageMotion.tsx": {
-    "mtime": 1784915401.6695774,
-    "ast_hash": "557d18ac6c1a920432882a1426855134",
+    "mtime": 1784915508.6715803,
+    "ast_hash": "d2482ff8d8daa1571a089e1ec5e587b9",
+    "semantic_hash": ""
+  },
+  ".vscode/extensions.json": {
+    "mtime": 1785761930.2791958,
+    "ast_hash": "1aa9ce67f4ff4ac0b5b8c8a6414a53d6",
+    "semantic_hash": ""
+  },
+  "scripts/generate-social-share.mjs": {
+    "mtime": 1785663508.1225483,
+    "ast_hash": "c2888270fd7bba511e6d9442bbadb46a",
+    "semantic_hash": ""
+  },
+  "src/components/ImageReveal.tsx": {
+    "mtime": 1785069039.0522602,
+    "ast_hash": "8dfb1472a55276ca0d015d8e2eb16b80",
+    "semantic_hash": ""
+  },
+  "src/components/PublicAssetFallback.tsx": {
+    "mtime": 1784918637.1825535,
+    "ast_hash": "f7351dd8c9f46e232e215529e5a16904",
+    "semantic_hash": ""
+  },
+  "public/assets/about/about-founder-legacy-hero-mobile-v2.jpg": {
+    "mtime": 1786270373.5901217,
+    "ast_hash": "e77d260587dd8e8fe03fe67c518360d6",
+    "semantic_hash": ""
+  },
+  "public/assets/about/about-founder-legacy-hero-v2.jpg": {
+    "mtime": 1786270351.575562,
+    "ast_hash": "10ca30308a40f0e59d8ffcddc5fc5c5e",
+    "semantic_hash": ""
+  },
+  "public/assets/about/about-founder-legacy-hero-v2.png": {
+    "mtime": 1786270351.4886105,
+    "ast_hash": "4e150e561915ed3d27a4ab4e06dcf73e",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/05_support_card_leaf_transparent.png": {
+    "mtime": 1785683506.0814087,
+    "ast_hash": "fca396e09a8937caaaef81bf84e0b685",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-ai-desktop.webp": {
+    "mtime": 1786218688.92347,
+    "ast_hash": "607a651b1ff1e90aae5c3879b05a1a18",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-ai-mobile.webp": {
+    "mtime": 1786218688.923463,
+    "ast_hash": "2401347fe03a6f9126de6ddb4f10bf24",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-hero-mobile-v2.webp": {
+    "mtime": 1786214474.8691578,
+    "ast_hash": "ab4ed80dcbd8a4d0226061386210154a",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-hero-v2.webp": {
+    "mtime": 1786213899.1463315,
+    "ast_hash": "2b5f04a5f1c533fe15746277b81f43d3",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-hero.webp": {
+    "mtime": 1786212517.7292995,
+    "ast_hash": "977ddfb1329a7a35638d8004011081bd",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-india-desktop.webp": {
+    "mtime": 1786218338.4430916,
+    "ast_hash": "958bf8a710ace83160a25f6f050156db",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-india-mobile.webp": {
+    "mtime": 1786218398.4868326,
+    "ast_hash": "5b675f96fb43c4cf223a538c76e55a88",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-desktop-v2.webp": {
+    "mtime": 1786216051.0971918,
+    "ast_hash": "9fe101f1fd224484c3054c35d0963cd0",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-desktop.webp": {
+    "mtime": 1786215583.9109955,
+    "ast_hash": "04619d65885b7bb921b896032a959c1a",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-mobile-v2.webp": {
+    "mtime": 1786216141.0019183,
+    "ast_hash": "1137425aae1ca1ace63d74483f0ed9c9",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-mobile.webp": {
+    "mtime": 1786215584.0515497,
+    "ast_hash": "e32de83b1ef98443314a3c606f73b7ef",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-india-v3.jpg": {
+    "mtime": 1786268119.7666993,
+    "ast_hash": "6de788a2f464bc2d96fcdcc6d7e50854",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-real-v2.jpg": {
+    "mtime": 1786267315.803879,
+    "ast_hash": "3fb25404a899f21d39bfb95d2a117616",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-user-clean-v5.jpg": {
+    "mtime": 1786268810.6245563,
+    "ast_hash": "d2721be9cac923fb45c0f2a6167b5cc6",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-user-v4.jpg": {
+    "mtime": 1786268667.6510854,
+    "ast_hash": "a84d085968d40910b3fa20771458eec8",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-hero-fit-v7.jpg": {
+    "mtime": 1786269501.5017338,
+    "ast_hash": "7e2e3469c89694bf938c88be41648530",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-india-v6.jpg": {
+    "mtime": 1786268119.4608853,
+    "ast_hash": "bb875f27b27cf76ed9c77bde2a2d3cb2",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v2.jpg": {
+    "mtime": 1786267315.989422,
+    "ast_hash": "ceca1bf7e6ff6f821b0560fd29f4f1af",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v3.jpg": {
+    "mtime": 1786267507.3224814,
+    "ast_hash": "ecb3a950c996f96ca19736081d216fe8",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v4.jpg": {
+    "mtime": 1786267621.432837,
+    "ast_hash": "1c75ba51356b741af88221b65e852f1c",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v5.jpg": {
+    "mtime": 1786267650.8854384,
+    "ast_hash": "b7e3d3a8d7ba8ec470163fcdb22b5925",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-hero-fit-v5.jpg": {
+    "mtime": 1786269501.5002356,
+    "ast_hash": "edf964c4212e0a49bc57fadb4af6d998",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-india-v3.jpg": {
+    "mtime": 1786268119.8033092,
+    "ast_hash": "6dea0f185b0967b551a9d7669ea3d91c",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-real-v2.jpg": {
+    "mtime": 1786267316.2408416,
+    "ast_hash": "faefd1834d723d211f883a5ffa20fa61",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-user-v4.jpg": {
+    "mtime": 1786268684.5384903,
+    "ast_hash": "320eb26b41602c24431112d0b98abde0",
+    "semantic_hash": ""
+  },
+  "public/assets/home/kvr-logo-mark.png": {
+    "mtime": 1786212277.7107077,
+    "ast_hash": "40defcf8e04457dba787af8b940ccaeb",
+    "semantic_hash": ""
+  },
+  "public/assets/home/kvr-logo.png": {
+    "mtime": 1786207477.444842,
+    "ast_hash": "c4ef56738d759aa1961190da351229eb",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-framer-v3.jpg": {
+    "mtime": 1786266763.9183736,
+    "ast_hash": "0a5eb6ee646beb7dc2ab16b3d7c5230a",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-india-mobile-v5.jpg": {
+    "mtime": 1786268120.3101373,
+    "ast_hash": "36c61baf2ad897012c9231fefddb3317",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-india-v5.jpg": {
+    "mtime": 1786268119.37281,
+    "ast_hash": "e8f76282835e95a86d8b8113e43ae880",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-mobile-v4.jpg": {
+    "mtime": 1786267316.4230058,
+    "ast_hash": "4e9e2fd4d337b983de93e95d8c1b5443",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-v2.jpg": {
+    "mtime": 1786266438.533465,
+    "ast_hash": "bb478d4776f2297950c345e26f447627",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero.jpg": {
+    "mtime": 1786265958.432899,
+    "ast_hash": "f2806241787afb898c6f6d1007379077",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-initiative.jpg": {
+    "mtime": 1786265923.095817,
+    "ast_hash": "2128e6cd1b93faa103da230d3027c44d",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-story-card-v2.jpg": {
+    "mtime": 1786266438.6338444,
+    "ast_hash": "930720dd5c08e8e0daae54974535f37e",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-story-card-v3.jpg": {
+    "mtime": 1786266764.0052156,
+    "ast_hash": "2625db272279e730eed35d1de29e43ee",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-story.jpg": {
+    "mtime": 1786265959.8120627,
+    "ast_hash": "e06a3c8832c359cf633251b856b26fc9",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_empowered-card-v4.jpg": {
+    "mtime": 1786203199.4645205,
+    "ast_hash": "61ed06d6604558db42af0bc142a63e5d",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_empowered-v2.jpg": {
+    "mtime": 1786047280.825309,
+    "ast_hash": "4e7556c06c5c4b0a4950581253ff2b83",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_empowered-v3.jpg": {
+    "mtime": 1786047541.8015425,
+    "ast_hash": "fbdb6f047ae6b5c0cad6444b8e30b4a4",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_healthcare-card-v4.jpg": {
+    "mtime": 1786203199.3764923,
+    "ast_hash": "137de3dabb7336f6c0e543e8130a7bb8",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_healthcare-v2.jpg": {
+    "mtime": 1786047280.6140716,
+    "ast_hash": "098b871bf782c88434188136cd0de708",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_healthcare-v3.jpg": {
+    "mtime": 1786047541.5737813,
+    "ast_hash": "94ea80ecd5ff4b1611d6f7764d600492",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_success-card-v4.jpg": {
+    "mtime": 1786203199.2839131,
+    "ast_hash": "8bf0245e90085d0e1cb57c6a04238c1d",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_success-v2.jpg": {
+    "mtime": 1786047280.3922656,
+    "ast_hash": "fdec28dfb30003d32405b010444bfbc0",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_success-v3.jpg": {
+    "mtime": 1786047541.3421278,
+    "ast_hash": "c0cc8a69f2d76abf963caa2b362b7657",
+    "semantic_hash": ""
+  },
+  "public/assets/social/share-background.png": {
+    "mtime": 1785662142.2421923,
+    "ast_hash": "1e1642270f13363eb4c18a129dd37e69",
+    "semantic_hash": ""
+  },
+  "public/social-share-v2.png": {
+    "mtime": 1785663513.4483337,
+    "ast_hash": "e935c607ad6a55d7869fb5d840456cfa",
+    "semantic_hash": ""
+  },
+  "public/social-share.png": {
+    "mtime": 1785663396.2690673,
+    "ast_hash": "e935c607ad6a55d7869fb5d840456cfa",
+    "semantic_hash": ""
+  },
+  "public/assets/about/legacy-sapling-wide-v2.jpg": {
+    "mtime": 1786272105.594849,
+    "ast_hash": "f7159a3db98a05451bc2ab73351c5ac9",
+    "semantic_hash": ""
+  },
+  "public/assets/about/legacy-sapling-wide-v2.png": {
+    "mtime": 1786272105.486458,
+    "ast_hash": "348bf073a8594fcaa3e45671cf34d366",
+    "semantic_hash": ""
+  },
+  "src/components/GalleryCard.tsx": {
+    "mtime": 1786288212.1606348,
+    "ast_hash": "5662481f323d06bac587118d8511e708",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/20_gallery_collaborative_classroom.png": {
+    "mtime": 1786291116.503843,
+    "ast_hash": "fdcb963a24adc8865dcab57ddf41fe21",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/21_gallery_community_health_camp.png": {
+    "mtime": 1786291323.9911418,
+    "ast_hash": "66bf927abab43c3f6dad691e9449328f",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryImage 2.tsx": {
+    "mtime": 1786293292.0,
+    "ast_hash": "364fad972b5d244f0123eebd587c232b",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryImage.tsx": {
+    "mtime": 1786297262.5450432,
+    "ast_hash": "0682291d37361e790db0bd69d9dbde34",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryLightbox 2.tsx": {
+    "mtime": 1786295900.0,
+    "ast_hash": "177a4570f9ac94082456cd05baa35e23",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryLightbox.tsx": {
+    "mtime": 1786295953.6639826,
+    "ast_hash": "98670641074d31bbde814d1efa0e0976",
+    "semantic_hash": ""
+  },
+  "src/pages/Gallery 2.tsx": {
+    "mtime": 1786385829.122697,
+    "ast_hash": "14a6f65e464be86b1bc87c3399692a54",
+    "semantic_hash": ""
+  },
+  "src/pages/Gallery 3.tsx": {
+    "mtime": 1786385829.1652648,
+    "ast_hash": "45e1647a8703018b0bf72e26156d5e8d",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/community-elder-support.jpg": {
+    "mtime": 1786294891.5271747,
+    "ast_hash": "58765ae9514d4f9fa6dcdd07030a4c2a",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/community-neighbourhood.jpg": {
+    "mtime": 1786294891.6176028,
+    "ast_hash": "a38bed866a02c02978e75dc7cad8feed",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/education-collaborative-learning.jpg": {
+    "mtime": 1786294891.705819,
+    "ast_hash": "b599a8da561c2987e7777a96ed580d01",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/education-science-class.jpg": {
+    "mtime": 1786294891.7935777,
+    "ast_hash": "6e4402162329f7977353f1f11950a4f3",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/food-community-meal.jpg": {
+    "mtime": 1786294891.879889,
+    "ast_hash": "ad2eb7ff32d359b130165682c6cb0bd0",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/food-family-support.jpg": {
+    "mtime": 1786294891.964861,
+    "ast_hash": "6630161812fddc320320c8c2b5e35243",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/healthcare-consultation.jpg": {
+    "mtime": 1786294892.053278,
+    "ast_hash": "f12dd084c5ff4f96d878037ed3bc665c",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/healthcare-rural-camp.jpg": {
+    "mtime": 1786294892.1429532,
+    "ast_hash": "34fae272d336f4aae9574065b9979587",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/school-infrastructure-campus.jpg": {
+    "mtime": 1786294892.2330022,
+    "ast_hash": "5d5b707be4e297d327791b9296b3a446",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/school-infrastructure-classroom.jpg": {
+    "mtime": 1786294892.3181243,
+    "ast_hash": "edbf09f031f5fffccd50b38c2d37b307",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-classroom-user-v6.jpg": {
+    "mtime": 1786301635.807703,
+    "ast_hash": "c7ed4f221013d8af7215a3402c4011d1",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-classroom-user-v7-enhanced.jpg": {
+    "mtime": 1786302121.6960633,
+    "ast_hash": "50eb17a77a9c1d38996137529cde6dc1",
+    "semantic_hash": ""
+  },
+  "src/pages/CancellationRefundPolicy.tsx": {
+    "mtime": 1786385803.361849,
+    "ast_hash": "71aa3df99649b530b4cee3f74385db65",
+    "semantic_hash": ""
+  },
+  "src/pages/PrivacyPolicy.tsx": {
+    "mtime": 1786385819.2177565,
+    "ast_hash": "41655339742e09175e36cce1ab1256fd",
+    "semantic_hash": ""
+  },
+  "src/pages/ShippingDeliveryPolicy.tsx": {
+    "mtime": 1786385803.3623772,
+    "ast_hash": "d7a5a46975c485f896d9b07944f647dc",
+    "semantic_hash": ""
+  },
+  "src/pages/TermsAndConditions.tsx": {
+    "mtime": 1786385803.3329103,
+    "ast_hash": "9ce36ab886645d7c20d741638069ddf8",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/contact_us_trust.png": {
+    "mtime": 1786377253.4572701,
+    "ast_hash": "0d28ad48a5eb114ab67e1b6e34f6698e",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/mobile_contactus.png": {
+    "mtime": 1786562783.6822953,
+    "ast_hash": "cebd7eee4de0e1335e63996da1ec13f5",
     "semantic_hash": ""
   }
 }

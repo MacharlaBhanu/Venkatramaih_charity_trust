@@ -7,6 +7,14 @@ export type GalleryCategoryKey =
   | 'Events'
   | 'Stories';
 
+export type HomeGalleryCategoryKey =
+  | 'All'
+  | 'Education'
+  | 'Food Donation'
+  | 'Healthcare'
+  | 'School Infrastructure'
+  | 'Community';
+
 export type GalleryIconKey =
   | 'grid'
   | 'education'
@@ -28,7 +36,7 @@ export interface GalleryCategory {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: Exclude<GalleryCategoryKey, 'All'>;
+  category: Exclude<GalleryCategoryKey, 'All'> | Exclude<HomeGalleryCategoryKey, 'All'>;
   description: string;
   categoryLabel: string;
   image: string;
@@ -70,6 +78,118 @@ export const categories: GalleryCategory[] = [
   { label: 'Stories', icon: 'stories' },
 ];
 
+export const homeGalleryCategories: Array<{ label: HomeGalleryCategoryKey; icon: GalleryIconKey }> = [
+  { label: 'All', icon: 'grid' },
+  { label: 'Education', icon: 'education' },
+  { label: 'Food Donation', icon: 'community' },
+  { label: 'Healthcare', icon: 'healthcare' },
+  { label: 'School Infrastructure', icon: 'education' },
+  { label: 'Community', icon: 'community' },
+];
+
+export const homeGalleryItems: GalleryItem[] = [
+  {
+    id: 'home-education-learning',
+    title: 'A Brighter Future Begins With Learning',
+    category: 'Education',
+    description: 'Opening doors to learning and confidence.',
+    categoryLabel: 'Education',
+    image: '/assets/gallery/generated/education-collaborative-learning.jpg',
+    icon: 'education',
+    layout: 'large',
+  },
+  {
+    id: 'home-education-science',
+    title: 'Curiosity Comes Alive Together',
+    category: 'Education',
+    description: 'Hands-on lessons spark curiosity every day.',
+    categoryLabel: 'Education',
+    image: '/assets/gallery/generated/education-science-class.jpg',
+    icon: 'education',
+    layout: 'medium',
+  },
+  {
+    id: 'home-food-community-meal',
+    title: 'Hope Served With Every Meal',
+    category: 'Food Donation',
+    description: 'Nutritious meals bring strength and dignity.',
+    categoryLabel: 'Food Donation',
+    image: '/assets/gallery/generated/food-community-meal.jpg',
+    icon: 'community',
+    layout: 'medium',
+  },
+  {
+    id: 'home-food-family-support',
+    title: 'Support Delivered With Dignity',
+    category: 'Food Donation',
+    description: 'Essential food support reaches families in need.',
+    categoryLabel: 'Food Donation',
+    image: '/assets/gallery/generated/food-family-support.jpg',
+    icon: 'community',
+    layout: 'medium',
+  },
+  {
+    id: 'home-healthcare-consultation',
+    title: 'Healthcare Within Everyone’s Reach',
+    category: 'Healthcare',
+    description: 'Timely healthcare reaches underserved families.',
+    categoryLabel: 'Healthcare',
+    image: '/assets/gallery/generated/healthcare-consultation.jpg',
+    icon: 'healthcare',
+    layout: 'medium',
+  },
+  {
+    id: 'home-healthcare-rural-camp',
+    title: 'Care Closer to Every Community',
+    category: 'Healthcare',
+    description: 'Rural health camps bring trusted care closer.',
+    categoryLabel: 'Healthcare',
+    image: '/assets/gallery/generated/healthcare-rural-camp.jpg',
+    icon: 'healthcare',
+    layout: 'medium',
+  },
+  {
+    id: 'home-school-infrastructure-campus',
+    title: 'A World of Possibility in Every Classroom',
+    category: 'School Infrastructure',
+    description: 'Safe classrooms help every child thrive.',
+    categoryLabel: 'School Infrastructure',
+    image: '/assets/gallery/generated/school-infrastructure-campus.jpg',
+    icon: 'education',
+    layout: 'large',
+  },
+  {
+    id: 'home-school-infrastructure-classroom',
+    title: 'Better Spaces Inspire Better Learning',
+    category: 'School Infrastructure',
+    description: 'Better school spaces improve focus and growth.',
+    categoryLabel: 'School Infrastructure',
+    image: '/assets/gallery/generated/school-infrastructure-classroom.jpg',
+    icon: 'education',
+    layout: 'large',
+  },
+  {
+    id: 'home-community-neighbourhood',
+    title: 'Compassion Builds Stronger Communities',
+    category: 'Community',
+    description: 'Volunteers unite to build lasting community change.',
+    categoryLabel: 'Community',
+    image: '/assets/gallery/generated/community-neighbourhood.jpg',
+    icon: 'community',
+    layout: 'medium',
+  },
+  {
+    id: 'home-community-elder-support',
+    title: 'Every Voice Deserves to Be Heard',
+    category: 'Community',
+    description: 'Companionship keeps elders connected and respected.',
+    categoryLabel: 'Community',
+    image: '/assets/gallery/generated/community-elder-support.jpg',
+    icon: 'community',
+    layout: 'medium',
+  },
+];
+
 export const galleryItems: GalleryItem[] = [
   {
     id: 'education-for-all',
@@ -87,7 +207,7 @@ export const galleryItems: GalleryItem[] = [
     category: 'Education',
     description: 'Creating welcoming spaces where curiosity, confidence, and friendship can flourish.',
     categoryLabel: 'Education',
-    image: initiativeAsset('schoolgirls_in_classroom_joyful_learning_moment.png'),
+    image: galleryAsset('20_gallery_collaborative_classroom.png'),
     icon: 'education',
     layout: 'medium',
   },
@@ -117,7 +237,7 @@ export const galleryItems: GalleryItem[] = [
     category: 'Healthcare',
     description: 'Compassionate consultations that make dependable medical support easier to reach.',
     categoryLabel: 'Healthcare',
-    image: initiativeAsset('caring_consultation_in_a_clinic.png'),
+    image: galleryAsset('21_gallery_community_health_camp.png'),
     icon: 'healthcare',
     layout: 'medium',
   },
@@ -147,7 +267,7 @@ export const galleryItems: GalleryItem[] = [
     category: 'Empowerment',
     description: 'Practical training that turns talent into confidence and sustainable livelihoods.',
     categoryLabel: 'Empowerment',
-    image: initiativeAsset('sewing_workshop_with_women_in_saris.png'),
+    image: initiativeAsset('a_collaborative_sewing_workshop_in_progress.png'),
     icon: 'empowerment',
     layout: 'medium',
   },
@@ -157,7 +277,7 @@ export const galleryItems: GalleryItem[] = [
     category: 'Empowerment',
     description: 'Shared knowledge and community support helping women move forward together.',
     categoryLabel: 'Empowerment',
-    image: initiativeAsset('a_collaborative_sewing_workshop_in_progress.png'),
+    image: galleryAsset('09_event_womens_day_workshop.png'),
     icon: 'empowerment',
     layout: 'medium',
   },
@@ -177,7 +297,7 @@ export const galleryItems: GalleryItem[] = [
     category: 'Community Welfare',
     description: 'Standing beside families with practical support, respect, and a shared sense of hope.',
     categoryLabel: 'Community',
-    image: initiativeAsset('village_community_joy_in_the_sun.png'),
+    image: initiativeAsset('serving_with_warmth_and_kindness.png'),
     icon: 'community',
     layout: 'medium',
   },
@@ -187,7 +307,7 @@ export const galleryItems: GalleryItem[] = [
     category: 'Community Welfare',
     description: 'Bringing nourishment and warmth to people through thoughtful community outreach.',
     categoryLabel: 'Community',
-    image: initiativeAsset('serving_with_warmth_and_kindness.png'),
+    image: '/assets/stories/07_story_food_support_clear.png',
     icon: 'community',
     layout: 'medium',
   },

@@ -240,6 +240,63 @@
   transform: translateY(0) scale(1);
 }
 
+/* Initiatives page: layered editorial reveals. */
+@media (prefers-reduced-motion: no-preference) {
+  .initiative-editorial-item.page-motion-item .initiative-visual,
+  .initiative-editorial-item.page-motion-item .initiative-copy {
+    opacity: 0;
+    transition: opacity 0.75s ease, transform 0.85s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .initiative-editorial-item.page-motion-item .initiative-visual {
+    transform: translateX(-34px) scale(0.975);
+  }
+
+  .initiative-editorial-item.page-motion-item .initiative-copy {
+    transform: translateX(28px);
+  }
+
+  .initiative-editorial-item.page-motion-item.initiative-reversed .initiative-visual {
+    transform: translateX(34px) scale(0.975);
+  }
+
+  .initiative-editorial-item.page-motion-item.initiative-reversed .initiative-copy {
+    transform: translateX(-28px);
+  }
+
+  .initiative-editorial-item.page-motion-visible .initiative-visual,
+  .initiative-editorial-item.page-motion-visible .initiative-copy,
+  .initiative-editorial-item.page-motion-visible.initiative-reversed .initiative-visual,
+  .initiative-editorial-item.page-motion-visible.initiative-reversed .initiative-copy {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  .initiative-editorial-item.page-motion-visible .initiative-copy {
+    transition-delay: 0.12s;
+  }
+
+  .initiative-editorial-item.page-motion-item .initiative-badge {
+    opacity: 0;
+    transform: translateY(10px) scale(0.75) rotate(-8deg);
+    transition: opacity 0.55s ease 0.32s, transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 0.32s;
+  }
+
+  .initiative-editorial-item.page-motion-visible .initiative-badge {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
+
+  .initiative-editorial-item.page-motion-item .initiative-number {
+    transform: translateY(-14px);
+    transition: transform 0.75s ease 0.25s;
+  }
+
+  .initiative-editorial-item.page-motion-visible .initiative-number {
+    transform: translateY(0);
+  }
+}
+
 /* Lazy images fade in as they load (see ImageReveal.tsx). Cached and eager/hero
    images are never tagged, so they paint instantly with no fade. */
 @media (prefers-reduced-motion: no-preference) {

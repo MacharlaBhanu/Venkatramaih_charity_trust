@@ -9,6 +9,7 @@ export const initiativesStats = [
 export interface Initiative {
   title: string;
   description: string;
+  supportingText: string;
   icon: string;
   image: string;
   stats: { value: string; label: string }[];
@@ -18,7 +19,8 @@ export const initiatives: Initiative[] = [
   {
     title: 'Education for All',
     description:
-      'We provide quality education, learning resources, and skill development opportunities to underprivileged children.',
+      'We provide quality education, learning resources, and skill development opportunities to underprivileged children through classroom support, after-school mentoring, and practical life-skills learning. By improving access to books, guidance, and safe learning environments, we help students stay in school, perform with confidence, and move toward brighter long-term opportunities.',
+    supportingText: 'By strengthening access to learning, we help children build confidence and create lasting opportunities for their future.',
     icon: 'book',
     image: '/assets/initiatives/schoolgirls_in_classroom_joyful_learning_moment.png',
     stats: [
@@ -29,7 +31,8 @@ export const initiatives: Initiative[] = [
   {
     title: 'Healthcare Support',
     description:
-      'We deliver accessible healthcare, medical camps, awareness programs, and wellness support to all.',
+      'We deliver accessible healthcare through medical camps, preventive checkups, awareness drives, and wellness support for families with limited access to quality care. Our programs focus on early intervention, health education, and continuity of care so communities can prevent avoidable illness and live with greater dignity and security.',
+    supportingText: 'Our focus is respectful, timely care that helps families live healthier lives with dignity and reassurance.',
     icon: 'health',
     image: '/assets/initiatives/caring_consultation_in_a_clinic.png',
     stats: [
@@ -40,7 +43,8 @@ export const initiatives: Initiative[] = [
   {
     title: 'Women Empowerment',
     description:
-      'We equip women with skills, training, and resources to become independent and confident change-makers.',
+      'We equip women with skills, vocational training, financial awareness, and mentorship so they can build independent and sustainable livelihoods. By strengthening confidence, decision-making ability, and access to opportunity, we support women in becoming leaders and positive change-makers within their families and communities.',
+    supportingText: 'Every training opportunity supports greater independence, confidence, and leadership within families and communities.',
     icon: 'lightbulb',
     image: '/assets/initiatives/sewing_workshop_with_women_in_saris.png',
     stats: [
@@ -51,7 +55,8 @@ export const initiatives: Initiative[] = [
   {
     title: 'Community Welfare',
     description:
-      'We support community development, infrastructure, sanitation, and programs that enhance quality of life.',
+      'We support community development through local infrastructure improvements, sanitation initiatives, and welfare programs that address everyday needs with practical solutions. Working closely with residents helps us create safer, healthier, and more resilient neighborhoods where progress is shared and sustainable.',
+    supportingText: 'Working alongside local communities allows us to create practical improvements that remain meaningful over time.',
     icon: 'welfare',
     image: '/assets/initiatives/village_community_joy_in_the_sun.png',
     stats: [
@@ -62,7 +67,8 @@ export const initiatives: Initiative[] = [
   {
     title: 'Scholarship Support',
     description:
-      'We offer scholarships to meritorious and deserving students to help them pursue their dreams.',
+      'We offer scholarships to meritorious and deserving students so that financial hardship does not interrupt talent, ambition, or academic progress. Along with funding support, we encourage continuity in education and career readiness, enabling students to complete their studies and pursue meaningful futures with confidence.',
+    supportingText: 'Financial support and encouragement ensure that talent and ambition are never limited by circumstance.',
     icon: 'grad',
     image: '/assets/initiatives/campus_portrait_in_bright_daylight.png',
     stats: [
@@ -73,7 +79,8 @@ export const initiatives: Initiative[] = [
   {
     title: 'Food Support',
     description:
-      'We ensure no one sleeps hungry by providing nutritious meals and groceries to those in need.',
+      'We provide nutritious meals and grocery support to vulnerable individuals and families facing hunger, especially during periods of crisis or financial stress. Our food support efforts are designed to bring immediate relief, protect dignity, and ensure that basic nourishment remains accessible when it is needed most.',
+    supportingText: 'Reliable food support brings immediate relief while helping vulnerable families face difficult days with dignity.',
     icon: 'food',
     image: '/assets/initiatives/serving_with_warmth_and_kindness.png',
     stats: [

@@ -44,14 +44,6 @@ export const helpOptions = [
     to: '/initiatives',
     tone: 'green' as const,
   },
-  {
-    title: 'Spread the Word',
-    description: 'Share our mission with your network and inspire others to get involved.',
-    icon: 'megaphone' as GetInvolvedIcon,
-    link: 'Share Now',
-    to: '/contact',
-    tone: 'blue' as const,
-  },
 ];
 
 export const processSteps = [

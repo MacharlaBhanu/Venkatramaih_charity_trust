@@ -1,0 +1,1617 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1783403960.6005902,
+    "ast_hash": "e51077b6a7f1f67afc748f1a32a1557d",
+    "semantic_hash": "e51077b6a7f1f67afc748f1a32a1557d"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1783405414.593045,
+    "ast_hash": "d73e112bca359cfb2453883b17979093",
+    "semantic_hash": ""
+  },
+  ".oxlintrc.json": {
+    "mtime": 1783343629.0,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": "029f4905006c1fffd96bc863e2d98d3e"
+  },
+  "package.json": {
+    "mtime": 1786203704.9274738,
+    "ast_hash": "2eff5c2b5139f16a52e8a88de834a752",
+    "semantic_hash": ""
+  },
+  "postcss.config.js": {
+    "mtime": 1783343661.0,
+    "ast_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0",
+    "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
+  },
+  "scripts/crop-assets.mjs": {
+    "mtime": 1783351668.0,
+    "ast_hash": "8fc9287831f28adb17d13ede00394c37",
+    "semantic_hash": "8fc9287831f28adb17d13ede00394c37"
+  },
+  "scripts/crop-logo-mark.mjs": {
+    "mtime": 1783355477.0,
+    "ast_hash": "127b71e0c8f6cc8375f29c78336f1a3c",
+    "semantic_hash": "127b71e0c8f6cc8375f29c78336f1a3c"
+  },
+  "scripts/footer-logo-bg.mjs": {
+    "mtime": 1783357285.0,
+    "ast_hash": "705afe3f73b92f504a90c875aaf68176",
+    "semantic_hash": "705afe3f73b92f504a90c875aaf68176"
+  },
+  "scripts/transparent-logo.mjs": {
+    "mtime": 1783355736.0,
+    "ast_hash": "a29e1dff772f4f1c9d339dc128e379a5",
+    "semantic_hash": "a29e1dff772f4f1c9d339dc128e379a5"
+  },
+  "scripts/trim-logo.mjs": {
+    "mtime": 1783355398.0,
+    "ast_hash": "587557aaa46591f5787536ec6c4d8bfa",
+    "semantic_hash": "587557aaa46591f5787536ec6c4d8bfa"
+  },
+  "src/App.tsx": {
+    "mtime": 1786204700.0555012,
+    "ast_hash": "8818f1dbdb6bef352917fada5ac802af",
+    "semantic_hash": ""
+  },
+  "src/components/Button.tsx": {
+    "mtime": 1783343939.0,
+    "ast_hash": "ac46a22614c27995c586a152f4e895a3",
+    "semantic_hash": "ac46a22614c27995c586a152f4e895a3"
+  },
+  "src/components/CTASection.tsx": {
+    "mtime": 1783351090.0,
+    "ast_hash": "9f8e4bd5daee0a7a4734252e3278fe71",
+    "semantic_hash": "9f8e4bd5daee0a7a4734252e3278fe71"
+  },
+  "src/components/ContactCard.tsx": {
+    "mtime": 1783344077.0,
+    "ast_hash": "e0173935531f8f93c98350e05d12a264",
+    "semantic_hash": "e0173935531f8f93c98350e05d12a264"
+  },
+  "src/components/Decorations.tsx": {
+    "mtime": 1783404766.808167,
+    "ast_hash": "d364d4cf59bcd0c6a83cb9752080c3bc",
+    "semantic_hash": ""
+  },
+  "src/components/DonationModal.tsx": {
+    "mtime": 1785072877.6711986,
+    "ast_hash": "e83dcb8b30358165ba3facb86be81a33",
+    "semantic_hash": ""
+  },
+  "src/components/Footer.tsx": {
+    "mtime": 1786207519.9578915,
+    "ast_hash": "a1565156d90d7b4c328710f9b6e683e1",
+    "semantic_hash": ""
+  },
+  "src/components/Icon.tsx": {
+    "mtime": 1783356701.0,
+    "ast_hash": "978700bc2b24751c99f73d2b14337df7",
+    "semantic_hash": "978700bc2b24751c99f73d2b14337df7"
+  },
+  "src/components/InitiativeCard.tsx": {
+    "mtime": 1784908375.4073021,
+    "ast_hash": "851ab28bc330f0f6e90222930bbe5869",
+    "semantic_hash": ""
+  },
+  "src/components/Logo.tsx": {
+    "mtime": 1786207519.9923086,
+    "ast_hash": "e8bb89fcfca85eee94d177dda2229037",
+    "semantic_hash": ""
+  },
+  "src/components/Navbar.tsx": {
+    "mtime": 1786213985.6812282,
+    "ast_hash": "1e22348a82969abb8ed1c66a0180486b",
+    "semantic_hash": ""
+  },
+  "src/components/PageHero.tsx": {
+    "mtime": 1783344029.0,
+    "ast_hash": "86291242eff703b6376a4bdd495cd0ac",
+    "semantic_hash": "86291242eff703b6376a4bdd495cd0ac"
+  },
+  "src/components/SEO.tsx": {
+    "mtime": 1785663508.2081842,
+    "ast_hash": "046d035a6977a604fb2d4dec7b3eb966",
+    "semantic_hash": ""
+  },
+  "src/components/ScrollToTop.tsx": {
+    "mtime": 1783344100.0,
+    "ast_hash": "694bc6d1c48a227d2fcab6a6ab5e8c06",
+    "semantic_hash": "694bc6d1c48a227d2fcab6a6ab5e8c06"
+  },
+  "src/components/SectionTitle.tsx": {
+    "mtime": 1785060184.3646867,
+    "ast_hash": "a31f2808187303c78b6da00bfaba84c1",
+    "semantic_hash": ""
+  },
+  "src/components/StatCard.tsx": {
+    "mtime": 1786283690.119956,
+    "ast_hash": "f9e570be5fdaae8577951186e0c0e13d",
+    "semantic_hash": ""
+  },
+  "src/components/StoryCard.tsx": {
+    "mtime": 1783408491.1344833,
+    "ast_hash": "5770e493fa66000019d5a7447971e326",
+    "semantic_hash": ""
+  },
+  "src/context/DonationContext.tsx": {
+    "mtime": 1783343928.0,
+    "ast_hash": "024bd703dc9ae9710237b47944f0ea5a",
+    "semantic_hash": "024bd703dc9ae9710237b47944f0ea5a"
+  },
+  "src/data/faqData.ts": {
+    "mtime": 1783343835.0,
+    "ast_hash": "5f77d85f613cab3aabea500543ead4ec",
+    "semantic_hash": "5f77d85f613cab3aabea500543ead4ec"
+  },
+  "src/data/galleryData.ts": {
+    "mtime": 1786294944.6111178,
+    "ast_hash": "ec6d7088e2077f84fcfb74c1887b44c9",
+    "semantic_hash": ""
+  },
+  "src/data/homeData.ts": {
+    "mtime": 1786283673.6931274,
+    "ast_hash": "c151b9be2b08779a7a5d97f7bb8027c4",
+    "semantic_hash": ""
+  },
+  "src/data/initiativesData.ts": {
+    "mtime": 1786287177.1891882,
+    "ast_hash": "0ee39e22b6876880d5fd097f72eba105",
+    "semantic_hash": ""
+  },
+  "src/data/siteData.ts": {
+    "mtime": 1786287366.9147832,
+    "ast_hash": "d0be28c62941031e919560fdbda7ae58",
+    "semantic_hash": ""
+  },
+  "src/data/storiesData.ts": {
+    "mtime": 1786302595.079143,
+    "ast_hash": "04304528eb9162dc204eae534a2daec6",
+    "semantic_hash": ""
+  },
+  "src/main.tsx": {
+    "mtime": 1784918637.0984876,
+    "ast_hash": "fcb384868102f7ff89c3c7d426c1d41e",
+    "semantic_hash": ""
+  },
+  "src/pages/About.tsx": {
+    "mtime": 1786284769.3287568,
+    "ast_hash": "46112e73744929c4b8d0abc81d3bf1ec",
+    "semantic_hash": ""
+  },
+  "src/pages/Contact.tsx": {
+    "mtime": 1785683541.7980883,
+    "ast_hash": "8b92aee5a5bb820eeb04d6512ed9c89b",
+    "semantic_hash": ""
+  },
+  "src/pages/Gallery.tsx": {
+    "mtime": 1786303705.6683536,
+    "ast_hash": "9bcfde1ac00da4991931a3f345a4aa34",
+    "semantic_hash": ""
+  },
+  "src/pages/GetInvolved.tsx": {
+    "mtime": 1786352679.8165827,
+    "ast_hash": "3e7ca9e7e6537e2b1ac51a39d4b22a68",
+    "semantic_hash": ""
+  },
+  "src/pages/Home.tsx": {
+    "mtime": 1786302147.8961427,
+    "ast_hash": "b0b72eefc58fbc10ee4cb76b8292c498",
+    "semantic_hash": ""
+  },
+  "src/pages/Initiatives.tsx": {
+    "mtime": 1786287193.4604988,
+    "ast_hash": "d55ae6ace9b543e79b1ac953884bf354",
+    "semantic_hash": ""
+  },
+  "src/pages/Stories.tsx": {
+    "mtime": 1786349054.368506,
+    "ast_hash": "e076892a5869c206935f4f7f81cae260",
+    "semantic_hash": ""
+  },
+  "tailwind.config.js": {
+    "mtime": 1785060184.365102,
+    "ast_hash": "86e22fb803ac38d0127ed664a2d09af7",
+    "semantic_hash": ""
+  },
+  "tsconfig.app.json": {
+    "mtime": 1783343629.0,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a"
+  },
+  "tsconfig.json": {
+    "mtime": 1783343629.0,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "tsconfig.node.json": {
+    "mtime": 1783343629.0,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": "f9cb81ddcea69ffdab672fc8c48dca66"
+  },
+  "vite.config.ts": {
+    "mtime": 1784919834.9492788,
+    "ast_hash": "dab8bdefe25f3b78a13b4381772ef37c",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1783403960.6003485,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": "82efb97a359f5c7290bf2513d14686be"
+  },
+  "README.md": {
+    "mtime": 1783343629.0,
+    "ast_hash": "10495bfcc6c568eca4dab6dd5df795d3",
+    "semantic_hash": "10495bfcc6c568eca4dab6dd5df795d3"
+  },
+  "index.html": {
+    "mtime": 1785663508.3020005,
+    "ast_hash": "24e4737357f8c430df75f00f74436469",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1785662846.1372526,
+    "ast_hash": "073330fb6075c7807795f5fe82ef0751",
+    "semantic_hash": ""
+  },
+  "home-current-screenshot.png": {
+    "mtime": 1783352427.0,
+    "ast_hash": "8b1c54945bdc2ea0636a61cf898864d7",
+    "semantic_hash": "8b1c54945bdc2ea0636a61cf898864d7"
+  },
+  "public/assets/home/01_full_home_design.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "62b4dcf3594d9eb30c2fe05896354fba",
+    "semantic_hash": "62b4dcf3594d9eb30c2fe05896354fba"
+  },
+  "public/assets/home/02_logo_top.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "b02bc8fcbba9bcc9d4ed806935d9222a",
+    "semantic_hash": "b02bc8fcbba9bcc9d4ed806935d9222a"
+  },
+  "public/assets/home/03_logo_footer.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "c202cdf3ccf20ea42f29e3379938a3d8",
+    "semantic_hash": "c202cdf3ccf20ea42f29e3379938a3d8"
+  },
+  "public/assets/home/03_logo_footer_clean.png": {
+    "mtime": 1783351677.0,
+    "ast_hash": "a8b47c5c4b7f9f4d804c9d9ede01d3f7",
+    "semantic_hash": "a8b47c5c4b7f9f4d804c9d9ede01d3f7"
+  },
+  "public/assets/home/04_hero_children.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "7a53db3c3770136966223c215391ce81",
+    "semantic_hash": "7a53db3c3770136966223c215391ce81"
+  },
+  "public/assets/home/05_initiative_education.png": {
+    "mtime": 1783357828.0,
+    "ast_hash": "88081a462740cd97fc399113ecc0333d",
+    "semantic_hash": "88081a462740cd97fc399113ecc0333d"
+  },
+  "public/assets/home/06_initiative_healthcare.png": {
+    "mtime": 1783357828.0,
+    "ast_hash": "5380fe8da3e4ede7fe664752648ce2bb",
+    "semantic_hash": "5380fe8da3e4ede7fe664752648ce2bb"
+  },
+  "public/assets/home/07_initiative_empowerment.png": {
+    "mtime": 1783357828.0,
+    "ast_hash": "fe1563dda8603b15edc9e19680930ab9",
+    "semantic_hash": "fe1563dda8603b15edc9e19680930ab9"
+  },
+  "public/assets/home/08_initiative_social_welfare.png": {
+    "mtime": 1783357828.0,
+    "ast_hash": "d51c3ed035a2727400c1050c03f8c767",
+    "semantic_hash": "d51c3ed035a2727400c1050c03f8c767"
+  },
+  "public/assets/home/09_story_success.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "c99f264f8373c35065a0d765589b20da",
+    "semantic_hash": "c99f264f8373c35065a0d765589b20da"
+  },
+  "public/assets/home/09_story_success_img.png": {
+    "mtime": 1783351677.0,
+    "ast_hash": "9f5361fef12bdd16b806559aa3fb4a4a",
+    "semantic_hash": "9f5361fef12bdd16b806559aa3fb4a4a"
+  },
+  "public/assets/home/10_story_healthcare.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "7020b7b215572a14895737fa6c44598c",
+    "semantic_hash": "7020b7b215572a14895737fa6c44598c"
+  },
+  "public/assets/home/10_story_healthcare_img.png": {
+    "mtime": 1783351677.0,
+    "ast_hash": "b6b7b63fecb8266193bc6a8aee99b3aa",
+    "semantic_hash": "b6b7b63fecb8266193bc6a8aee99b3aa"
+  },
+  "public/assets/home/11_story_empowered.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "f74471a04b85dff90dde4cbf4f6cd84a",
+    "semantic_hash": "f74471a04b85dff90dde4cbf4f6cd84a"
+  },
+  "public/assets/home/11_story_empowered_img.png": {
+    "mtime": 1783351677.0,
+    "ast_hash": "6f731fba1f170025b0755bf32eaddcd6",
+    "semantic_hash": "6f731fba1f170025b0755bf32eaddcd6"
+  },
+  "public/assets/home/12_leaf_left_hero.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "8e258851fd66b916b9ed97db65ceba2e",
+    "semantic_hash": "8e258851fd66b916b9ed97db65ceba2e"
+  },
+  "public/assets/home/13_leaf_cta_left.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "8eab50c785f136f27d86be1b490cc382",
+    "semantic_hash": "8eab50c785f136f27d86be1b490cc382"
+  },
+  "public/assets/home/14_leaf_cta_right.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "c68289cb1f947ce549544d6a9e3fa83d",
+    "semantic_hash": "c68289cb1f947ce549544d6a9e3fa83d"
+  },
+  "public/assets/home/15_footer_leaf_left.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "6debf4dbca4383b884ccadc200d63e69",
+    "semantic_hash": "6debf4dbca4383b884ccadc200d63e69"
+  },
+  "public/assets/home/16_footer_leaf_right.png": {
+    "mtime": 1783349254.0,
+    "ast_hash": "bdf8c13ed86efc187cab3aa2c313ef7f",
+    "semantic_hash": "bdf8c13ed86efc187cab3aa2c313ef7f"
+  },
+  "public/assets/home/logo_footer.png": {
+    "mtime": 1783357297.0,
+    "ast_hash": "05ad804481c8d2c5849e581dbbd8a962",
+    "semantic_hash": "05ad804481c8d2c5849e581dbbd8a962"
+  },
+  "public/assets/home/logo_main.png": {
+    "mtime": 1783355963.0,
+    "ast_hash": "bd6abe58e6b19a59c88ac0e72602c2d6",
+    "semantic_hash": "bd6abe58e6b19a59c88ac0e72602c2d6"
+  },
+  "public/assets/home/logo_main_raw.png": {
+    "mtime": 1783355949.0,
+    "ast_hash": "8f18e3a0421acf98f23c9cf8e8cf4226",
+    "semantic_hash": "8f18e3a0421acf98f23c9cf8e8cf4226"
+  },
+  "public/assets/home/logo_mark.png": {
+    "mtime": 1783355963.0,
+    "ast_hash": "210ad38f2425d6d477d076eaf7e5d3dd",
+    "semantic_hash": "210ad38f2425d6d477d076eaf7e5d3dd"
+  },
+  "public/assets/home/story_empowered.png": {
+    "mtime": 1783357143.0,
+    "ast_hash": "0d9c325857823ffb78baf69d26f91155",
+    "semantic_hash": "0d9c325857823ffb78baf69d26f91155"
+  },
+  "public/assets/home/story_healthcare.png": {
+    "mtime": 1783357143.0,
+    "ast_hash": "b5d8b0870e8e5dd6fe465f9a3a38cccf",
+    "semantic_hash": "b5d8b0870e8e5dd6fe465f9a3a38cccf"
+  },
+  "public/assets/home/story_success.png": {
+    "mtime": 1783357143.0,
+    "ast_hash": "c1c1fe1d24c5f8489430898899165247",
+    "semantic_hash": "c1c1fe1d24c5f8489430898899165247"
+  },
+  "public/favicon.svg": {
+    "mtime": 1783343732.0,
+    "ast_hash": "9d0c8dfcd72621c4c5763c0876291a72",
+    "semantic_hash": "9d0c8dfcd72621c4c5763c0876291a72"
+  },
+  "public/icons.svg": {
+    "mtime": 1783343629.0,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "public/logo.png": {
+    "mtime": 1786207477.486084,
+    "ast_hash": "90ba166e6b720aa48db0d18818d380d6",
+    "semantic_hash": ""
+  },
+  "public/reference/about.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "6725b268c8df998f74c918ee17139ec1",
+    "semantic_hash": "6725b268c8df998f74c918ee17139ec1"
+  },
+  "public/reference/contact.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "db8a703c4ecfc00af53c691b3a9e4d03",
+    "semantic_hash": "db8a703c4ecfc00af53c691b3a9e4d03"
+  },
+  "public/reference/gallery.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "50e27def728e179c90d3d93bac5eec16",
+    "semantic_hash": "50e27def728e179c90d3d93bac5eec16"
+  },
+  "public/reference/get-involved.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "44558a58eafcfccd57531864051839b3",
+    "semantic_hash": "44558a58eafcfccd57531864051839b3"
+  },
+  "public/reference/home.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "cea38cca8b47019acd27bf05f1fb54d8",
+    "semantic_hash": "cea38cca8b47019acd27bf05f1fb54d8"
+  },
+  "public/reference/initiatives.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "f58088653aab76d5561b4eb171d3e4f8",
+    "semantic_hash": "f58088653aab76d5561b4eb171d3e4f8"
+  },
+  "public/reference/stories.png": {
+    "mtime": 1783343678.0,
+    "ast_hash": "e3e0325d502060d0e4cf410a22fd23bc",
+    "semantic_hash": "e3e0325d502060d0e4cf410a22fd23bc"
+  },
+  "src/components/EventHighlightCard.tsx": {
+    "mtime": 1784571299.8969328,
+    "ast_hash": "1391bebb924ec38471daead60a21c989",
+    "semantic_hash": ""
+  },
+  "src/components/PhotoAlbumCard.tsx": {
+    "mtime": 1784571299.9794528,
+    "ast_hash": "48854fd39bdacf3c66fcd77912f8a020",
+    "semantic_hash": ""
+  },
+  "src/components/TransformationStoryCard.tsx": {
+    "mtime": 1784826909.7817063,
+    "ast_hash": "b05fedf28c26f68cdde0a9c4872a1e1f",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/README.txt": {
+    "mtime": 1784547562.0,
+    "ast_hash": "31c1d6a669f72f9f0c2a4795311edf07",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/README.txt": {
+    "mtime": 1784633212.0,
+    "ast_hash": "4d54aaf6e46d49854fc89ec44e7a0632",
+    "semantic_hash": ""
+  },
+  "about-after-image-fix.png": {
+    "mtime": 1783424679.8948336,
+    "ast_hash": "de2170e2eda30a8abeb0d8d52a6e0445",
+    "semantic_hash": ""
+  },
+  "about-after-photo-sizing.png": {
+    "mtime": 1783425019.2084985,
+    "ast_hash": "abfba3a15af3acbd7a1becdbd296d33f",
+    "semantic_hash": ""
+  },
+  "about-alignment-final.png": {
+    "mtime": 1783480432.8399324,
+    "ast_hash": "e17103eba5ffa1e788048f45d8b7b6cb",
+    "semantic_hash": ""
+  },
+  "about-alignment-polished.png": {
+    "mtime": 1783480277.5001204,
+    "ast_hash": "ba01e0be0be3a127f5c36fe2c02470d8",
+    "semantic_hash": ""
+  },
+  "about-current-render.png": {
+    "mtime": 1783424006.4385147,
+    "ast_hash": "de2170e2eda30a8abeb0d8d52a6e0445",
+    "semantic_hash": ""
+  },
+  "about-final-photo-sizing.png": {
+    "mtime": 1783425286.2968102,
+    "ast_hash": "b060324e6d3b402ac282de91c39c4068",
+    "semantic_hash": ""
+  },
+  "about-green-polish.png": {
+    "mtime": 1783485719.146647,
+    "ast_hash": "d0acc0cdf20e8c1b91618a7c891f59c0",
+    "semantic_hash": ""
+  },
+  "about-hero-refresh.png": {
+    "mtime": 1783483634.4398708,
+    "ast_hash": "e06a722c3f2e73e7d959b68b86e68781",
+    "semantic_hash": ""
+  },
+  "about-photo-sizing-final.png": {
+    "mtime": 1783426534.351278,
+    "ast_hash": "0290223892fb87ed3db9267b4737601c",
+    "semantic_hash": ""
+  },
+  "about-polished-sections.png": {
+    "mtime": 1783484916.1593218,
+    "ast_hash": "0a51691961bb42fbaabef2c0a115b2d8",
+    "semantic_hash": ""
+  },
+  "about-stats-trustees-final.png": {
+    "mtime": 1783481188.0425465,
+    "ast_hash": "e5b23a5a7717ebf6cb9ba1c543ac665f",
+    "semantic_hash": ""
+  },
+  "about-typography-final.png": {
+    "mtime": 1783480892.630077,
+    "ast_hash": "446b07faa3d336b790d7e14b8ef3c244",
+    "semantic_hash": ""
+  },
+  "public/assets/about/01_full_about_design.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "1701abc216f0d2a4189afba90431281e",
+    "semantic_hash": ""
+  },
+  "public/assets/about/02_about_reference_without_footer.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "7600db62f2b278a89f08dab0bb66d972",
+    "semantic_hash": ""
+  },
+  "public/assets/about/02_hero_children_photo.png": {
+    "mtime": 1783421189.0,
+    "ast_hash": "2e4c22af2a854016e7924eaadc46a1ae",
+    "semantic_hash": ""
+  },
+  "public/assets/about/03_hero_children.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "228da9383dabe4ca39a18398fb721b64",
+    "semantic_hash": ""
+  },
+  "public/assets/about/03_legacy_sapling_photo.png": {
+    "mtime": 1783420525.0,
+    "ast_hash": "01ccbb4cc037ae79bf6c77be05d54772",
+    "semantic_hash": ""
+  },
+  "public/assets/about/04_founder_portrait.png": {
+    "mtime": 1783421203.0,
+    "ast_hash": "f964ad302e77892a9612ac4fa2b5a611",
+    "semantic_hash": ""
+  },
+  "public/assets/about/04_legacy_plant.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "13554e1b3f727223db8635541c98368a",
+    "semantic_hash": ""
+  },
+  "public/assets/about/05_founder_portrait.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "bfdef4e2129dbfb65f85c6325973afb9",
+    "semantic_hash": ""
+  },
+  "public/assets/about/06_timeline_strip.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "231775dbe1efa20d0dc14faf9385f8c7",
+    "semantic_hash": ""
+  },
+  "public/assets/about/06_trustee_rajesh_kanneganti.png": {
+    "mtime": 1783421234.0,
+    "ast_hash": "b6f78bc708a0efa04951ead313eb0249",
+    "semantic_hash": ""
+  },
+  "public/assets/about/07_stats_strip.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "2b624bc7d9619f55b8f4df586fc74070",
+    "semantic_hash": ""
+  },
+  "public/assets/about/07_trustee_padma_srinivas.png": {
+    "mtime": 1783421256.0,
+    "ast_hash": "6511f68b304c2b230199155ec2062185",
+    "semantic_hash": ""
+  },
+  "public/assets/about/08_trustee_rajesh.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "4cb80e2d54b0c3d72949a57ad3db5a58",
+    "semantic_hash": ""
+  },
+  "public/assets/about/08_trustee_v_suryanarayana.png": {
+    "mtime": 1783421276.0,
+    "ast_hash": "35cc1e1107c5b62b21018be86be4a53c",
+    "semantic_hash": ""
+  },
+  "public/assets/about/09_trustee_anita_reddy.png": {
+    "mtime": 1783421298.0,
+    "ast_hash": "cc9b3b93f4c67f8ff6283e22a6e73229",
+    "semantic_hash": ""
+  },
+  "public/assets/about/09_trustee_padma.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "31330f3cc684d3746ace98e49b15cff1",
+    "semantic_hash": ""
+  },
+  "public/assets/about/10_trustee_dr_mohan_kumar.png": {
+    "mtime": 1783421317.0,
+    "ast_hash": "a7b04cf0f81ae751fafa10c61f65d068",
+    "semantic_hash": ""
+  },
+  "public/assets/about/10_trustee_suryanarayana.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "47b2b0d988c02af7236a05b260cda651",
+    "semantic_hash": ""
+  },
+  "public/assets/about/11_trustee_anita.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "eb15ef3fb08429a5f647e64f00d367ae",
+    "semantic_hash": ""
+  },
+  "public/assets/about/11_trustee_lavanya_k.png": {
+    "mtime": 1783421331.0,
+    "ast_hash": "5d6c6121aa05a75e35448e30ccd006fb",
+    "semantic_hash": ""
+  },
+  "public/assets/about/12_trustee_mohan.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "ce8f461523ce016356c10e3497a1c961",
+    "semantic_hash": ""
+  },
+  "public/assets/about/13_trustee_lavanya.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "a132300cb7e723c0a27d2942a8f82fdf",
+    "semantic_hash": ""
+  },
+  "public/assets/about/14_left_leaf_decor.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "16e6ebfb6540dfe8db5e0cdf12687672",
+    "semantic_hash": ""
+  },
+  "public/assets/about/15_right_leaf_decor.png": {
+    "mtime": 1783394204.0,
+    "ast_hash": "82034b99c822bd41441dfcb9bbd9b3d4",
+    "semantic_hash": ""
+  },
+  "public/assets/about/16_core_values_panel.png": {
+    "mtime": 1783394206.0,
+    "ast_hash": "f39badf91b3f7bfc2eeb9404dd92ec54",
+    "semantic_hash": ""
+  },
+  "public/assets/about/17_vision_card.png": {
+    "mtime": 1783394206.0,
+    "ast_hash": "58c16bee1dcc047e355f0d77de2ab966",
+    "semantic_hash": ""
+  },
+  "public/assets/about/18_mission_card.png": {
+    "mtime": 1783394206.0,
+    "ast_hash": "87d961f6e1707783b886b7657f0074b8",
+    "semantic_hash": ""
+  },
+  "public/assets/about/19_legacy_card.png": {
+    "mtime": 1783394206.0,
+    "ast_hash": "bd65c4ea3ec8434fa3a26bff1f02b707",
+    "semantic_hash": ""
+  },
+  "public/assets/about/20_founder_message_card.png": {
+    "mtime": 1783394206.0,
+    "ast_hash": "85df92a7ee0accd4982a81e3eecbcd92",
+    "semantic_hash": ""
+  },
+  "public/assets/about/21_about_hero_learning.png": {
+    "mtime": 1783483117.7619615,
+    "ast_hash": "eb2196a7d9a0c05c03c5b5b676794332",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_founder_portrait.png": {
+    "mtime": 1783418020.9681976,
+    "ast_hash": "c3d4c0ec00cd7a27e81a4ecb90f815ee",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_hero_children.png": {
+    "mtime": 1783418020.5815306,
+    "ast_hash": "5999ba3331aac1e1c5dbee3e5c5dd7a3",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_legacy_plant.png": {
+    "mtime": 1783418020.9292772,
+    "ast_hash": "1c4511161d76b679ad9677395ef2f51b",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_trustee_anita.png": {
+    "mtime": 1783418023.2438345,
+    "ast_hash": "f9d68abd3cf95d7c81cb065ef82eec00",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_trustee_lavanya.png": {
+    "mtime": 1783418023.3590577,
+    "ast_hash": "d7fa696d7935e4ffc50564ffec7fb499",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_trustee_mohan.png": {
+    "mtime": 1783418023.247595,
+    "ast_hash": "46f3b399f3d497c40dd0ab35867b1590",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_trustee_padma.png": {
+    "mtime": 1783418023.2382402,
+    "ast_hash": "a9867edf13034a34a30640a19443fdb4",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_trustee_rajesh.png": {
+    "mtime": 1783418023.2315338,
+    "ast_hash": "689e3b54cad9c6eebdc68fbd3087706b",
+    "semantic_hash": ""
+  },
+  "public/assets/about/generated_trustee_suryanarayana.png": {
+    "mtime": 1783418023.2415624,
+    "ast_hash": "8066f5a8d615215304f386d844f5c9a8",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/01_gallery_reference.png": {
+    "mtime": 1784547556.0,
+    "ast_hash": "861e7c66ee4900c0bdd80e6429713b53",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/02_hero_sapling_banner.png": {
+    "mtime": 1784547556.0,
+    "ast_hash": "97d6826f42e51304227867e875e97b6e",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/03_gallery_education_for_all.png": {
+    "mtime": 1784547556.0,
+    "ast_hash": "8a7ef071495d11e2edbb98674dec7598",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/04_gallery_healthcare_support.png": {
+    "mtime": 1784547556.0,
+    "ast_hash": "ca1caaa6c28156d28e68acaf1fa4838b",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/05_gallery_women_empowerment.png": {
+    "mtime": 1784547558.0,
+    "ast_hash": "2a4ec8a1628758f4e34795ff5ded7b4f",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/06_gallery_community_welfare.png": {
+    "mtime": 1784547558.0,
+    "ast_hash": "e87603d9d618158856d001fb7adc6596",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/07_event_health_camp.png": {
+    "mtime": 1784547558.0,
+    "ast_hash": "6cb92a5e8512def6c8ea4dbe6171aa37",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/08_event_republic_day_celebration.png": {
+    "mtime": 1784547558.0,
+    "ast_hash": "41de7504f62e26df5cfe4063b381df57",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/09_event_womens_day_workshop.png": {
+    "mtime": 1784547558.0,
+    "ast_hash": "3e9511c45434c51af14158d6941e77fe",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/10_album_education_initiatives.png": {
+    "mtime": 1784547560.0,
+    "ast_hash": "8a7ef071495d11e2edbb98674dec7598",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/11_album_healthcare_camps.png": {
+    "mtime": 1784547560.0,
+    "ast_hash": "bf7df8e8a09153e48e5226b9ab4ae129",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/12_album_empowerment_programs.png": {
+    "mtime": 1784547560.0,
+    "ast_hash": "2a4ec8a1628758f4e34795ff5ded7b4f",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/13_album_community_outreach.png": {
+    "mtime": 1784547560.0,
+    "ast_hash": "e87603d9d618158856d001fb7adc6596",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/14_spotlight_story_children.png": {
+    "mtime": 1784547560.0,
+    "ast_hash": "41de7504f62e26df5cfe4063b381df57",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/15_story_dreams_to_degrees.png": {
+    "mtime": 1784547562.0,
+    "ast_hash": "80c54614282f2f3e2610d96ee997f3e0",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/16_story_healing_with_compassion.png": {
+    "mtime": 1784547562.0,
+    "ast_hash": "bf7df8e8a09153e48e5226b9ab4ae129",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/17_story_empowered_to_inspire.png": {
+    "mtime": 1784547562.0,
+    "ast_hash": "3e9511c45434c51af14158d6941e77fe",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/18_cta_leaf_style_left.png": {
+    "mtime": 1784547562.0,
+    "ast_hash": "3f7d2d88456f33e8de4fb0c89e6bd1aa",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/19_cta_leaf_style_right.png": {
+    "mtime": 1784547562.0,
+    "ast_hash": "b5662a1c3cb760a92651bf0d598fbbee",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/cta-leaf-left-transparent.png": {
+    "mtime": 1784622594.1105704,
+    "ast_hash": "1a404d151b0c32e6ce9697fd38cdebb7",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/cta-leaf-right-transparent.png": {
+    "mtime": 1784622594.1505473,
+    "ast_hash": "4ca7fb7c3f4e5764b17d5fcc9e78c2cc",
+    "semantic_hash": ""
+  },
+  "public/assets/home/children.png": {
+    "mtime": 1783405593.3919547,
+    "ast_hash": "70e4082f23a8c4b6b225422b0f6a7449",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/a_collaborative_sewing_workshop_in_progress.png": {
+    "mtime": 1784561396.0,
+    "ast_hash": "91501d09e8df2b4ca047d5351143a75a",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/campus_portrait_in_bright_daylight.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "2263b4185cc261700bbf51e0123c72b6",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/caring_consultation_in_a_clinic.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "54a5ce4e8aaf41ad6940c3c90d7b5fdd",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/friendly_consultation_in_a_bright_clinic.png": {
+    "mtime": 1784561396.0,
+    "ast_hash": "65db5247a184ca6742019715e5a32eda",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/initiatives-reference.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "369282fe6abcd6a62e954a5d996d63ec",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/nurturing_new_life_in_nature.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "a22aa6c7fc2007146fce6e2a2865a9f4",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/schoolgirls_in_classroom_joyful_learning_moment.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "23062b587a145a35c5b725395e28144e",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/serving_with_warmth_and_kindness.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "8b523fbca615e392895f6aa8dc480fc0",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/sewing_workshop_with_women_in_saris.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "8c37824bef63eaff8f248fdb039d60f2",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/smiling_schoolgirl_in_a_serene_campus_setting.png": {
+    "mtime": 1784561396.0,
+    "ast_hash": "1b68ec27767b333c2ec19b855e9d4d65",
+    "semantic_hash": ""
+  },
+  "public/assets/initiatives/village_community_joy_in_the_sun.png": {
+    "mtime": 1784561395.0,
+    "ast_hash": "a4b0c0743d15a7a7374cd3571a73738a",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/01_stories_reference.png": {
+    "mtime": 1784633206.0,
+    "ast_hash": "57701d67f7a004f6b784c4fef09399ae",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/02_hero_children.png": {
+    "mtime": 1784633208.0,
+    "ast_hash": "2904bf31ae31fc2fba7f294e05654268",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/03_featured_story_student.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "d1f65efccf28afbd6f481849abaea5fe",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/04_story_healthcare_access.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "387a0874ef6ec12648f1727bd695fa04",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/05_story_healing_with_care.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "5fa0e538f79647869655d6a9b5e41e74",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/06_story_skills_future.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "633aad6148e2106e97dbaf048b609b60",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/07_story_food_support.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "ce6a408e2c3edf55a9b5429e507250af",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/08_before_student.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "7bd6f54696fd280f183eb270d2090f11",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/09_after_student.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "dc4b81c22fe43a78502c75b167ec950a",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/10_hero_leaf_left.png": {
+    "mtime": 1784633210.0,
+    "ast_hash": "352295fd89a4e913575b6f0ab9e52348",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/11_hero_leaf_right.png": {
+    "mtime": 1784633212.0,
+    "ast_hash": "6ce6dd8dad5c6b8dcfbfc10fc8f7c469",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/12_gratitude_leaf_left.png": {
+    "mtime": 1784633212.0,
+    "ast_hash": "791dc597d2b3f27b7db24ca69fa646de",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/13_gratitude_leaf_right.png": {
+    "mtime": 1784633212.0,
+    "ast_hash": "36e0ee7656b8db729d9acae6052f93d4",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/14_cta_leaf_left.png": {
+    "mtime": 1784633212.0,
+    "ast_hash": "c4f28fd78c16580584728b561a24bedd",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/15_cta_leaf_right.png": {
+    "mtime": 1784633212.0,
+    "ast_hash": "c16c187b29f2e35308c66aba1d06d6c3",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/04_story_healthcare_access_clear.png": {
+    "mtime": 1784654717.6733537,
+    "ast_hash": "7666343c7308e6a4431995ffcedb1a5d",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/05_story_healing_with_care_clear.png": {
+    "mtime": 1784654839.4014819,
+    "ast_hash": "dd73fbb6f363c31084fa850802320112",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/06_story_skills_future_clear.png": {
+    "mtime": 1784654968.6424744,
+    "ast_hash": "5532dbf6fe10e908f80ef6ccc7621707",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/07_story_food_support_clear.png": {
+    "mtime": 1784655105.6308296,
+    "ast_hash": "6e968064cabf2ba49ed555ef05d857a0",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/08_before_student_clear.png": {
+    "mtime": 1784655217.0961611,
+    "ast_hash": "7b4a1c68ac7963dc2591d8545e1b01a2",
+    "semantic_hash": ""
+  },
+  "public/assets/stories/09_after_student_clear.png": {
+    "mtime": 1784655403.6702018,
+    "ast_hash": "870ad9337024505488a81c679008daf5",
+    "semantic_hash": ""
+  },
+  "src/data/contactData.ts": {
+    "mtime": 1784701524.4884837,
+    "ast_hash": "0553edbd314384eb3b96222574c2be08",
+    "semantic_hash": ""
+  },
+  "src/data/getInvolvedData.ts": {
+    "mtime": 1786349783.2517757,
+    "ast_hash": "504dee9c07f99486a1b8da5d976774f4",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/README.txt": {
+    "mtime": 1784680846.0,
+    "ast_hash": "ddc95f0540d10377bcc4b5881153294b",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/README.txt": {
+    "mtime": 1784680454.0,
+    "ast_hash": "7e0a5b88b9f684a9e97dc4c9cc0e0f42",
+    "semantic_hash": ""
+  },
+  "home-blue-glass-stats.png": {
+    "mtime": 1784657811.2795548,
+    "ast_hash": "d09d6aa6afc794735a146e2d250fcf74",
+    "semantic_hash": ""
+  },
+  "home-classy-hero-final.png": {
+    "mtime": 1784657052.430768,
+    "ast_hash": "afd05734a9486bc87b2089fea55f8074",
+    "semantic_hash": ""
+  },
+  "home-fourth-slide-clear.png": {
+    "mtime": 1784660080.9969697,
+    "ast_hash": "3a9799c4993275ae0f552e26c3ae396a",
+    "semantic_hash": ""
+  },
+  "home-hero-carousel-final.png": {
+    "mtime": 1784658655.395999,
+    "ast_hash": "3c91fbdd89751efe2278344861fbce20",
+    "semantic_hash": ""
+  },
+  "home-hero-glass-final.png": {
+    "mtime": 1784656905.864825,
+    "ast_hash": "6761b4b7ef7f1e2067b953b92d399555",
+    "semantic_hash": ""
+  },
+  "home-hero-no-overlap.png": {
+    "mtime": 1784658826.7305155,
+    "ast_hash": "3893da7bc4c1104618228b09c72adada",
+    "semantic_hash": ""
+  },
+  "home-photo-animation-final.png": {
+    "mtime": 1784658399.3894458,
+    "ast_hash": "cfed7b2260d13bee4b88e9ed57504787",
+    "semantic_hash": ""
+  },
+  "home-polished-desktop.png": {
+    "mtime": 1784656406.167946,
+    "ast_hash": "06dc17cdf71f2ea7f587285057873868",
+    "semantic_hash": ""
+  },
+  "home-polished-mobile.png": {
+    "mtime": 1784656409.6088984,
+    "ast_hash": "a68518737bae496366cbaae14aa9be02",
+    "semantic_hash": ""
+  },
+  "home-sapling-spacing-final.png": {
+    "mtime": 1784659023.8431156,
+    "ast_hash": "7d62bd91f37da9a6055eebcebf913982",
+    "semantic_hash": ""
+  },
+  "home-white-glass-final.png": {
+    "mtime": 1784657349.8856654,
+    "ast_hash": "ce02905bc2dadff9f9c6c34093da4cb9",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/01_contact_reference_without_header_footer.png": {
+    "mtime": 1784680836.0,
+    "ast_hash": "0212cca929821d9fd042dd8c2d7240c3",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/02_contact_hero_sapling.png": {
+    "mtime": 1784680838.0,
+    "ast_hash": "184986ecb00a4a5b83c8c972640ef486",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/03_office_building.png": {
+    "mtime": 1784680838.0,
+    "ast_hash": "ad65d57e5551c3ebd65d40bb73c46325",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/04_contact_map.png": {
+    "mtime": 1784680840.0,
+    "ast_hash": "9115f32b2ac578e4f1bfc9227a593f96",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/05_support_card_leaf.png": {
+    "mtime": 1784680840.0,
+    "ast_hash": "e1ae609da71fbdb6ec3cff5ba091f942",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/06_hero_left_plant.png": {
+    "mtime": 1784680840.0,
+    "ast_hash": "d39146fd3b167a2338b08688dc6fe29a",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/07_hero_right_hands_sapling.png": {
+    "mtime": 1784680842.0,
+    "ast_hash": "c692fe968527eb982ecd3da279dd6b97",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/08_get_in_touch_reference.png": {
+    "mtime": 1784680842.0,
+    "ast_hash": "3a8a2b05d62181d61f7ee24b58c09463",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/09_contact_form_reference.png": {
+    "mtime": 1784680844.0,
+    "ast_hash": "e1200854846386a76cd4478b7b3fb84b",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/10_office_hours_reference.png": {
+    "mtime": 1784680844.0,
+    "ast_hash": "fd851c57b00c58ab3e630d546609cfca",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/11_find_us_reference.png": {
+    "mtime": 1784680846.0,
+    "ast_hash": "7db7e5e1bdbe0c643f4543210bec0a9a",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/12_support_reference.png": {
+    "mtime": 1784680846.0,
+    "ast_hash": "832248679e1d9b331fe00f062b469e9e",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/01_page_reference_without_header_footer.png": {
+    "mtime": 1784680402.0,
+    "ast_hash": "716a42f473ecb5e3c2bbd15d1d4e33e8",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/02_hero_volunteers.png": {
+    "mtime": 1784702146.0844648,
+    "ast_hash": "90efa29ca8d0a1ef01fb585723d68a51",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/03_volunteer_benefits_photo.png": {
+    "mtime": 1784702146.0879962,
+    "ast_hash": "2aeb7729e7010f81c1361610ffb56275",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/04_hero_right_leaf.png": {
+    "mtime": 1784680428.0,
+    "ast_hash": "eda444f8618b6c1bb9cc318591327e7f",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/05_partner_left_leaf.png": {
+    "mtime": 1784680428.0,
+    "ast_hash": "4a22cf96b27e8b8daaee078fa8810116",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/06_faq_right_leaf.png": {
+    "mtime": 1784680430.0,
+    "ast_hash": "6fa61e46552ee453000143da25dba933",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/07_cta_left_leaf.png": {
+    "mtime": 1784680430.0,
+    "ast_hash": "1278ff7d6dfb296fabba80d200964d3a",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/08_cta_right_leaf.png": {
+    "mtime": 1784680432.0,
+    "ast_hash": "069eded03c27ff6a550768eb6cdd8484",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/09_ways_you_can_help_reference.png": {
+    "mtime": 1784680438.0,
+    "ast_hash": "597764618c4c4e9fd2b0b7502c86aa54",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/10_our_process_reference.png": {
+    "mtime": 1784680442.0,
+    "ast_hash": "c7467bb01e4155f540e376e0e0371ce1",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/11_partner_with_us_reference.png": {
+    "mtime": 1784680446.0,
+    "ast_hash": "85e4914e558c01d0d7ee133ffe357927",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/12_faq_reference.png": {
+    "mtime": 1784680448.0,
+    "ast_hash": "deaac66428679534b688725190cb3a49",
+    "semantic_hash": ""
+  },
+  "public/assets/get-involved/13_cta_reference.png": {
+    "mtime": 1784680454.0,
+    "ast_hash": "5e4b518aeee86eceb475666296bda178",
+    "semantic_hash": ""
+  },
+  "stories-hero-clear.png": {
+    "mtime": 1784660078.2668135,
+    "ast_hash": "72b3c2f6e90eec66fd2bf9aa66c09d39",
+    "semantic_hash": ""
+  },
+  ".tmp-mobile-shots/home-840.png": {
+    "mtime": 1784907722.7716992,
+    "ast_hash": "f4908f36f97211af5c26faeb9f0887d8",
+    "semantic_hash": ""
+  },
+  ".tmp-mobile-shots/home.png": {
+    "mtime": 1784907698.993921,
+    "ast_hash": "ab8471b48f5c89f12cd6089ca58dc2bd",
+    "semantic_hash": ""
+  },
+  "src/components/PageMotion.tsx": {
+    "mtime": 1784915508.6715803,
+    "ast_hash": "d2482ff8d8daa1571a089e1ec5e587b9",
+    "semantic_hash": ""
+  },
+  ".vscode/extensions.json": {
+    "mtime": 1785761930.2791958,
+    "ast_hash": "1aa9ce67f4ff4ac0b5b8c8a6414a53d6",
+    "semantic_hash": ""
+  },
+  "scripts/generate-social-share.mjs": {
+    "mtime": 1785663508.1225483,
+    "ast_hash": "c2888270fd7bba511e6d9442bbadb46a",
+    "semantic_hash": ""
+  },
+  "src/components/ImageReveal.tsx": {
+    "mtime": 1785069039.0522602,
+    "ast_hash": "8dfb1472a55276ca0d015d8e2eb16b80",
+    "semantic_hash": ""
+  },
+  "src/components/PublicAssetFallback.tsx": {
+    "mtime": 1784918637.1825535,
+    "ast_hash": "f7351dd8c9f46e232e215529e5a16904",
+    "semantic_hash": ""
+  },
+  "public/assets/about/about-founder-legacy-hero-mobile-v2.jpg": {
+    "mtime": 1786270373.5901217,
+    "ast_hash": "e77d260587dd8e8fe03fe67c518360d6",
+    "semantic_hash": ""
+  },
+  "public/assets/about/about-founder-legacy-hero-v2.jpg": {
+    "mtime": 1786270351.575562,
+    "ast_hash": "10ca30308a40f0e59d8ffcddc5fc5c5e",
+    "semantic_hash": ""
+  },
+  "public/assets/about/about-founder-legacy-hero-v2.png": {
+    "mtime": 1786270351.4886105,
+    "ast_hash": "4e150e561915ed3d27a4ab4e06dcf73e",
+    "semantic_hash": ""
+  },
+  "public/assets/contact/05_support_card_leaf_transparent.png": {
+    "mtime": 1785683506.0814087,
+    "ast_hash": "fca396e09a8937caaaef81bf84e0b685",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-ai-desktop.webp": {
+    "mtime": 1786218688.92347,
+    "ast_hash": "607a651b1ff1e90aae5c3879b05a1a18",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-ai-mobile.webp": {
+    "mtime": 1786218688.923463,
+    "ast_hash": "2401347fe03a6f9126de6ddb4f10bf24",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-hero-mobile-v2.webp": {
+    "mtime": 1786214474.8691578,
+    "ast_hash": "ab4ed80dcbd8a4d0226061386210154a",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-hero-v2.webp": {
+    "mtime": 1786213899.1463315,
+    "ast_hash": "2b5f04a5f1c533fe15746277b81f43d3",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-hero.webp": {
+    "mtime": 1786212517.7292995,
+    "ast_hash": "977ddfb1329a7a35638d8004011081bd",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-india-desktop.webp": {
+    "mtime": 1786218338.4430916,
+    "ast_hash": "958bf8a710ace83160a25f6f050156db",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-india-mobile.webp": {
+    "mtime": 1786218398.4868326,
+    "ast_hash": "5b675f96fb43c4cf223a538c76e55a88",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-desktop-v2.webp": {
+    "mtime": 1786216051.0971918,
+    "ast_hash": "9fe101f1fd224484c3054c35d0963cd0",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-desktop.webp": {
+    "mtime": 1786215583.9109955,
+    "ast_hash": "04619d65885b7bb921b896032a959c1a",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-mobile-v2.webp": {
+    "mtime": 1786216141.0019183,
+    "ast_hash": "1137425aae1ca1ace63d74483f0ed9c9",
+    "semantic_hash": ""
+  },
+  "public/assets/home/food-donation-real-mobile.webp": {
+    "mtime": 1786215584.0515497,
+    "ast_hash": "e32de83b1ef98443314a3c606f73b7ef",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-india-v3.jpg": {
+    "mtime": 1786268119.7666993,
+    "ast_hash": "6de788a2f464bc2d96fcdcc6d7e50854",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-real-v2.jpg": {
+    "mtime": 1786267315.803879,
+    "ast_hash": "3fb25404a899f21d39bfb95d2a117616",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-user-clean-v5.jpg": {
+    "mtime": 1786268810.6245563,
+    "ast_hash": "d2721be9cac923fb45c0f2a6167b5cc6",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-education-user-v4.jpg": {
+    "mtime": 1786268667.6510854,
+    "ast_hash": "a84d085968d40910b3fa20771458eec8",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-hero-fit-v7.jpg": {
+    "mtime": 1786269501.5017338,
+    "ast_hash": "7e2e3469c89694bf938c88be41648530",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-india-v6.jpg": {
+    "mtime": 1786268119.4608853,
+    "ast_hash": "bb875f27b27cf76ed9c77bde2a2d3cb2",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v2.jpg": {
+    "mtime": 1786267315.989422,
+    "ast_hash": "ceca1bf7e6ff6f821b0560fd29f4f1af",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v3.jpg": {
+    "mtime": 1786267507.3224814,
+    "ast_hash": "ecb3a950c996f96ca19736081d216fe8",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v4.jpg": {
+    "mtime": 1786267621.432837,
+    "ast_hash": "1c75ba51356b741af88221b65e852f1c",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-healthcare-real-v5.jpg": {
+    "mtime": 1786267650.8854384,
+    "ast_hash": "b7e3d3a8d7ba8ec470163fcdb22b5925",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-hero-fit-v5.jpg": {
+    "mtime": 1786269501.5002356,
+    "ast_hash": "edf964c4212e0a49bc57fadb4af6d998",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-india-v3.jpg": {
+    "mtime": 1786268119.8033092,
+    "ast_hash": "6dea0f185b0967b551a9d7669ea3d91c",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-real-v2.jpg": {
+    "mtime": 1786267316.2408416,
+    "ast_hash": "faefd1834d723d211f883a5ffa20fa61",
+    "semantic_hash": ""
+  },
+  "public/assets/home/initiative-social-welfare-user-v4.jpg": {
+    "mtime": 1786268684.5384903,
+    "ast_hash": "320eb26b41602c24431112d0b98abde0",
+    "semantic_hash": ""
+  },
+  "public/assets/home/kvr-logo-mark.png": {
+    "mtime": 1786212277.7107077,
+    "ast_hash": "40defcf8e04457dba787af8b940ccaeb",
+    "semantic_hash": ""
+  },
+  "public/assets/home/kvr-logo.png": {
+    "mtime": 1786207477.444842,
+    "ast_hash": "c4ef56738d759aa1961190da351229eb",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-framer-v3.jpg": {
+    "mtime": 1786266763.9183736,
+    "ast_hash": "0a5eb6ee646beb7dc2ab16b3d7c5230a",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-india-mobile-v5.jpg": {
+    "mtime": 1786268120.3101373,
+    "ast_hash": "36c61baf2ad897012c9231fefddb3317",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-india-v5.jpg": {
+    "mtime": 1786268119.37281,
+    "ast_hash": "e8f76282835e95a86d8b8113e43ae880",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-mobile-v4.jpg": {
+    "mtime": 1786267316.4230058,
+    "ast_hash": "4e9e2fd4d337b983de93e95d8c1b5443",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero-v2.jpg": {
+    "mtime": 1786266438.533465,
+    "ast_hash": "bb478d4776f2297950c345e26f447627",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-hero.jpg": {
+    "mtime": 1786265958.432899,
+    "ast_hash": "f2806241787afb898c6f6d1007379077",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-initiative.jpg": {
+    "mtime": 1786265923.095817,
+    "ast_hash": "2128e6cd1b93faa103da230d3027c44d",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-story-card-v2.jpg": {
+    "mtime": 1786266438.6338444,
+    "ast_hash": "930720dd5c08e8e0daae54974535f37e",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-story-card-v3.jpg": {
+    "mtime": 1786266764.0052156,
+    "ast_hash": "2625db272279e730eed35d1de29e43ee",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-story.jpg": {
+    "mtime": 1786265959.8120627,
+    "ast_hash": "e06a3c8832c359cf633251b856b26fc9",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_empowered-card-v4.jpg": {
+    "mtime": 1786203199.4645205,
+    "ast_hash": "61ed06d6604558db42af0bc142a63e5d",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_empowered-v2.jpg": {
+    "mtime": 1786047280.825309,
+    "ast_hash": "4e7556c06c5c4b0a4950581253ff2b83",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_empowered-v3.jpg": {
+    "mtime": 1786047541.8015425,
+    "ast_hash": "fbdb6f047ae6b5c0cad6444b8e30b4a4",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_healthcare-card-v4.jpg": {
+    "mtime": 1786203199.3764923,
+    "ast_hash": "137de3dabb7336f6c0e543e8130a7bb8",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_healthcare-v2.jpg": {
+    "mtime": 1786047280.6140716,
+    "ast_hash": "098b871bf782c88434188136cd0de708",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_healthcare-v3.jpg": {
+    "mtime": 1786047541.5737813,
+    "ast_hash": "94ea80ecd5ff4b1611d6f7764d600492",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_success-card-v4.jpg": {
+    "mtime": 1786203199.2839131,
+    "ast_hash": "8bf0245e90085d0e1cb57c6a04238c1d",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_success-v2.jpg": {
+    "mtime": 1786047280.3922656,
+    "ast_hash": "fdec28dfb30003d32405b010444bfbc0",
+    "semantic_hash": ""
+  },
+  "public/assets/home/story_success-v3.jpg": {
+    "mtime": 1786047541.3421278,
+    "ast_hash": "c0cc8a69f2d76abf963caa2b362b7657",
+    "semantic_hash": ""
+  },
+  "public/assets/social/share-background.png": {
+    "mtime": 1785662142.2421923,
+    "ast_hash": "1e1642270f13363eb4c18a129dd37e69",
+    "semantic_hash": ""
+  },
+  "public/social-share-v2.png": {
+    "mtime": 1785663513.4483337,
+    "ast_hash": "e935c607ad6a55d7869fb5d840456cfa",
+    "semantic_hash": ""
+  },
+  "public/social-share.png": {
+    "mtime": 1785663396.2690673,
+    "ast_hash": "e935c607ad6a55d7869fb5d840456cfa",
+    "semantic_hash": ""
+  },
+  "public/assets/about/legacy-sapling-wide-v2.jpg": {
+    "mtime": 1786272105.594849,
+    "ast_hash": "f7159a3db98a05451bc2ab73351c5ac9",
+    "semantic_hash": ""
+  },
+  "public/assets/about/legacy-sapling-wide-v2.png": {
+    "mtime": 1786272105.486458,
+    "ast_hash": "348bf073a8594fcaa3e45671cf34d366",
+    "semantic_hash": ""
+  },
+  "src/components/GalleryCard.tsx": {
+    "mtime": 1786288212.1606348,
+    "ast_hash": "5662481f323d06bac587118d8511e708",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/20_gallery_collaborative_classroom.png": {
+    "mtime": 1786291116.503843,
+    "ast_hash": "fdcb963a24adc8865dcab57ddf41fe21",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/21_gallery_community_health_camp.png": {
+    "mtime": 1786291323.9911418,
+    "ast_hash": "66bf927abab43c3f6dad691e9449328f",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryImage 2.tsx": {
+    "mtime": 1786293292.0,
+    "ast_hash": "364fad972b5d244f0123eebd587c232b",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryImage.tsx": {
+    "mtime": 1786297262.5450432,
+    "ast_hash": "0682291d37361e790db0bd69d9dbde34",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryLightbox 2.tsx": {
+    "mtime": 1786295900.0,
+    "ast_hash": "177a4570f9ac94082456cd05baa35e23",
+    "semantic_hash": ""
+  },
+  "src/components/gallery/GalleryLightbox.tsx": {
+    "mtime": 1786295953.6639826,
+    "ast_hash": "98670641074d31bbde814d1efa0e0976",
+    "semantic_hash": ""
+  },
+  "src/pages/Gallery 2.tsx": {
+    "mtime": 1786293522.6199481,
+    "ast_hash": "5db87f60139c90f0983a5949f4dc8e23",
+    "semantic_hash": ""
+  },
+  "src/pages/Gallery 3.tsx": {
+    "mtime": 1786295900.0,
+    "ast_hash": "99fc93a84d177a19a415cd8f470b7c4d",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/community-elder-support.jpg": {
+    "mtime": 1786294891.5271747,
+    "ast_hash": "58765ae9514d4f9fa6dcdd07030a4c2a",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/community-neighbourhood.jpg": {
+    "mtime": 1786294891.6176028,
+    "ast_hash": "a38bed866a02c02978e75dc7cad8feed",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/education-collaborative-learning.jpg": {
+    "mtime": 1786294891.705819,
+    "ast_hash": "b599a8da561c2987e7777a96ed580d01",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/education-science-class.jpg": {
+    "mtime": 1786294891.7935777,
+    "ast_hash": "6e4402162329f7977353f1f11950a4f3",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/food-community-meal.jpg": {
+    "mtime": 1786294891.879889,
+    "ast_hash": "ad2eb7ff32d359b130165682c6cb0bd0",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/food-family-support.jpg": {
+    "mtime": 1786294891.964861,
+    "ast_hash": "6630161812fddc320320c8c2b5e35243",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/healthcare-consultation.jpg": {
+    "mtime": 1786294892.053278,
+    "ast_hash": "f12dd084c5ff4f96d878037ed3bc665c",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/healthcare-rural-camp.jpg": {
+    "mtime": 1786294892.1429532,
+    "ast_hash": "34fae272d336f4aae9574065b9979587",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/school-infrastructure-campus.jpg": {
+    "mtime": 1786294892.2330022,
+    "ast_hash": "5d5b707be4e297d327791b9296b3a446",
+    "semantic_hash": ""
+  },
+  "public/assets/gallery/generated/school-infrastructure-classroom.jpg": {
+    "mtime": 1786294892.3181243,
+    "ast_hash": "edbf09f031f5fffccd50b38c2d37b307",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-classroom-user-v6.jpg": {
+    "mtime": 1786301635.807703,
+    "ast_hash": "c7ed4f221013d8af7215a3402c4011d1",
+    "semantic_hash": ""
+  },
+  "public/assets/home/school-infrastructure-classroom-user-v7-enhanced.jpg": {
+    "mtime": 1786302121.6960633,
+    "ast_hash": "50eb17a77a9c1d38996137529cde6dc1",
+    "semantic_hash": ""
+  }
+}
